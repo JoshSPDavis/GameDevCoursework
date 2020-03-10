@@ -7675,6 +7675,13 @@
         "name": "RightUpStab2-15.png",
         "smoothed": false,
         "userAdded": true
+      },
+      {
+        "file": "Assets/SirValesTheme.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Assets\\SirValesTheme.wav",
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -30276,6 +30283,39 @@
             }
           ],
           "parameters": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": [],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "PlaySoundCanal"
+              },
+              "parameters": [
+                "",
+                "Assets\\SirValesTheme.wav",
+                "1",
+                "yes",
+                "20",
+                "1"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
         }
       ],
       "layers": [
