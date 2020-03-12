@@ -7853,6 +7853,366 @@
         "name": "UpDodge-1.png",
         "smoothed": false,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "RightGhost-1-0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "RightGhost-1-0.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "RightGhost-2-0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "RightGhost-2-0.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "RightGhost-3-0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "RightGhost-3-0.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "RightGhost-4-0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "RightGhost-4-0.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "RightGhost-5-0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "RightGhost-5-0.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "RightDownGhost-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "RightDownGhost-1.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "RightDownGhost-2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "RightDownGhost-2.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "RightDownGhost-3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "RightDownGhost-3.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "RightDownGhost-4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "RightDownGhost-4.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "RightDownGhost-5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "RightDownGhost-5.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "DownGhost-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "DownGhost-1.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "DownGhost-2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "DownGhost-2.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "DownGhost-3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "DownGhost-3.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "DownGhost-4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "DownGhost-4.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "DownGhost-5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "DownGhost-5.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "LeftDownGhost-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "LeftDownGhost-1.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "LeftDownGhost-2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "LeftDownGhost-2.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "LeftDownGhost-3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "LeftDownGhost-3.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "LeftDownGhost-4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "LeftDownGhost-4.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "LeftDownGhost-5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "LeftDownGhost-5.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "LeftGhost-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "LeftGhost-1.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "LeftGhost-2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "LeftGhost-2.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "LeftGhost-3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "LeftGhost-3.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "LeftGhost-4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "LeftGhost-4.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "LeftGhost-5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "LeftGhost-5.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "LeftUpGhost-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "LeftUpGhost-1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "LeftUpGhost-2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "LeftUpGhost-2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "LeftUpGhost-3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "LeftUpGhost-3.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "LeftUpGhost-4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "LeftUpGhost-4.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "LeftUpGhost-5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "LeftUpGhost-5.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "UpGhost-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "UpGhost-1.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "UpGhost-2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "UpGhost-2.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "UpGhost-3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "UpGhost-3.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "UpGhost-4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "UpGhost-4.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "UpGhost-5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "UpGhost-5.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "RightUpGhost-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "RightUpGhost-1.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "RightUpGhost-2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "RightUpGhost-2.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "RightUpGhost-3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "RightUpGhost-3.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "RightUpGhost-4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "RightUpGhost-4.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "RightUpGhost-5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "RightUpGhost-5.png",
+        "smoothed": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -7926,6 +8286,10 @@
           "initialVariables": [
             {
               "name": "Attacking",
+              "value": "0"
+            },
+            {
+              "name": "GhostMod",
               "value": "0"
             }
           ]
@@ -8112,21 +8476,6 @@
         },
         {
           "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "Display",
-          "width": 0,
-          "x": 1043,
-          "y": 860,
-          "zOrder": 10004,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
           "customSize": true,
           "height": 34,
           "layer": "UI",
@@ -8248,6 +8597,18 @@
             },
             {
               "name": "Dodging",
+              "value": "0"
+            },
+            {
+              "name": "GhostForm",
+              "value": "0"
+            },
+            {
+              "name": "TempGhost",
+              "value": "0"
+            },
+            {
+              "name": "GhostMod",
               "value": "0"
             }
           ],
@@ -29445,6 +29806,1862 @@
                   ]
                 }
               ]
+            },
+            {
+              "name": "RightGhost",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "timeBetweenFrames": 0.115,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "RightGhost-1-0.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 17.5195,
+                            "y": 7.32143
+                          },
+                          {
+                            "x": 20.1981,
+                            "y": 13.2143
+                          },
+                          {
+                            "x": 15.9124,
+                            "y": 27.5
+                          },
+                          {
+                            "x": 11.091,
+                            "y": 28.3929
+                          },
+                          {
+                            "x": 13.0552,
+                            "y": 13.75
+                          },
+                          {
+                            "x": 13.9481,
+                            "y": 7.5
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "RightGhost-2-0.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 16.9838,
+                            "y": 8.21429
+                          },
+                          {
+                            "x": 19.6624,
+                            "y": 13.75
+                          },
+                          {
+                            "x": 15.9124,
+                            "y": 27.5
+                          },
+                          {
+                            "x": 11.2695,
+                            "y": 26.7857
+                          },
+                          {
+                            "x": 12.5195,
+                            "y": 14.4643
+                          },
+                          {
+                            "x": 13.9481,
+                            "y": 8.75
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "RightGhost-3-0.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 17.341,
+                            "y": 9.46429
+                          },
+                          {
+                            "x": 19.841,
+                            "y": 14.8214
+                          },
+                          {
+                            "x": 15.7338,
+                            "y": 26.4286
+                          },
+                          {
+                            "x": 11.2695,
+                            "y": 25.5357
+                          },
+                          {
+                            "x": 12.6981,
+                            "y": 14.6429
+                          },
+                          {
+                            "x": 14.1267,
+                            "y": 9.10714
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "RightGhost-4-0.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 17.1624,
+                            "y": 8.03571
+                          },
+                          {
+                            "x": 19.841,
+                            "y": 13.9286
+                          },
+                          {
+                            "x": 16.091,
+                            "y": 26.4286
+                          },
+                          {
+                            "x": 10.9124,
+                            "y": 26.6071
+                          },
+                          {
+                            "x": 12.8767,
+                            "y": 14.4643
+                          },
+                          {
+                            "x": 14.1267,
+                            "y": 8.75
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "RightGhost-5-0.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 17.5195,
+                            "y": 7.32143
+                          },
+                          {
+                            "x": 20.1981,
+                            "y": 13.2143
+                          },
+                          {
+                            "x": 15.9124,
+                            "y": 27.5
+                          },
+                          {
+                            "x": 11.091,
+                            "y": 28.3929
+                          },
+                          {
+                            "x": 13.0552,
+                            "y": 13.75
+                          },
+                          {
+                            "x": 13.9481,
+                            "y": 7.5
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "RightDownGhost",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "timeBetweenFrames": 0.115,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "RightDownGhost-1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 17.5195,
+                            "y": 7.32143
+                          },
+                          {
+                            "x": 19.4838,
+                            "y": 14.2857
+                          },
+                          {
+                            "x": 17.1624,
+                            "y": 25.7143
+                          },
+                          {
+                            "x": 11.091,
+                            "y": 28.5714
+                          },
+                          {
+                            "x": 13.0552,
+                            "y": 13.5714
+                          },
+                          {
+                            "x": 13.9481,
+                            "y": 7.5
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "RightDownGhost-2.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 17.5195,
+                            "y": 8.21429
+                          },
+                          {
+                            "x": 19.4838,
+                            "y": 15.5357
+                          },
+                          {
+                            "x": 17.1624,
+                            "y": 25.7143
+                          },
+                          {
+                            "x": 10.9124,
+                            "y": 26.9643
+                          },
+                          {
+                            "x": 12.6981,
+                            "y": 14.2857
+                          },
+                          {
+                            "x": 13.7695,
+                            "y": 8.39286
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "RightDownGhost-3.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 16.9838,
+                            "y": 9.46429
+                          },
+                          {
+                            "x": 19.6624,
+                            "y": 15.3571
+                          },
+                          {
+                            "x": 17.5195,
+                            "y": 25.3571
+                          },
+                          {
+                            "x": 11.2695,
+                            "y": 26.0714
+                          },
+                          {
+                            "x": 13.0552,
+                            "y": 13.5714
+                          },
+                          {
+                            "x": 13.7695,
+                            "y": 9.10714
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "RightDownGhost-4.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 17.1624,
+                            "y": 8.03571
+                          },
+                          {
+                            "x": 19.4838,
+                            "y": 14.2857
+                          },
+                          {
+                            "x": 17.1624,
+                            "y": 25.7143
+                          },
+                          {
+                            "x": 11.091,
+                            "y": 27.3214
+                          },
+                          {
+                            "x": 12.8767,
+                            "y": 13.5714
+                          },
+                          {
+                            "x": 13.591,
+                            "y": 8.39286
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "RightDownGhost-5.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 17.5195,
+                            "y": 7.32143
+                          },
+                          {
+                            "x": 19.4838,
+                            "y": 14.2857
+                          },
+                          {
+                            "x": 17.1624,
+                            "y": 25.7143
+                          },
+                          {
+                            "x": 11.091,
+                            "y": 28.5714
+                          },
+                          {
+                            "x": 13.0552,
+                            "y": 13.5714
+                          },
+                          {
+                            "x": 13.9481,
+                            "y": 7.5
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "DownGhost",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "timeBetweenFrames": 0.115,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "DownGhost-1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 17.8767,
+                            "y": 7.14286
+                          },
+                          {
+                            "x": 20.7338,
+                            "y": 13.9286
+                          },
+                          {
+                            "x": 19.3052,
+                            "y": 23.5714
+                          },
+                          {
+                            "x": 16.4481,
+                            "y": 27.8571
+                          },
+                          {
+                            "x": 14.3052,
+                            "y": 23.2143
+                          },
+                          {
+                            "x": 14.841,
+                            "y": 7.32143
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "DownGhost-2.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 18.0552,
+                            "y": 8.21429
+                          },
+                          {
+                            "x": 20.7338,
+                            "y": 13.9286
+                          },
+                          {
+                            "x": 19.3052,
+                            "y": 23.5714
+                          },
+                          {
+                            "x": 16.4481,
+                            "y": 27.1429
+                          },
+                          {
+                            "x": 14.3052,
+                            "y": 23.2143
+                          },
+                          {
+                            "x": 14.4838,
+                            "y": 8.39286
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "DownGhost-3.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 18.2338,
+                            "y": 9.28571
+                          },
+                          {
+                            "x": 20.7338,
+                            "y": 13.9286
+                          },
+                          {
+                            "x": 19.3052,
+                            "y": 23.5714
+                          },
+                          {
+                            "x": 16.2695,
+                            "y": 25.7143
+                          },
+                          {
+                            "x": 14.3052,
+                            "y": 23.2143
+                          },
+                          {
+                            "x": 14.6624,
+                            "y": 9.28571
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "DownGhost-4.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 18.0552,
+                            "y": 8.21429
+                          },
+                          {
+                            "x": 20.7338,
+                            "y": 13.9286
+                          },
+                          {
+                            "x": 19.3052,
+                            "y": 23.5714
+                          },
+                          {
+                            "x": 16.4481,
+                            "y": 27.8571
+                          },
+                          {
+                            "x": 14.3052,
+                            "y": 23.2143
+                          },
+                          {
+                            "x": 14.3052,
+                            "y": 8.21429
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "DownGhost-5.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 17.8767,
+                            "y": 7.14286
+                          },
+                          {
+                            "x": 20.7338,
+                            "y": 13.9286
+                          },
+                          {
+                            "x": 19.3052,
+                            "y": 23.5714
+                          },
+                          {
+                            "x": 16.4481,
+                            "y": 27.8571
+                          },
+                          {
+                            "x": 14.3052,
+                            "y": 23.2143
+                          },
+                          {
+                            "x": 14.841,
+                            "y": 7.32143
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "LeftDownGhost",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "timeBetweenFrames": 0.115,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "LeftDownGhost-1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 19.6624,
+                            "y": 11.6071
+                          },
+                          {
+                            "x": 20.7338,
+                            "y": 14.8214
+                          },
+                          {
+                            "x": 20.3767,
+                            "y": 28.2143
+                          },
+                          {
+                            "x": 14.4838,
+                            "y": 25.7143
+                          },
+                          {
+                            "x": 14.841,
+                            "y": 7.85714
+                          },
+                          {
+                            "x": 18.0552,
+                            "y": 7.67857
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "LeftDownGhost-2.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 18.9481,
+                            "y": 10.8929
+                          },
+                          {
+                            "x": 20.9124,
+                            "y": 14.6429
+                          },
+                          {
+                            "x": 20.5552,
+                            "y": 27.6786
+                          },
+                          {
+                            "x": 14.1267,
+                            "y": 23.5714
+                          },
+                          {
+                            "x": 14.6624,
+                            "y": 8.39286
+                          },
+                          {
+                            "x": 17.5195,
+                            "y": 8.21429
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "LeftDownGhost-3.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 19.6624,
+                            "y": 11.6071
+                          },
+                          {
+                            "x": 20.7338,
+                            "y": 14.8214
+                          },
+                          {
+                            "x": 20.3767,
+                            "y": 26.7857
+                          },
+                          {
+                            "x": 14.1267,
+                            "y": 23.5714
+                          },
+                          {
+                            "x": 15.1981,
+                            "y": 9.10714
+                          },
+                          {
+                            "x": 17.8767,
+                            "y": 9.28571
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "LeftDownGhost-4.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 19.6624,
+                            "y": 11.6071
+                          },
+                          {
+                            "x": 20.7338,
+                            "y": 14.8214
+                          },
+                          {
+                            "x": 20.3767,
+                            "y": 28.2143
+                          },
+                          {
+                            "x": 14.1267,
+                            "y": 23.5714
+                          },
+                          {
+                            "x": 14.841,
+                            "y": 8.39286
+                          },
+                          {
+                            "x": 18.2338,
+                            "y": 8.21429
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "LeftDownGhost-5.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 19.6624,
+                            "y": 11.6071
+                          },
+                          {
+                            "x": 20.7338,
+                            "y": 14.8214
+                          },
+                          {
+                            "x": 20.3767,
+                            "y": 28.2143
+                          },
+                          {
+                            "x": 14.1267,
+                            "y": 23.5714
+                          },
+                          {
+                            "x": 14.841,
+                            "y": 7.85714
+                          },
+                          {
+                            "x": 18.0552,
+                            "y": 7.67857
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "LeftGhost",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "timeBetweenFrames": 0.115,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "LeftGhost-1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 18.2338,
+                            "y": 7.32143
+                          },
+                          {
+                            "x": 19.6624,
+                            "y": 14.1071
+                          },
+                          {
+                            "x": 20.0195,
+                            "y": 28.9286
+                          },
+                          {
+                            "x": 14.1267,
+                            "y": 24.2857
+                          },
+                          {
+                            "x": 14.1267,
+                            "y": 13.9286
+                          },
+                          {
+                            "x": 14.4838,
+                            "y": 7.32143
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "LeftGhost-2.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 17.8767,
+                            "y": 8.57143
+                          },
+                          {
+                            "x": 19.6624,
+                            "y": 14.1071
+                          },
+                          {
+                            "x": 20.5552,
+                            "y": 27.6786
+                          },
+                          {
+                            "x": 14.1267,
+                            "y": 24.2857
+                          },
+                          {
+                            "x": 14.1267,
+                            "y": 13.9286
+                          },
+                          {
+                            "x": 14.841,
+                            "y": 8.39286
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "LeftGhost-3.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 18.0552,
+                            "y": 9.28571
+                          },
+                          {
+                            "x": 19.6624,
+                            "y": 14.1071
+                          },
+                          {
+                            "x": 20.7338,
+                            "y": 26.0714
+                          },
+                          {
+                            "x": 14.1267,
+                            "y": 24.2857
+                          },
+                          {
+                            "x": 14.1267,
+                            "y": 13.9286
+                          },
+                          {
+                            "x": 14.841,
+                            "y": 8.92857
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "LeftGhost-4.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 18.4124,
+                            "y": 8.39286
+                          },
+                          {
+                            "x": 19.6624,
+                            "y": 14.1071
+                          },
+                          {
+                            "x": 20.1981,
+                            "y": 27.6786
+                          },
+                          {
+                            "x": 14.1267,
+                            "y": 24.2857
+                          },
+                          {
+                            "x": 14.1267,
+                            "y": 13.9286
+                          },
+                          {
+                            "x": 14.841,
+                            "y": 8.39286
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "LeftGhost-5.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 18.2338,
+                            "y": 7.32143
+                          },
+                          {
+                            "x": 19.6624,
+                            "y": 14.1071
+                          },
+                          {
+                            "x": 20.0195,
+                            "y": 28.9286
+                          },
+                          {
+                            "x": 14.1267,
+                            "y": 24.2857
+                          },
+                          {
+                            "x": 14.1267,
+                            "y": 13.9286
+                          },
+                          {
+                            "x": 14.4838,
+                            "y": 7.32143
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "LeftUpGhost",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "timeBetweenFrames": 0.115,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "LeftUpGhost-1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 18.0552,
+                            "y": 7.32143
+                          },
+                          {
+                            "x": 19.1267,
+                            "y": 12.1429
+                          },
+                          {
+                            "x": 20.9124,
+                            "y": 28.3929
+                          },
+                          {
+                            "x": 14.3052,
+                            "y": 24.8214
+                          },
+                          {
+                            "x": 12.8767,
+                            "y": 14.2857
+                          },
+                          {
+                            "x": 15.0195,
+                            "y": 7.5
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "LeftUpGhost-2.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 18.0552,
+                            "y": 8.21429
+                          },
+                          {
+                            "x": 18.9481,
+                            "y": 13.3929
+                          },
+                          {
+                            "x": 20.7338,
+                            "y": 27.6786
+                          },
+                          {
+                            "x": 14.3052,
+                            "y": 24.8214
+                          },
+                          {
+                            "x": 12.8767,
+                            "y": 14.2857
+                          },
+                          {
+                            "x": 15.1981,
+                            "y": 8.39286
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "LeftUpGhost-3.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 17.8767,
+                            "y": 8.92857
+                          },
+                          {
+                            "x": 19.1267,
+                            "y": 12.1429
+                          },
+                          {
+                            "x": 20.5552,
+                            "y": 26.0714
+                          },
+                          {
+                            "x": 14.3052,
+                            "y": 24.8214
+                          },
+                          {
+                            "x": 12.8767,
+                            "y": 14.2857
+                          },
+                          {
+                            "x": 14.6624,
+                            "y": 9.46429
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "LeftUpGhost-4.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 17.8767,
+                            "y": 8.03571
+                          },
+                          {
+                            "x": 19.3052,
+                            "y": 12.8571
+                          },
+                          {
+                            "x": 20.5552,
+                            "y": 27.5
+                          },
+                          {
+                            "x": 14.3052,
+                            "y": 24.8214
+                          },
+                          {
+                            "x": 12.8767,
+                            "y": 14.2857
+                          },
+                          {
+                            "x": 14.841,
+                            "y": 8.21429
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "LeftUpGhost-5.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 18.0552,
+                            "y": 7.32143
+                          },
+                          {
+                            "x": 19.1267,
+                            "y": 12.1429
+                          },
+                          {
+                            "x": 20.9124,
+                            "y": 28.3929
+                          },
+                          {
+                            "x": 14.3052,
+                            "y": 24.8214
+                          },
+                          {
+                            "x": 12.8767,
+                            "y": 14.2857
+                          },
+                          {
+                            "x": 15.0195,
+                            "y": 7.5
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "UpGhost",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "timeBetweenFrames": 0.115,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "UpGhost-1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 17.5195,
+                            "y": 7.67857
+                          },
+                          {
+                            "x": 18.2338,
+                            "y": 23.0357
+                          },
+                          {
+                            "x": 15.0195,
+                            "y": 27.5
+                          },
+                          {
+                            "x": 13.2338,
+                            "y": 22.5
+                          },
+                          {
+                            "x": 10.5552,
+                            "y": 14.2857
+                          },
+                          {
+                            "x": 13.4124,
+                            "y": 7.5
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "UpGhost-2.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 17.1624,
+                            "y": 8.92857
+                          },
+                          {
+                            "x": 18.2338,
+                            "y": 23.0357
+                          },
+                          {
+                            "x": 15.9124,
+                            "y": 26.7857
+                          },
+                          {
+                            "x": 13.2338,
+                            "y": 23.5714
+                          },
+                          {
+                            "x": 11.091,
+                            "y": 15.5357
+                          },
+                          {
+                            "x": 13.4124,
+                            "y": 8.39286
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "UpGhost-3.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 16.9838,
+                            "y": 9.28571
+                          },
+                          {
+                            "x": 18.2338,
+                            "y": 23.0357
+                          },
+                          {
+                            "x": 16.091,
+                            "y": 25.8929
+                          },
+                          {
+                            "x": 13.2338,
+                            "y": 22.5
+                          },
+                          {
+                            "x": 10.7338,
+                            "y": 15.3571
+                          },
+                          {
+                            "x": 13.4124,
+                            "y": 9.10714
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "UpGhost-4.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 17.1624,
+                            "y": 8.75
+                          },
+                          {
+                            "x": 18.2338,
+                            "y": 23.0357
+                          },
+                          {
+                            "x": 15.7338,
+                            "y": 26.9643
+                          },
+                          {
+                            "x": 13.2338,
+                            "y": 22.5
+                          },
+                          {
+                            "x": 11.091,
+                            "y": 14.6429
+                          },
+                          {
+                            "x": 13.9481,
+                            "y": 8.75
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "UpGhost-5.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 17.5195,
+                            "y": 7.67857
+                          },
+                          {
+                            "x": 18.2338,
+                            "y": 23.0357
+                          },
+                          {
+                            "x": 15.0195,
+                            "y": 27.5
+                          },
+                          {
+                            "x": 13.2338,
+                            "y": 22.5
+                          },
+                          {
+                            "x": 10.5552,
+                            "y": 14.2857
+                          },
+                          {
+                            "x": 13.4124,
+                            "y": 7.5
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "RightUpGhost",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "timeBetweenFrames": 0.115,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "RightUpGhost-1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 13.0552,
+                            "y": 7.5
+                          },
+                          {
+                            "x": 17.8767,
+                            "y": 8.21429
+                          },
+                          {
+                            "x": 17.341,
+                            "y": 23.75
+                          },
+                          {
+                            "x": 15.3767,
+                            "y": 27.8571
+                          },
+                          {
+                            "x": 11.4481,
+                            "y": 28.5714
+                          },
+                          {
+                            "x": 12.341,
+                            "y": 14.1071
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "RightUpGhost-2.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 13.591,
+                            "y": 8.75
+                          },
+                          {
+                            "x": 17.341,
+                            "y": 8.21429
+                          },
+                          {
+                            "x": 17.341,
+                            "y": 23.75
+                          },
+                          {
+                            "x": 15.3767,
+                            "y": 27.8571
+                          },
+                          {
+                            "x": 11.091,
+                            "y": 27.1429
+                          },
+                          {
+                            "x": 12.1624,
+                            "y": 15.3571
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "RightUpGhost-3.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 16.9838,
+                            "y": 8.92857
+                          },
+                          {
+                            "x": 18.2338,
+                            "y": 13.0357
+                          },
+                          {
+                            "x": 17.341,
+                            "y": 23.75
+                          },
+                          {
+                            "x": 15.3767,
+                            "y": 27.8571
+                          },
+                          {
+                            "x": 10.0195,
+                            "y": 25.1786
+                          },
+                          {
+                            "x": 12.8767,
+                            "y": 10.1786
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "RightUpGhost-4.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 13.4124,
+                            "y": 8.21429
+                          },
+                          {
+                            "x": 17.8767,
+                            "y": 8.21429
+                          },
+                          {
+                            "x": 17.341,
+                            "y": 23.75
+                          },
+                          {
+                            "x": 15.3767,
+                            "y": 27.8571
+                          },
+                          {
+                            "x": 11.4481,
+                            "y": 28.5714
+                          },
+                          {
+                            "x": 12.341,
+                            "y": 14.1071
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "RightUpGhost-5.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 13.0552,
+                            "y": 7.5
+                          },
+                          {
+                            "x": 17.6981,
+                            "y": 7.67857
+                          },
+                          {
+                            "x": 17.341,
+                            "y": 23.75
+                          },
+                          {
+                            "x": 15.3767,
+                            "y": 27.8571
+                          },
+                          {
+                            "x": 11.4481,
+                            "y": 28.5714
+                          },
+                          {
+                            "x": 12.341,
+                            "y": 14.1071
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
             }
           ]
         },
@@ -29591,6 +31808,19 @@
                 {
                   "type": {
                     "inverted": false,
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
+                    "SirHenry",
+                    "GhostForm",
+                    "=",
+                    "0"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
                     "value": "KeyPressed"
                   },
                   "parameters": [
@@ -29691,6 +31921,19 @@
                                 "SirHenry",
                                 "\"attack1\"",
                                 "0.8"
+                              ],
+                              "subInstructions": []
+                            },
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "VarObjet"
+                              },
+                              "parameters": [
+                                "SirHenry",
+                                "HeavySkip",
+                                "=",
+                                "0"
                               ],
                               "subInstructions": []
                             }
@@ -29864,6 +32107,19 @@
                   },
                   "parameters": [],
                   "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
+                    "SirHenry",
+                    "GhostForm",
+                    "=",
+                    "0"
+                  ],
+                  "subInstructions": []
                 }
               ],
               "actions": [],
@@ -30001,6 +32257,32 @@
                         "1"
                       ],
                       "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarObjet"
+                      },
+                      "parameters": [
+                        "SirHenry",
+                        "GhostForm",
+                        "=",
+                        "1"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarObjet"
+                      },
+                      "parameters": [
+                        "SirHenry",
+                        "TempGhost",
+                        "=",
+                        "1"
+                      ],
+                      "subInstructions": []
                     }
                   ],
                   "events": []
@@ -30015,11 +32297,24 @@
                 {
                   "type": {
                     "inverted": false,
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
+                    "SirHenry",
+                    "CurrentGhost",
+                    ">",
+                    "0"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
                     "value": "KeyPressed"
                   },
                   "parameters": [
                     "",
-                    "e"
+                    "Space"
                   ],
                   "subInstructions": []
                 },
@@ -30030,9 +32325,359 @@
                   },
                   "parameters": [],
                   "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
+                    "SirHenry",
+                    "GhostForm",
+                    "=",
+                    "1"
+                  ],
+                  "subInstructions": []
                 }
               ],
               "actions": [],
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarObjet"
+                      },
+                      "parameters": [
+                        "SirHenry",
+                        "Dodging",
+                        "=",
+                        "0"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarObjet"
+                      },
+                      "parameters": [
+                        "SirHenry",
+                        "HeavyAttacking",
+                        "!=",
+                        "1"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarObjet"
+                      },
+                      "parameters": [
+                        "SirHenry",
+                        "HeavyAttack2",
+                        "!=",
+                        "1"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarObjet"
+                      },
+                      "parameters": [
+                        "SirHenry",
+                        "Attacking",
+                        "!=",
+                        "1"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarObjet"
+                      },
+                      "parameters": [
+                        "SirHenry",
+                        "Attack2",
+                        "!=",
+                        "1"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarObjet"
+                      },
+                      "parameters": [
+                        "SirHenry",
+                        "HeavySkip",
+                        "!=",
+                        "1"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ResetObjectTimer"
+                      },
+                      "parameters": [
+                        "SirHenry",
+                        "\"Dodge\""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "TopDownMovementBehavior::MaxSpeed"
+                      },
+                      "parameters": [
+                        "SirHenry",
+                        "TopDownMovement",
+                        "=",
+                        "100"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ChangeAnimationSpeedScale"
+                      },
+                      "parameters": [
+                        "SirHenry",
+                        "=",
+                        "1"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarObjet"
+                      },
+                      "parameters": [
+                        "SirHenry",
+                        "Dodging",
+                        "=",
+                        "1"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarObjet"
+                      },
+                      "parameters": [
+                        "SirHenry",
+                        "GhostForm",
+                        "=",
+                        "1"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarObjet"
+                      },
+                      "parameters": [
+                        "SirHenry",
+                        "TempGhost",
+                        "=",
+                        "0"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ]
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "BuiltinCommonInstructions::And"
+                  },
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarObjet"
+                      },
+                      "parameters": [
+                        "SirHenry",
+                        "Dodging",
+                        "=",
+                        "0"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarObjet"
+                      },
+                      "parameters": [
+                        "SirHenry",
+                        "TempGhost",
+                        "=",
+                        "0"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarObjet"
+                      },
+                      "parameters": [
+                        "SirHenry",
+                        "HeavyAttacking",
+                        "=",
+                        "0"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarObjet"
+                      },
+                      "parameters": [
+                        "SirHenry",
+                        "HeavyAttack2",
+                        "=",
+                        "0"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarObjet"
+                      },
+                      "parameters": [
+                        "SirHenry",
+                        "Attacking",
+                        "=",
+                        "0"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarObjet"
+                      },
+                      "parameters": [
+                        "SirHenry",
+                        "Attack2",
+                        "=",
+                        "0"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarObjet"
+                      },
+                      "parameters": [
+                        "SirHenry",
+                        "HeavySkip",
+                        "=",
+                        "0"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarObjet"
+                      },
+                      "parameters": [
+                        "SirHenry",
+                        "GhostForm",
+                        "=",
+                        "0"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "KeyPressed"
+                      },
+                      "parameters": [
+                        "",
+                        "e"
+                      ],
+                      "subInstructions": []
+                    }
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "SirHenry",
+                    "GhostForm",
+                    "=",
+                    "1"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TopDownMovementBehavior::MaxSpeed"
+                  },
+                  "parameters": [
+                    "SirHenry",
+                    "TopDownMovement",
+                    "=",
+                    "350"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "SirHenry",
+                    "GhostMod",
+                    "=",
+                    "48"
+                  ],
+                  "subInstructions": []
+                }
+              ],
               "events": []
             },
             {
@@ -30040,6 +32685,192 @@
               "folded": false,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "BuiltinCommonInstructions::And"
+                  },
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarObjet"
+                      },
+                      "parameters": [
+                        "SirHenry",
+                        "Dodging",
+                        "=",
+                        "0"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarObjet"
+                      },
+                      "parameters": [
+                        "SirHenry",
+                        "TempGhost",
+                        "=",
+                        "0"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarObjet"
+                      },
+                      "parameters": [
+                        "SirHenry",
+                        "HeavyAttacking",
+                        "=",
+                        "0"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarObjet"
+                      },
+                      "parameters": [
+                        "SirHenry",
+                        "HeavyAttack2",
+                        "=",
+                        "0"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarObjet"
+                      },
+                      "parameters": [
+                        "SirHenry",
+                        "Attacking",
+                        "=",
+                        "0"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarObjet"
+                      },
+                      "parameters": [
+                        "SirHenry",
+                        "Attack2",
+                        "=",
+                        "0"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarObjet"
+                      },
+                      "parameters": [
+                        "SirHenry",
+                        "HeavySkip",
+                        "=",
+                        "0"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarObjet"
+                      },
+                      "parameters": [
+                        "SirHenry",
+                        "GhostForm",
+                        "=",
+                        "1"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "KeyReleased"
+                      },
+                      "parameters": [
+                        "",
+                        "e"
+                      ],
+                      "subInstructions": []
+                    }
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "SirHenry",
+                    "GhostForm",
+                    "=",
+                    "0"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TopDownMovementBehavior::MaxSpeed"
+                  },
+                  "parameters": [
+                    "SirHenry",
+                    "TopDownMovement",
+                    "=",
+                    "100"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "SirHenry",
+                    "GhostMod",
+                    "=",
+                    "0"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
+                    "SirHenry",
+                    "GhostForm",
+                    "=",
+                    "0"
+                  ],
+                  "subInstructions": []
+                },
                 {
                   "type": {
                     "inverted": false,
@@ -30109,6 +32940,19 @@
                             "SirHenry",
                             "\"attack1\"",
                             "0.8"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "VarObjet"
+                          },
+                          "parameters": [
+                            "SirHenry",
+                            "Attack2",
+                            "=",
+                            "0"
                           ],
                           "subInstructions": []
                         }
@@ -30196,7 +33040,7 @@
                       "parameters": [
                         "SirHenry",
                         "\"attack2\"",
-                        "1.495"
+                        "1.605"
                       ],
                       "subInstructions": []
                     },
@@ -32091,7 +34935,7 @@
                       "parameters": [
                         "SirHenry",
                         "\"attack1\"",
-                        "0.92"
+                        "0.805"
                       ],
                       "subInstructions": []
                     },
@@ -32174,7 +35018,7 @@
                       "parameters": [
                         "SirHenry",
                         "\"attack2\"",
-                        "1.61"
+                        "1.390"
                       ],
                       "subInstructions": []
                     },
@@ -32257,7 +35101,7 @@
                       "parameters": [
                         "SirHenry",
                         "\"attack1\"",
-                        "1.2"
+                        "1.210"
                       ],
                       "subInstructions": []
                     },
@@ -32327,7 +35171,7 @@
                       "parameters": [
                         "SirHenry",
                         "\"attack2\"",
-                        "3.5"
+                        "3.270"
                       ],
                       "subInstructions": []
                     },
@@ -32397,7 +35241,7 @@
                       "parameters": [
                         "SirHenry",
                         "\"attack1\"",
-                        "02.64"
+                        "02.525"
                       ],
                       "subInstructions": []
                     },
@@ -32502,7 +35346,178 @@
                   "subInstructions": []
                 }
               ],
-              "events": []
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarObjet"
+                      },
+                      "parameters": [
+                        "SirHenry",
+                        "TempGhost",
+                        "=",
+                        "1"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarObjet"
+                      },
+                      "parameters": [
+                        "SirHenry",
+                        "GhostForm",
+                        "=",
+                        "0"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarObjet"
+                      },
+                      "parameters": [
+                        "SirHenry",
+                        "TempGhost",
+                        "=",
+                        "0"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ]
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "BuiltinCommonInstructions::And"
+                  },
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarObjet"
+                      },
+                      "parameters": [
+                        "SirHenry",
+                        "TempGhost",
+                        "=",
+                        "0"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarObjet"
+                      },
+                      "parameters": [
+                        "SirHenry",
+                        "GhostForm",
+                        "=",
+                        "1"
+                      ],
+                      "subInstructions": []
+                    }
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "SirHenry",
+                    "CurrentGhost",
+                    "-",
+                    "0.3"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarObjet"
+                      },
+                      "parameters": [
+                        "SirHenry",
+                        "CurrentGhost",
+                        "<=",
+                        "0"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarObjet"
+                      },
+                      "parameters": [
+                        "SirHenry",
+                        "GhostForm",
+                        "=",
+                        "0"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarObjet"
+                      },
+                      "parameters": [
+                        "SirHenry",
+                        "GhostMod",
+                        "=",
+                        "0"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "TopDownMovementBehavior::MaxSpeed"
+                      },
+                      "parameters": [
+                        "SirHenry",
+                        "TopDownMovement",
+                        "=",
+                        "100"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ]
             },
             {
               "disabled": false,
@@ -32563,8 +35578,8 @@
                       "parameters": [
                         "SirHenry",
                         "Dodging",
-                        "!=",
-                        "1"
+                        "=",
+                        "0"
                       ],
                       "subInstructions": []
                     }
@@ -32586,6 +35601,19 @@
                       "parameters": [
                         "",
                         "LShift"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarObjet"
+                      },
+                      "parameters": [
+                        "SirHenry",
+                        "GhostForm",
+                        "=",
+                        "0"
                       ],
                       "subInstructions": []
                     },
@@ -32617,7 +35645,7 @@
                             "SirHenry",
                             "CurrentStamina",
                             ">",
-                            "SirHenry.Variable(MaxStamina) * 0.1"
+                            "0"
                           ],
                           "subInstructions": []
                         }
@@ -32732,6 +35760,19 @@
                     },
                     {
                       "type": {
+                        "inverted": false,
+                        "value": "VarObjet"
+                      },
+                      "parameters": [
+                        "SirHenry",
+                        "GhostForm",
+                        "=",
+                        "0"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
                         "inverted": true,
                         "value": "TopDownMovementBehavior::IsMoving"
                       },
@@ -32793,6 +35834,19 @@
                       "parameters": [
                         "",
                         "LShift"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarObjet"
+                      },
+                      "parameters": [
+                        "SirHenry",
+                        "GhostForm",
+                        "=",
+                        "0"
                       ],
                       "subInstructions": []
                     }
@@ -32971,21 +36025,79 @@
                       "subInstructions": []
                     }
                   ],
-                  "actions": [
+                  "actions": [],
+                  "events": [
                     {
-                      "type": {
-                        "inverted": false,
-                        "value": "ChangeAnimation"
-                      },
-                      "parameters": [
-                        "SirHenry",
-                        "=",
-                        "round(SirHenry.TopDownMovement::Angle()/45)"
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "VarObjet"
+                          },
+                          "parameters": [
+                            "SirHenry",
+                            "GhostForm",
+                            "=",
+                            "1"
+                          ],
+                          "subInstructions": []
+                        }
                       ],
-                      "subInstructions": []
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ChangeAnimation"
+                          },
+                          "parameters": [
+                            "SirHenry",
+                            "=",
+                            "round(SirHenry.TopDownMovement::Angle()/45) + SirHenry.Variable(GhostMod) + 8"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "VarObjet"
+                          },
+                          "parameters": [
+                            "SirHenry",
+                            "GhostForm",
+                            "=",
+                            "0"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ChangeAnimation"
+                          },
+                          "parameters": [
+                            "SirHenry",
+                            "=",
+                            "round(SirHenry.TopDownMovement::Angle()/45)"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
                     }
-                  ],
-                  "events": []
+                  ]
                 },
                 {
                   "disabled": false,
@@ -33034,7 +36146,7 @@
                           "parameters": [
                             "SirHenry",
                             "=",
-                            "8 + round(SirHenry.TopDownMovement::Angle()/45)"
+                            "8 + round(SirHenry.TopDownMovement::Angle()/45) + SirHenry.Variable(GhostMod)"
                           ],
                           "subInstructions": []
                         }
@@ -33069,7 +36181,7 @@
                           "parameters": [
                             "SirHenry",
                             "=",
-                            "16 + round(SirHenry.TopDownMovement::Angle()/45)"
+                            "16 + round(SirHenry.TopDownMovement::Angle()/45) + SirHenry.Variable(GhostMod)"
                           ],
                           "subInstructions": []
                         }
