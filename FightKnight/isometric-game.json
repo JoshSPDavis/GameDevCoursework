@@ -30393,28 +30393,6 @@
                   "disabled": false,
                   "folded": false,
                   "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "AddForceAL"
-                      },
-                      "parameters": [
-                        "SirHenry",
-                        "-180 + round(SirHenry.TopDownMovement::Angle())",
-                        "500",
-                        ""
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "events": []
-                },
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
                       "type": {
@@ -30439,24 +30417,35 @@
                       "parameters": [
                         "SirHenry",
                         "=",
-                        "48 + round(SirHenry.TopDownMovement::Angle()/45)"
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "TextObject::String"
-                      },
-                      "parameters": [
-                        "Display",
-                        "=",
-                        "ToString(48 + round(SirHenry.TopDownMovement::Angle()/45))"
+                        "48 + (round(SirHenry.TopDownMovement::Angle()/45))"
                       ],
                       "subInstructions": []
                     }
                   ],
-                  "events": []
+                  "events": [
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "AddForceAL"
+                          },
+                          "parameters": [
+                            "SirHenry",
+                            "-180 + round(SirHenry.TopDownMovement::Angle())",
+                            "500",
+                            ""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    }
+                  ]
                 },
                 {
                   "disabled": false,
@@ -30489,21 +30478,32 @@
                         "56 + round(SirHenry.TopDownMovement::Angle()/45)"
                       ],
                       "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "TextObject::String"
-                      },
-                      "parameters": [
-                        "Display",
-                        "=",
-                        "ToString(56 + round(SirHenry.TopDownMovement::Angle()/45))"
-                      ],
-                      "subInstructions": []
                     }
                   ],
-                  "events": []
+                  "events": [
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "AddForceAL"
+                          },
+                          "parameters": [
+                            "SirHenry",
+                            "-180 + round(SirHenry.TopDownMovement::Angle())",
+                            "500",
+                            ""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    }
+                  ]
                 },
                 {
                   "disabled": false,
@@ -32467,7 +32467,7 @@
                       "parameters": [
                         "SirHenry",
                         "\"Dodge\"",
-                        "0.1"
+                        "0.2"
                       ],
                       "subInstructions": []
                     },
@@ -32552,6 +32552,19 @@
                         "HeavySkip",
                         "=",
                         "0"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarObjet"
+                      },
+                      "parameters": [
+                        "SirHenry",
+                        "Dodging",
+                        "!=",
+                        "1"
                       ],
                       "subInstructions": []
                     }
