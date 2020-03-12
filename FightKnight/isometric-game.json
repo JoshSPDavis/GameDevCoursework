@@ -35692,6 +35692,19 @@
                             "0.25"
                           ],
                           "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ModVarObjet"
+                          },
+                          "parameters": [
+                            "SirHenry",
+                            "Regen",
+                            "=",
+                            "0"
+                          ],
+                          "subInstructions": []
                         }
                       ],
                       "events": []
@@ -36565,6 +36578,19 @@
                     "CurrentStamina",
                     "<=",
                     "SirHenry.Variable(MaxStamina)"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
+                    "SirHenry",
+                    "Regen",
+                    "=",
+                    "1"
                   ],
                   "subInstructions": []
                 }
