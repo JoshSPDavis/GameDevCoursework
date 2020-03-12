@@ -7718,6 +7718,141 @@
         "name": "Assets\\GhostBar.png",
         "smoothed": false,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "RightGhost-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "RightGhost-1.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "RightGhost-2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "RightGhost-2.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "RightGhost-3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "RightGhost-3.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "RightGhost-4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "RightGhost-4.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "RightGhost-5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "RightGhost-5.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "LeftDownDodge-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "LeftDownDodge-1.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "RightDodge-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "RightDodge-1.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "RightDownDodge-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "RightDownDodge-1.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "DownDodge-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "DownDodge-1.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "LeftDownDodge-1-0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "LeftDownDodge-1-0.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "LeftDodge-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "LeftDodge-1.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "LeftUpDodge-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "LeftUpDodge-1.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "RightUpDodge-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "RightUpDodge-1.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "RightUpDodge-1-0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "RightUpDodge-1-0.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "UpDodge-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "UpDodge-1.png",
+        "smoothed": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -27454,6 +27589,1862 @@
                   ]
                 }
               ]
+            },
+            {
+              "name": "RightDodge",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "timeBetweenFrames": 0.115,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "RightDodge-1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 13.8715,
+                            "y": 8.33333
+                          },
+                          {
+                            "x": 17.2049,
+                            "y": 8.33333
+                          },
+                          {
+                            "x": 19.4271,
+                            "y": 15
+                          },
+                          {
+                            "x": 19.9826,
+                            "y": 27.4074
+                          },
+                          {
+                            "x": 15.1678,
+                            "y": 27.037
+                          },
+                          {
+                            "x": 12.9456,
+                            "y": 22.963
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "RightDodge-1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 13.8715,
+                            "y": 8.33333
+                          },
+                          {
+                            "x": 17.2049,
+                            "y": 8.33333
+                          },
+                          {
+                            "x": 19.4271,
+                            "y": 15
+                          },
+                          {
+                            "x": 19.9826,
+                            "y": 27.4074
+                          },
+                          {
+                            "x": 15.1678,
+                            "y": 27.037
+                          },
+                          {
+                            "x": 12.9456,
+                            "y": 22.963
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "RightDodge-1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 13.8715,
+                            "y": 8.33333
+                          },
+                          {
+                            "x": 17.2049,
+                            "y": 8.33333
+                          },
+                          {
+                            "x": 19.4271,
+                            "y": 15
+                          },
+                          {
+                            "x": 19.9826,
+                            "y": 27.4074
+                          },
+                          {
+                            "x": 15.1678,
+                            "y": 27.037
+                          },
+                          {
+                            "x": 12.9456,
+                            "y": 22.963
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "RightDodge-1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 13.8715,
+                            "y": 8.33333
+                          },
+                          {
+                            "x": 17.2049,
+                            "y": 8.33333
+                          },
+                          {
+                            "x": 19.4271,
+                            "y": 15
+                          },
+                          {
+                            "x": 19.9826,
+                            "y": 27.4074
+                          },
+                          {
+                            "x": 15.1678,
+                            "y": 27.037
+                          },
+                          {
+                            "x": 12.9456,
+                            "y": 22.963
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "RightDodge-1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 13.8715,
+                            "y": 8.33333
+                          },
+                          {
+                            "x": 17.2049,
+                            "y": 8.33333
+                          },
+                          {
+                            "x": 19.4271,
+                            "y": 15
+                          },
+                          {
+                            "x": 19.9826,
+                            "y": 27.4074
+                          },
+                          {
+                            "x": 15.1678,
+                            "y": 27.037
+                          },
+                          {
+                            "x": 12.9456,
+                            "y": 22.963
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "RightDownDodge",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "timeBetweenFrames": 0.115,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "RightDownDodge-1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 18.1308,
+                            "y": 7.96296
+                          },
+                          {
+                            "x": 20.7234,
+                            "y": 15.7407
+                          },
+                          {
+                            "x": 20.5382,
+                            "y": 27.963
+                          },
+                          {
+                            "x": 14.2419,
+                            "y": 25.1852
+                          },
+                          {
+                            "x": 13.8715,
+                            "y": 15
+                          },
+                          {
+                            "x": 14.4271,
+                            "y": 8.33333
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "RightDownDodge-1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 18.1308,
+                            "y": 7.96296
+                          },
+                          {
+                            "x": 20.7234,
+                            "y": 15.7407
+                          },
+                          {
+                            "x": 20.5382,
+                            "y": 27.963
+                          },
+                          {
+                            "x": 14.2419,
+                            "y": 25.1852
+                          },
+                          {
+                            "x": 13.8715,
+                            "y": 15
+                          },
+                          {
+                            "x": 14.4271,
+                            "y": 8.33333
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "RightDownDodge-1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 18.1308,
+                            "y": 7.96296
+                          },
+                          {
+                            "x": 20.7234,
+                            "y": 15.7407
+                          },
+                          {
+                            "x": 20.5382,
+                            "y": 27.963
+                          },
+                          {
+                            "x": 14.2419,
+                            "y": 25.1852
+                          },
+                          {
+                            "x": 13.8715,
+                            "y": 15
+                          },
+                          {
+                            "x": 14.4271,
+                            "y": 8.33333
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "RightDownDodge-1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 18.1308,
+                            "y": 7.96296
+                          },
+                          {
+                            "x": 20.7234,
+                            "y": 15.7407
+                          },
+                          {
+                            "x": 20.5382,
+                            "y": 27.963
+                          },
+                          {
+                            "x": 14.2419,
+                            "y": 25.1852
+                          },
+                          {
+                            "x": 13.8715,
+                            "y": 15
+                          },
+                          {
+                            "x": 14.4271,
+                            "y": 8.33333
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "RightDownDodge-1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 18.1308,
+                            "y": 7.96296
+                          },
+                          {
+                            "x": 20.7234,
+                            "y": 15.7407
+                          },
+                          {
+                            "x": 20.5382,
+                            "y": 27.963
+                          },
+                          {
+                            "x": 14.2419,
+                            "y": 25.1852
+                          },
+                          {
+                            "x": 13.8715,
+                            "y": 15
+                          },
+                          {
+                            "x": 14.4271,
+                            "y": 8.33333
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "DownDodge",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "timeBetweenFrames": 0.115,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "DownDodge-1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 20.7234,
+                            "y": 14.8148
+                          },
+                          {
+                            "x": 19.4271,
+                            "y": 24.2593
+                          },
+                          {
+                            "x": 16.8345,
+                            "y": 27.037
+                          },
+                          {
+                            "x": 14.4271,
+                            "y": 24.4444
+                          },
+                          {
+                            "x": 14.7975,
+                            "y": 8.51852
+                          },
+                          {
+                            "x": 18.1308,
+                            "y": 8.51852
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "DownDodge-1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 20.7234,
+                            "y": 14.8148
+                          },
+                          {
+                            "x": 19.4271,
+                            "y": 24.2593
+                          },
+                          {
+                            "x": 16.8345,
+                            "y": 27.037
+                          },
+                          {
+                            "x": 14.4271,
+                            "y": 24.4444
+                          },
+                          {
+                            "x": 14.7975,
+                            "y": 8.51852
+                          },
+                          {
+                            "x": 18.1308,
+                            "y": 8.51852
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "DownDodge-1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 20.7234,
+                            "y": 14.8148
+                          },
+                          {
+                            "x": 19.4271,
+                            "y": 24.2593
+                          },
+                          {
+                            "x": 16.8345,
+                            "y": 27.037
+                          },
+                          {
+                            "x": 14.4271,
+                            "y": 24.4444
+                          },
+                          {
+                            "x": 14.7975,
+                            "y": 8.51852
+                          },
+                          {
+                            "x": 18.1308,
+                            "y": 8.51852
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "DownDodge-1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 20.7234,
+                            "y": 14.8148
+                          },
+                          {
+                            "x": 19.4271,
+                            "y": 24.2593
+                          },
+                          {
+                            "x": 16.8345,
+                            "y": 27.037
+                          },
+                          {
+                            "x": 14.4271,
+                            "y": 24.4444
+                          },
+                          {
+                            "x": 14.7975,
+                            "y": 8.51852
+                          },
+                          {
+                            "x": 18.1308,
+                            "y": 8.51852
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "DownDodge-1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 20.7234,
+                            "y": 14.8148
+                          },
+                          {
+                            "x": 19.4271,
+                            "y": 24.2593
+                          },
+                          {
+                            "x": 16.8345,
+                            "y": 27.037
+                          },
+                          {
+                            "x": 14.4271,
+                            "y": 24.4444
+                          },
+                          {
+                            "x": 14.7975,
+                            "y": 8.51852
+                          },
+                          {
+                            "x": 18.1308,
+                            "y": 8.51852
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "LeftDownDodge",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "timeBetweenFrames": 0.115,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "LeftDownDodge-1-0.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 19.6123,
+                            "y": 13.3333
+                          },
+                          {
+                            "x": 20.5382,
+                            "y": 16.4815
+                          },
+                          {
+                            "x": 17.7604,
+                            "y": 25.3704
+                          },
+                          {
+                            "x": 10.9086,
+                            "y": 27.4074
+                          },
+                          {
+                            "x": 13.8715,
+                            "y": 7.96296
+                          },
+                          {
+                            "x": 17.39,
+                            "y": 8.33333
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "LeftDownDodge-1-0.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 19.6123,
+                            "y": 13.3333
+                          },
+                          {
+                            "x": 20.5382,
+                            "y": 16.4815
+                          },
+                          {
+                            "x": 17.7604,
+                            "y": 25.3704
+                          },
+                          {
+                            "x": 10.9086,
+                            "y": 27.4074
+                          },
+                          {
+                            "x": 13.8715,
+                            "y": 7.96296
+                          },
+                          {
+                            "x": 17.39,
+                            "y": 8.33333
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "LeftDownDodge-1-0.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 19.6123,
+                            "y": 13.3333
+                          },
+                          {
+                            "x": 20.5382,
+                            "y": 16.4815
+                          },
+                          {
+                            "x": 17.7604,
+                            "y": 25.3704
+                          },
+                          {
+                            "x": 10.9086,
+                            "y": 27.4074
+                          },
+                          {
+                            "x": 13.8715,
+                            "y": 7.96296
+                          },
+                          {
+                            "x": 17.39,
+                            "y": 8.33333
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "LeftDownDodge-1-0.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 19.6123,
+                            "y": 13.3333
+                          },
+                          {
+                            "x": 20.5382,
+                            "y": 16.4815
+                          },
+                          {
+                            "x": 17.7604,
+                            "y": 25.3704
+                          },
+                          {
+                            "x": 10.9086,
+                            "y": 27.4074
+                          },
+                          {
+                            "x": 13.8715,
+                            "y": 7.96296
+                          },
+                          {
+                            "x": 17.39,
+                            "y": 8.33333
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "LeftDownDodge-1-0.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 19.6123,
+                            "y": 13.3333
+                          },
+                          {
+                            "x": 20.5382,
+                            "y": 16.4815
+                          },
+                          {
+                            "x": 17.7604,
+                            "y": 25.3704
+                          },
+                          {
+                            "x": 10.9086,
+                            "y": 27.4074
+                          },
+                          {
+                            "x": 13.8715,
+                            "y": 7.96296
+                          },
+                          {
+                            "x": 17.39,
+                            "y": 8.33333
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "LeftDodge",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "timeBetweenFrames": 0.115,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "LeftDodge-1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 17.9456,
+                            "y": 7.40741
+                          },
+                          {
+                            "x": 19.9826,
+                            "y": 14.0741
+                          },
+                          {
+                            "x": 18.8715,
+                            "y": 26.4815
+                          },
+                          {
+                            "x": 10.7234,
+                            "y": 27.7778
+                          },
+                          {
+                            "x": 13.5012,
+                            "y": 14.8148
+                          },
+                          {
+                            "x": 15.5382,
+                            "y": 7.03704
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "LeftDodge-1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 17.9456,
+                            "y": 7.40741
+                          },
+                          {
+                            "x": 19.9826,
+                            "y": 14.0741
+                          },
+                          {
+                            "x": 18.8715,
+                            "y": 26.4815
+                          },
+                          {
+                            "x": 10.7234,
+                            "y": 27.7778
+                          },
+                          {
+                            "x": 13.5012,
+                            "y": 14.8148
+                          },
+                          {
+                            "x": 15.5382,
+                            "y": 7.03704
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "LeftDodge-1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 17.9456,
+                            "y": 7.40741
+                          },
+                          {
+                            "x": 19.9826,
+                            "y": 14.0741
+                          },
+                          {
+                            "x": 18.8715,
+                            "y": 26.4815
+                          },
+                          {
+                            "x": 10.7234,
+                            "y": 27.7778
+                          },
+                          {
+                            "x": 13.5012,
+                            "y": 14.8148
+                          },
+                          {
+                            "x": 15.5382,
+                            "y": 7.03704
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "LeftDodge-1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 17.9456,
+                            "y": 7.40741
+                          },
+                          {
+                            "x": 19.9826,
+                            "y": 14.0741
+                          },
+                          {
+                            "x": 18.8715,
+                            "y": 26.4815
+                          },
+                          {
+                            "x": 10.7234,
+                            "y": 27.7778
+                          },
+                          {
+                            "x": 13.5012,
+                            "y": 14.8148
+                          },
+                          {
+                            "x": 15.5382,
+                            "y": 7.03704
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "LeftDodge-1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 17.9456,
+                            "y": 7.40741
+                          },
+                          {
+                            "x": 19.9826,
+                            "y": 14.0741
+                          },
+                          {
+                            "x": 18.8715,
+                            "y": 26.4815
+                          },
+                          {
+                            "x": 10.7234,
+                            "y": 27.7778
+                          },
+                          {
+                            "x": 13.5012,
+                            "y": 14.8148
+                          },
+                          {
+                            "x": 15.5382,
+                            "y": 7.03704
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "LeftUpDodge",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "timeBetweenFrames": 0.115,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "LeftUpDodge-1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 17.0197,
+                            "y": 8.7037
+                          },
+                          {
+                            "x": 19.6123,
+                            "y": 14.2593
+                          },
+                          {
+                            "x": 18.8715,
+                            "y": 24.8148
+                          },
+                          {
+                            "x": 12.0197,
+                            "y": 27.7778
+                          },
+                          {
+                            "x": 12.9456,
+                            "y": 14.0741
+                          },
+                          {
+                            "x": 13.6863,
+                            "y": 8.51852
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "LeftUpDodge-1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 17.0197,
+                            "y": 8.7037
+                          },
+                          {
+                            "x": 19.6123,
+                            "y": 14.2593
+                          },
+                          {
+                            "x": 18.8715,
+                            "y": 24.8148
+                          },
+                          {
+                            "x": 12.0197,
+                            "y": 27.7778
+                          },
+                          {
+                            "x": 12.9456,
+                            "y": 14.0741
+                          },
+                          {
+                            "x": 13.6863,
+                            "y": 8.51852
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "LeftUpDodge-1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 17.0197,
+                            "y": 8.7037
+                          },
+                          {
+                            "x": 19.6123,
+                            "y": 14.2593
+                          },
+                          {
+                            "x": 18.8715,
+                            "y": 24.8148
+                          },
+                          {
+                            "x": 12.0197,
+                            "y": 27.7778
+                          },
+                          {
+                            "x": 12.9456,
+                            "y": 14.0741
+                          },
+                          {
+                            "x": 13.6863,
+                            "y": 8.51852
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "LeftUpDodge-1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 17.0197,
+                            "y": 8.7037
+                          },
+                          {
+                            "x": 19.6123,
+                            "y": 14.2593
+                          },
+                          {
+                            "x": 18.8715,
+                            "y": 24.8148
+                          },
+                          {
+                            "x": 12.0197,
+                            "y": 27.7778
+                          },
+                          {
+                            "x": 12.9456,
+                            "y": 14.0741
+                          },
+                          {
+                            "x": 13.6863,
+                            "y": 8.51852
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "LeftUpDodge-1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 17.0197,
+                            "y": 8.7037
+                          },
+                          {
+                            "x": 19.6123,
+                            "y": 14.2593
+                          },
+                          {
+                            "x": 18.8715,
+                            "y": 24.8148
+                          },
+                          {
+                            "x": 12.0197,
+                            "y": 27.7778
+                          },
+                          {
+                            "x": 12.9456,
+                            "y": 14.0741
+                          },
+                          {
+                            "x": 13.6863,
+                            "y": 8.51852
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "UpDodge",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "timeBetweenFrames": 0.115,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "UpDodge-1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 13.6863,
+                            "y": 8.51852
+                          },
+                          {
+                            "x": 17.9456,
+                            "y": 8.51852
+                          },
+                          {
+                            "x": 17.9456,
+                            "y": 25
+                          },
+                          {
+                            "x": 14.9826,
+                            "y": 26.6667
+                          },
+                          {
+                            "x": 11.4641,
+                            "y": 17.037
+                          },
+                          {
+                            "x": 11.8345,
+                            "y": 13.1481
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "UpDodge-1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 13.6863,
+                            "y": 8.51852
+                          },
+                          {
+                            "x": 17.9456,
+                            "y": 8.51852
+                          },
+                          {
+                            "x": 17.9456,
+                            "y": 25
+                          },
+                          {
+                            "x": 14.9826,
+                            "y": 26.6667
+                          },
+                          {
+                            "x": 11.4641,
+                            "y": 17.037
+                          },
+                          {
+                            "x": 11.8345,
+                            "y": 13.1481
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "UpDodge-1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 13.6863,
+                            "y": 8.51852
+                          },
+                          {
+                            "x": 17.9456,
+                            "y": 8.51852
+                          },
+                          {
+                            "x": 17.9456,
+                            "y": 25
+                          },
+                          {
+                            "x": 14.9826,
+                            "y": 26.6667
+                          },
+                          {
+                            "x": 11.4641,
+                            "y": 17.037
+                          },
+                          {
+                            "x": 11.8345,
+                            "y": 13.1481
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "UpDodge-1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 13.6863,
+                            "y": 8.51852
+                          },
+                          {
+                            "x": 17.9456,
+                            "y": 8.51852
+                          },
+                          {
+                            "x": 17.9456,
+                            "y": 25
+                          },
+                          {
+                            "x": 14.9826,
+                            "y": 26.6667
+                          },
+                          {
+                            "x": 11.4641,
+                            "y": 17.037
+                          },
+                          {
+                            "x": 11.8345,
+                            "y": 13.1481
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "UpDodge-1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 13.6863,
+                            "y": 8.51852
+                          },
+                          {
+                            "x": 17.9456,
+                            "y": 8.51852
+                          },
+                          {
+                            "x": 17.9456,
+                            "y": 25
+                          },
+                          {
+                            "x": 14.9826,
+                            "y": 26.6667
+                          },
+                          {
+                            "x": 11.4641,
+                            "y": 17.037
+                          },
+                          {
+                            "x": 11.8345,
+                            "y": 13.1481
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "RightUpDodge",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "timeBetweenFrames": 0.115,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "RightUpDodge-1-0.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 18.5012,
+                            "y": 8.51852
+                          },
+                          {
+                            "x": 19.4271,
+                            "y": 13.8889
+                          },
+                          {
+                            "x": 20.9086,
+                            "y": 27.5926
+                          },
+                          {
+                            "x": 14.0567,
+                            "y": 25
+                          },
+                          {
+                            "x": 12.7604,
+                            "y": 15
+                          },
+                          {
+                            "x": 14.2419,
+                            "y": 8.7037
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "RightUpDodge-1-0.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 18.5012,
+                            "y": 8.51852
+                          },
+                          {
+                            "x": 19.4271,
+                            "y": 13.8889
+                          },
+                          {
+                            "x": 20.9086,
+                            "y": 27.5926
+                          },
+                          {
+                            "x": 14.0567,
+                            "y": 25
+                          },
+                          {
+                            "x": 12.7604,
+                            "y": 15
+                          },
+                          {
+                            "x": 14.2419,
+                            "y": 8.7037
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "RightUpDodge-1-0.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 18.5012,
+                            "y": 8.51852
+                          },
+                          {
+                            "x": 19.4271,
+                            "y": 13.8889
+                          },
+                          {
+                            "x": 20.9086,
+                            "y": 27.5926
+                          },
+                          {
+                            "x": 14.0567,
+                            "y": 25
+                          },
+                          {
+                            "x": 12.7604,
+                            "y": 15
+                          },
+                          {
+                            "x": 14.2419,
+                            "y": 8.7037
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "RightUpDodge-1-0.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 18.5012,
+                            "y": 8.51852
+                          },
+                          {
+                            "x": 19.4271,
+                            "y": 13.8889
+                          },
+                          {
+                            "x": 20.9086,
+                            "y": 27.5926
+                          },
+                          {
+                            "x": 14.0567,
+                            "y": 25
+                          },
+                          {
+                            "x": 12.7604,
+                            "y": 15
+                          },
+                          {
+                            "x": 14.2419,
+                            "y": 8.7037
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "RightUpDodge-1-0.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 18.5012,
+                            "y": 8.51852
+                          },
+                          {
+                            "x": 19.4271,
+                            "y": 13.8889
+                          },
+                          {
+                            "x": 20.9086,
+                            "y": 27.5926
+                          },
+                          {
+                            "x": 14.0567,
+                            "y": 25
+                          },
+                          {
+                            "x": 12.7604,
+                            "y": 15
+                          },
+                          {
+                            "x": 14.2419,
+                            "y": 8.7037
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
             }
           ]
         },
@@ -28378,7 +30369,7 @@
                   "parameters": [
                     "SirHenry",
                     "Dodging",
-                    "",
+                    "=",
                     "1"
                   ],
                   "subInstructions": []
@@ -28391,13 +30382,129 @@
                   "parameters": [
                     "SirHenry",
                     "\"Dodge\"",
-                    "0.1"
+                    "0.2"
                   ],
                   "subInstructions": []
                 }
               ],
               "actions": [],
               "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "AddForceAL"
+                      },
+                      "parameters": [
+                        "SirHenry",
+                        "-180 + round(SirHenry.TopDownMovement::Angle())",
+                        "500",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "TopDownMovementBehavior::Angle"
+                      },
+                      "parameters": [
+                        "SirHenry",
+                        "TopDownMovement",
+                        ">=",
+                        "0"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ChangeAnimation"
+                      },
+                      "parameters": [
+                        "SirHenry",
+                        "=",
+                        "48 + round(SirHenry.TopDownMovement::Angle()/45)"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "TextObject::String"
+                      },
+                      "parameters": [
+                        "Display",
+                        "=",
+                        "ToString(48 + round(SirHenry.TopDownMovement::Angle()/45))"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "TopDownMovementBehavior::Angle"
+                      },
+                      "parameters": [
+                        "SirHenry",
+                        "TopDownMovement",
+                        "<",
+                        "0"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ChangeAnimation"
+                      },
+                      "parameters": [
+                        "SirHenry",
+                        "=",
+                        "56 + round(SirHenry.TopDownMovement::Angle()/45)"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "TextObject::String"
+                      },
+                      "parameters": [
+                        "Display",
+                        "=",
+                        "ToString(56 + round(SirHenry.TopDownMovement::Angle()/45))"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
                 {
                   "disabled": false,
                   "folded": false,
@@ -28423,49 +30530,6 @@
                         "CurrentGhost",
                         "-",
                         "10"
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "events": []
-                },
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "ChangeAnimation"
-                      },
-                      "parameters": [
-                        "SirHenry",
-                        "=",
-                        "48 + round(SirHenry.TopDownMovement::Angle()/45)"
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "events": []
-                },
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "AddForceAL"
-                      },
-                      "parameters": [
-                        "SirHenry",
-                        "-180 + round(SirHenry.TopDownMovement::Angle())",
-                        "500",
-                        ""
                       ],
                       "subInstructions": []
                     }
@@ -30580,7 +32644,7 @@
                             "SirHenry",
                             "CurrentStamina",
                             "-",
-                            "0.5"
+                            "0.25"
                           ],
                           "subInstructions": []
                         }
