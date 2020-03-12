@@ -8,13 +8,12 @@
   },
   "properties": {
     "adMobAppId": "",
-    "adaptGameResolutionAtRuntime": true,
     "folderProject": false,
     "linuxExecutableFilename": "",
     "macExecutableFilename": "",
     "orientation": "landscape",
     "packageName": "com.example.FightKnight",
-    "projectFile": "C:\\Users\\joshd\\OneDrive\\GameDev\\GameDev2\\FightKnight\\isometric-game.json",
+    "projectFile": "D:\\GameDev2\\FightKnight\\isometric-game.json",
     "scaleMode": "nearest",
     "sizeOnStartupMode": "adaptWidth",
     "useExternalSourceFiles": false,
@@ -7682,6 +7681,42 @@
         "metadata": "",
         "name": "Assets\\SirValesTheme.wav",
         "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Health-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Health-1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Health-1-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Health-1-1.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/StaminaBar.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\StaminaBar.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/GhostBar.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\GhostBar.png",
+        "smoothed": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -7714,7 +7749,7 @@
         "gridWidth": 32,
         "snap": true,
         "windowMask": false,
-        "zoomFactor": 0.664
+        "zoomFactor": 0.592
       },
       "objectsGroups": [
         {
@@ -7756,14 +7791,6 @@
             {
               "name": "Attacking",
               "value": "0"
-            },
-            {
-              "name": "Variable",
-              "value": ""
-            },
-            {
-              "name": "Variable2",
-              "value": ""
             }
           ]
         },
@@ -7961,6 +7988,51 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 34,
+          "layer": "UI",
+          "locked": false,
+          "name": "Health",
+          "width": 1000,
+          "x": 8,
+          "y": 6,
+          "zOrder": 10005,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 34,
+          "layer": "UI",
+          "locked": false,
+          "name": "Stamina",
+          "width": 1000,
+          "x": 8,
+          "y": 35,
+          "zOrder": 10007,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 34,
+          "layer": "UI",
+          "locked": false,
+          "name": "Ghost",
+          "width": 1000,
+          "x": 8,
+          "y": 63,
+          "zOrder": 10008,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -8008,6 +8080,38 @@
             },
             {
               "name": "HeavySkip",
+              "value": "0"
+            },
+            {
+              "name": "MaxHealth",
+              "value": "100"
+            },
+            {
+              "name": "CurrentHealth",
+              "value": "100"
+            },
+            {
+              "name": "MaxStamina",
+              "value": "100"
+            },
+            {
+              "name": "MaxGhostHealth",
+              "value": "100"
+            },
+            {
+              "name": "GhostHealth",
+              "value": "100"
+            },
+            {
+              "name": "CurrentStamina",
+              "value": "100"
+            },
+            {
+              "name": "CurrentGhost",
+              "value": "100"
+            },
+            {
+              "name": "Dodging",
               "value": "0"
             }
           ],
@@ -27353,23 +27457,6 @@
           ]
         },
         {
-          "name": "Display",
-          "tags": "",
-          "type": "BBText::BBText",
-          "variables": [],
-          "behaviors": [],
-          "content": {
-            "text": "",
-            "opacity": 255,
-            "fontSize": "20",
-            "visible": true,
-            "color": "#000000",
-            "fontFamily": "Arial",
-            "align": "center",
-            "wordWrap": true
-          }
-        },
-        {
           "height": 32,
           "name": "SideFence",
           "tags": "",
@@ -27428,6 +27515,55 @@
           "width": 32,
           "variables": [],
           "behaviors": []
+        },
+        {
+          "height": 64,
+          "name": "Ghost",
+          "tags": "",
+          "texture": "Assets\\GhostBar.png",
+          "type": "TiledSpriteObject::TiledSprite",
+          "width": 32,
+          "variables": [],
+          "behaviors": []
+        },
+        {
+          "height": 64,
+          "name": "Stamina",
+          "tags": "",
+          "texture": "Assets\\StaminaBar.png",
+          "type": "TiledSpriteObject::TiledSprite",
+          "width": 32,
+          "variables": [],
+          "behaviors": []
+        },
+        {
+          "height": 64,
+          "name": "Health",
+          "tags": "",
+          "texture": "Health-1-1.png",
+          "type": "TiledSpriteObject::TiledSprite",
+          "width": 32,
+          "variables": [],
+          "behaviors": []
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "Display",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [],
+          "string": "Text",
+          "font": "",
+          "characterSize": 20,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          }
         }
       ],
       "events": [
@@ -27447,6 +27583,19 @@
               "folded": false,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
+                    "SirHenry",
+                    "CurrentStamina",
+                    ">=",
+                    "0"
+                  ],
+                  "subInstructions": []
+                },
                 {
                   "type": {
                     "inverted": false,
@@ -27695,11 +27844,231 @@
                 {
                   "type": {
                     "inverted": false,
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
+                    "SirHenry",
+                    "CurrentGhost",
+                    ">",
+                    "0"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "KeyPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "Space"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": [],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarObjet"
+                      },
+                      "parameters": [
+                        "SirHenry",
+                        "Dodging",
+                        "=",
+                        "0"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarObjet"
+                      },
+                      "parameters": [
+                        "SirHenry",
+                        "HeavyAttacking",
+                        "!=",
+                        "1"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarObjet"
+                      },
+                      "parameters": [
+                        "SirHenry",
+                        "HeavyAttack2",
+                        "!=",
+                        "1"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarObjet"
+                      },
+                      "parameters": [
+                        "SirHenry",
+                        "Attacking",
+                        "!=",
+                        "1"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarObjet"
+                      },
+                      "parameters": [
+                        "SirHenry",
+                        "Attack2",
+                        "!=",
+                        "1"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarObjet"
+                      },
+                      "parameters": [
+                        "SirHenry",
+                        "HeavySkip",
+                        "!=",
+                        "1"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ResetObjectTimer"
+                      },
+                      "parameters": [
+                        "SirHenry",
+                        "\"Dodge\""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "TopDownMovementBehavior::MaxSpeed"
+                      },
+                      "parameters": [
+                        "SirHenry",
+                        "TopDownMovement",
+                        "=",
+                        "100"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ChangeAnimationSpeedScale"
+                      },
+                      "parameters": [
+                        "SirHenry",
+                        "=",
+                        "1"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarObjet"
+                      },
+                      "parameters": [
+                        "SirHenry",
+                        "Dodging",
+                        "=",
+                        "1"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ]
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "KeyPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "e"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": [],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
                     "value": "KeyPressed"
                   },
                   "parameters": [
                     "",
                     "h"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
+                    "SirHenry",
+                    "CurrentStamina",
+                    ">=",
+                    "0"
                   ],
                   "subInstructions": []
                 },
@@ -28003,6 +28372,115 @@
                 {
                   "type": {
                     "inverted": false,
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
+                    "SirHenry",
+                    "Dodging",
+                    "",
+                    "1"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "ObjectTimer"
+                  },
+                  "parameters": [
+                    "SirHenry",
+                    "\"Dodge\"",
+                    "0.1"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": [],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarObjet"
+                      },
+                      "parameters": [
+                        "SirHenry",
+                        "CurrentGhost",
+                        "-",
+                        "10"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ChangeAnimation"
+                      },
+                      "parameters": [
+                        "SirHenry",
+                        "=",
+                        "48 + round(SirHenry.TopDownMovement::Angle()/45)"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "AddForceAL"
+                      },
+                      "parameters": [
+                        "SirHenry",
+                        "-180 + round(SirHenry.TopDownMovement::Angle())",
+                        "500",
+                        ""
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ]
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
                     "value": "BuiltinCommonInstructions::And"
                   },
                   "parameters": [],
@@ -28051,6 +28529,37 @@
               ],
               "actions": [],
               "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": [],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarObjet"
+                      },
+                      "parameters": [
+                        "SirHenry",
+                        "CurrentStamina",
+                        "-",
+                        "10"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
                 {
                   "disabled": false,
                   "folded": false,
@@ -28111,7 +28620,7 @@
                           },
                           "parameters": [
                             "SirHenry",
-                            "SirHenry.TopDownMovement::Angle()",
+                            "round(SirHenry.TopDownMovement::Angle())",
                             "50",
                             ""
                           ],
@@ -28150,7 +28659,7 @@
                       "parameters": [
                         "SirHenry",
                         "=",
-                        "24 + (SirHenry.TopDownMovement::Angle()/45)"
+                        "24 + round(SirHenry.TopDownMovement::Angle()/45)"
                       ],
                       "subInstructions": []
                     }
@@ -28238,6 +28747,37 @@
               ],
               "actions": [],
               "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": [],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarObjet"
+                      },
+                      "parameters": [
+                        "SirHenry",
+                        "CurrentStamina",
+                        "-",
+                        "20"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
                 {
                   "disabled": false,
                   "folded": false,
@@ -28544,6 +29084,37 @@
                     {
                       "type": {
                         "inverted": false,
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": [],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarObjet"
+                      },
+                      "parameters": [
+                        "SirHenry",
+                        "CurrentStamina",
+                        "-",
+                        "7.5"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
                         "value": "TopDownMovementBehavior::Angle"
                       },
                       "parameters": [
@@ -28722,6 +29293,37 @@
               ],
               "actions": [],
               "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": [],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarObjet"
+                      },
+                      "parameters": [
+                        "SirHenry",
+                        "CurrentStamina",
+                        "-",
+                        "15"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
                 {
                   "disabled": false,
                   "folded": false,
@@ -29062,6 +29664,37 @@
               ],
               "actions": [],
               "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": [],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarObjet"
+                      },
+                      "parameters": [
+                        "SirHenry",
+                        "CurrentStamina",
+                        "-",
+                        "15"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
                 {
                   "disabled": false,
                   "folded": false,
@@ -29764,6 +30397,63 @@
                     {
                       "type": {
                         "inverted": false,
+                        "value": "ObjectTimer"
+                      },
+                      "parameters": [
+                        "SirHenry",
+                        "\"Dodge\"",
+                        "0.1"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarObjet"
+                      },
+                      "parameters": [
+                        "SirHenry",
+                        "Dodging",
+                        "=",
+                        "1"
+                      ],
+                      "subInstructions": []
+                    }
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "SirHenry",
+                    "Dodging",
+                    "=",
+                    "0"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "BuiltinCommonInstructions::And"
+                  },
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "inverted": false,
                         "value": "VarObjet"
                       },
                       "parameters": [
@@ -29820,36 +30510,197 @@
                         "LShift"
                       ],
                       "subInstructions": []
-                    }
-                  ],
-                  "actions": [
+                    },
                     {
                       "type": {
                         "inverted": false,
-                        "value": "TopDownMovementBehavior::MaxSpeed"
+                        "value": "TopDownMovementBehavior::IsMoving"
                       },
                       "parameters": [
                         "SirHenry",
-                        "TopDownMovement",
-                        "=",
-                        "250"
+                        "TopDownMovement"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [],
+                  "events": [
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "VarObjet"
+                          },
+                          "parameters": [
+                            "SirHenry",
+                            "CurrentStamina",
+                            ">",
+                            "SirHenry.Variable(MaxStamina) * 0.1"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "TopDownMovementBehavior::MaxSpeed"
+                          },
+                          "parameters": [
+                            "SirHenry",
+                            "TopDownMovement",
+                            "=",
+                            "250"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ChangeAnimationSpeedScale"
+                          },
+                          "parameters": [
+                            "SirHenry",
+                            "=",
+                            "2.5"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ModVarObjet"
+                          },
+                          "parameters": [
+                            "SirHenry",
+                            "CurrentStamina",
+                            "-",
+                            "0.5"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "VarObjet"
+                          },
+                          "parameters": [
+                            "SirHenry",
+                            "CurrentStamina",
+                            "<=",
+                            "SirHenry.Variable(MaxStamina) * 0.1"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ChangeAnimationSpeedScale"
+                          },
+                          "parameters": [
+                            "SirHenry",
+                            "=",
+                            "1"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "TopDownMovementBehavior::MaxSpeed"
+                          },
+                          "parameters": [
+                            "SirHenry",
+                            "TopDownMovement",
+                            "=",
+                            "100"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    }
+                  ]
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "KeyPressed"
+                      },
+                      "parameters": [
+                        "",
+                        "LShift"
                       ],
                       "subInstructions": []
                     },
                     {
                       "type": {
-                        "inverted": false,
-                        "value": "ChangeAnimationSpeedScale"
+                        "inverted": true,
+                        "value": "TopDownMovementBehavior::IsMoving"
                       },
                       "parameters": [
                         "SirHenry",
-                        "=",
-                        "2.5"
+                        "TopDownMovement"
                       ],
                       "subInstructions": []
                     }
                   ],
-                  "events": []
+                  "actions": [],
+                  "events": [
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ChangeAnimationSpeedScale"
+                          },
+                          "parameters": [
+                            "SirHenry",
+                            "=",
+                            "1"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "TopDownMovementBehavior::MaxSpeed"
+                          },
+                          "parameters": [
+                            "SirHenry",
+                            "TopDownMovement",
+                            "=",
+                            "100"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    }
+                  ]
                 },
                 {
                   "disabled": false,
@@ -30285,6 +31136,302 @@
           "parameters": []
         },
         {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "disabled": false,
+          "folded": false,
+          "name": "HUD",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
+                    "SirHenry",
+                    "CurrentHealth",
+                    ">=",
+                    "0"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TiledSpriteObject::Width"
+                  },
+                  "parameters": [
+                    "Health",
+                    "=",
+                    "(1000 * (SirHenry.Variable(CurrentHealth)/100))"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
+                    "SirHenry",
+                    "CurrentHealth",
+                    "<",
+                    "0"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TiledSpriteObject::Width"
+                  },
+                  "parameters": [
+                    "Health",
+                    "=",
+                    "0"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
+                    "SirHenry",
+                    "CurrentStamina",
+                    ">=",
+                    "0"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TiledSpriteObject::Width"
+                  },
+                  "parameters": [
+                    "Stamina",
+                    "=",
+                    "(1000 * (SirHenry.Variable(CurrentStamina)/100))"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
+                    "SirHenry",
+                    "CurrentStamina",
+                    "<",
+                    "0"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TiledSpriteObject::Width"
+                  },
+                  "parameters": [
+                    "Stamina",
+                    "=",
+                    "0"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
+                    "SirHenry",
+                    "CurrentGhost",
+                    ">=",
+                    "0"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TiledSpriteObject::Width"
+                  },
+                  "parameters": [
+                    "Ghost",
+                    "=",
+                    "(1000 * (SirHenry.Variable(CurrentGhost)/100))"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
+                    "SirHenry",
+                    "CurrentGhost",
+                    "<",
+                    "0"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TiledSpriteObject::Width"
+                  },
+                  "parameters": [
+                    "Ghost",
+                    "=",
+                    "0"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
+                    "SirHenry",
+                    "CurrentStamina",
+                    "<=",
+                    "SirHenry.Variable(MaxStamina)"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "SirHenry",
+                    "CurrentStamina",
+                    "+",
+                    "10* TimeDelta()"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
+                    "SirHenry",
+                    "CurrentStamina",
+                    ">",
+                    "SirHenry.Variable(MaxStamina)"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "SirHenry",
+                    "CurrentStamina",
+                    "=",
+                    "SirHenry.Variable(MaxStamina)"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            }
+          ],
+          "parameters": []
+        },
+        {
           "disabled": false,
           "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
@@ -30311,6 +31458,17 @@
                 "yes",
                 "20",
                 "1"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ResetObjectTimer"
+              },
+              "parameters": [
+                "SirHenry",
+                "\"Stamina\""
               ],
               "subInstructions": []
             }
@@ -30571,7 +31729,6 @@
                   "codeOnly": false,
                   "defaultValue": "",
                   "description": "Object",
-                  "longDescription": "",
                   "name": "Object",
                   "optional": false,
                   "supplementaryInformation": "",
@@ -30581,7 +31738,6 @@
                   "codeOnly": false,
                   "defaultValue": "",
                   "description": "Behavior",
-                  "longDescription": "",
                   "name": "Behavior",
                   "optional": false,
                   "supplementaryInformation": "Bounce::Bounce",
@@ -30591,7 +31747,6 @@
                   "codeOnly": false,
                   "defaultValue": "",
                   "description": "The objects to bounce on",
-                  "longDescription": "",
                   "name": "Obstacle",
                   "optional": false,
                   "supplementaryInformation": "",
@@ -30606,7 +31761,6 @@
               "value": "0",
               "type": "Number",
               "label": "",
-              "description": "",
               "extraInformation": [],
               "hidden": true,
               "name": "OldX"
@@ -30615,7 +31769,6 @@
               "value": "",
               "type": "Number",
               "label": "",
-              "description": "",
               "extraInformation": [],
               "hidden": true,
               "name": "OldY"
@@ -30624,7 +31777,6 @@
               "value": "",
               "type": "Number",
               "label": "",
-              "description": "",
               "extraInformation": [],
               "hidden": true,
               "name": "OldForceAngle"
@@ -30633,7 +31785,6 @@
               "value": "",
               "type": "Number",
               "label": "",
-              "description": "",
               "extraInformation": [],
               "hidden": true,
               "name": "OldForceLength"
@@ -30642,7 +31793,6 @@
               "value": "",
               "type": "Number",
               "label": "",
-              "description": "",
               "extraInformation": [],
               "hidden": true,
               "name": "NormalAngle"
