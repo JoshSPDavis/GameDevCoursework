@@ -31995,6 +31995,19 @@
                             "1"
                           ],
                           "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ModVarObjet"
+                          },
+                          "parameters": [
+                            "SirHenry",
+                            "Regen",
+                            "=",
+                            "0"
+                          ],
+                          "subInstructions": []
                         }
                       ],
                       "events": []
@@ -32065,6 +32078,19 @@
                           "parameters": [
                             "SirHenry",
                             "\"attack1\""
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ModVarObjet"
+                          },
+                          "parameters": [
+                            "SirHenry",
+                            "Regen",
+                            "=",
+                            "0"
                           ],
                           "subInstructions": []
                         }
@@ -33014,6 +33040,19 @@
                         "1"
                       ],
                       "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarObjet"
+                      },
+                      "parameters": [
+                        "SirHenry",
+                        "Regen",
+                        "=",
+                        "0"
+                      ],
+                      "subInstructions": []
                     }
                   ],
                   "events": []
@@ -33113,6 +33152,19 @@
                         "1"
                       ],
                       "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarObjet"
+                      },
+                      "parameters": [
+                        "SirHenry",
+                        "Regen",
+                        "=",
+                        "0"
+                      ],
+                      "subInstructions": []
                     }
                   ],
                   "events": []
@@ -33196,6 +33248,19 @@
                       "parameters": [
                         "SirHenry",
                         "\"attack2\""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarObjet"
+                      },
+                      "parameters": [
+                        "SirHenry",
+                        "Regen",
+                        "=",
+                        "0"
                       ],
                       "subInstructions": []
                     }
@@ -33684,7 +33749,7 @@
                         "SirHenry",
                         "CurrentStamina",
                         "-",
-                        "20"
+                        "15"
                       ],
                       "subInstructions": []
                     }
@@ -34013,7 +34078,7 @@
                         "SirHenry",
                         "CurrentStamina",
                         "-",
-                        "7.5"
+                        "5"
                       ],
                       "subInstructions": []
                     }
@@ -34230,7 +34295,7 @@
                         "SirHenry",
                         "CurrentStamina",
                         "-",
-                        "15"
+                        "25"
                       ],
                       "subInstructions": []
                     }
@@ -34601,7 +34666,7 @@
                         "SirHenry",
                         "CurrentStamina",
                         "-",
-                        "15"
+                        "25"
                       ],
                       "subInstructions": []
                     }
@@ -35581,6 +35646,103 @@
                       },
                       "parameters": [
                         "SirHenry",
+                        "Attack2",
+                        "=",
+                        "0"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarObjet"
+                      },
+                      "parameters": [
+                        "SirHenry",
+                        "HeavyAttack2",
+                        "=",
+                        "0"
+                      ],
+                      "subInstructions": []
+                    }
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "SirHenry",
+                    "Regen",
+                    "=",
+                    "1"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "BuiltinCommonInstructions::And"
+                  },
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarObjet"
+                      },
+                      "parameters": [
+                        "SirHenry",
+                        "Attacking",
+                        "=",
+                        "0"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarObjet"
+                      },
+                      "parameters": [
+                        "SirHenry",
+                        "HeavyAttacking",
+                        "=",
+                        "0"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarObjet"
+                      },
+                      "parameters": [
+                        "SirHenry",
+                        "HeavySkip",
+                        "=",
+                        "0"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarObjet"
+                      },
+                      "parameters": [
+                        "SirHenry",
                         "Dodging",
                         "=",
                         "0"
@@ -35689,7 +35851,7 @@
                             "SirHenry",
                             "CurrentStamina",
                             "-",
-                            "0.25"
+                            "0.1"
                           ],
                           "subInstructions": []
                         },
@@ -35723,7 +35885,7 @@
                             "SirHenry",
                             "CurrentStamina",
                             "<=",
-                            "SirHenry.Variable(MaxStamina) * 0.1"
+                            "0"
                           ],
                           "subInstructions": []
                         }
@@ -35751,6 +35913,19 @@
                             "TopDownMovement",
                             "=",
                             "100"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ModVarObjet"
+                          },
+                          "parameters": [
+                            "SirHenry",
+                            "Regen",
+                            "=",
+                            "1"
                           ],
                           "subInstructions": []
                         }
@@ -36571,28 +36746,37 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "VarObjet"
+                    "value": "BuiltinCommonInstructions::And"
                   },
-                  "parameters": [
-                    "SirHenry",
-                    "CurrentStamina",
-                    "<=",
-                    "SirHenry.Variable(MaxStamina)"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "VarObjet"
-                  },
-                  "parameters": [
-                    "SirHenry",
-                    "Regen",
-                    "=",
-                    "1"
-                  ],
-                  "subInstructions": []
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarObjet"
+                      },
+                      "parameters": [
+                        "SirHenry",
+                        "CurrentStamina",
+                        "<=",
+                        "SirHenry.Variable(MaxStamina)"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarObjet"
+                      },
+                      "parameters": [
+                        "SirHenry",
+                        "Regen",
+                        "=",
+                        "1"
+                      ],
+                      "subInstructions": []
+                    }
+                  ]
                 }
               ],
               "actions": [
