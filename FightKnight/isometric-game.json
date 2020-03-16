@@ -8563,71 +8563,7 @@
           "updateIfNotVisible": false,
           "variables": [
             {
-              "name": "Attacking",
-              "value": "0"
-            },
-            {
-              "name": "Attack2",
-              "value": "0"
-            },
-            {
-              "name": "HeavyAttacking",
-              "value": "0"
-            },
-            {
-              "name": "HeavyAttack2",
-              "value": "0"
-            },
-            {
-              "name": "HeavySkip",
-              "value": "0"
-            },
-            {
-              "name": "MaxHealth",
-              "value": "100"
-            },
-            {
-              "name": "CurrentHealth",
-              "value": "100"
-            },
-            {
-              "name": "MaxStamina",
-              "value": "100"
-            },
-            {
-              "name": "MaxGhostHealth",
-              "value": "100"
-            },
-            {
-              "name": "GhostHealth",
-              "value": "100"
-            },
-            {
-              "name": "CurrentStamina",
-              "value": "100"
-            },
-            {
-              "name": "CurrentGhost",
-              "value": "100"
-            },
-            {
-              "name": "Dodging",
-              "value": "0"
-            },
-            {
-              "name": "GhostForm",
-              "value": "0"
-            },
-            {
-              "name": "TempGhost",
-              "value": "0"
-            },
-            {
-              "name": "GhostMod",
-              "value": "0"
-            },
-            {
-              "name": "Regen",
+              "name": "activated",
               "value": "0"
             }
           ],
@@ -49092,7 +49028,21 @@
                   ]
                 }
               ],
-              "actions": [],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "SirHenrysSword",
+                    "activated",
+                    "=",
+                    "1"
+                  ],
+                  "subInstructions": []
+                }
+              ],
               "events": [
                 {
                   "disabled": false,
@@ -49360,7 +49310,21 @@
                   ]
                 }
               ],
-              "actions": [],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "SirHenrysSword",
+                    "activated",
+                    "=",
+                    "1"
+                  ],
+                  "subInstructions": []
+                }
+              ],
               "events": [
                 {
                   "disabled": false,
@@ -49765,7 +49729,21 @@
                   ]
                 }
               ],
-              "actions": [],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "SirHenrysSword",
+                    "activated",
+                    "=",
+                    "1"
+                  ],
+                  "subInstructions": []
+                }
+              ],
               "events": [
                 {
                   "disabled": false,
@@ -50032,7 +50010,21 @@
                   ]
                 }
               ],
-              "actions": [],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "SirHenrysSword",
+                    "activated",
+                    "=",
+                    "1"
+                  ],
+                  "subInstructions": []
+                }
+              ],
               "events": [
                 {
                   "disabled": false,
@@ -50479,7 +50471,21 @@
                   ]
                 }
               ],
-              "actions": [],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "SirHenrysSword",
+                    "activated",
+                    "=",
+                    "1"
+                  ],
+                  "subInstructions": []
+                }
+              ],
               "events": [
                 {
                   "disabled": false,
@@ -50965,6 +50971,19 @@
                     "0"
                   ],
                   "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "SirHenrysSword",
+                    "activated",
+                    "=",
+                    "0"
+                  ],
+                  "subInstructions": []
                 }
               ],
               "events": []
@@ -51044,6 +51063,19 @@
                   "parameters": [
                     "SirHenry",
                     "HeavyAttack2",
+                    "=",
+                    "0"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "SirHenrysSword",
+                    "activated",
                     "=",
                     "0"
                   ],
@@ -51131,6 +51163,19 @@
                     "0"
                   ],
                   "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "SirHenrysSword",
+                    "activated",
+                    "=",
+                    "0"
+                  ],
+                  "subInstructions": []
                 }
               ],
               "events": []
@@ -51197,6 +51242,19 @@
                   "parameters": [
                     "SirHenry",
                     "HeavyAttack2",
+                    "=",
+                    "0"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "SirHenrysSword",
+                    "activated",
                     "=",
                     "0"
                   ],
@@ -51271,6 +51329,19 @@
                     "0"
                   ],
                   "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "SirHenrysSword",
+                    "activated",
+                    "=",
+                    "0"
+                  ],
+                  "subInstructions": []
                 }
               ],
               "events": []
@@ -51328,6 +51399,19 @@
                     "0"
                   ],
                   "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "SirHenrysSword",
+                    "activated",
+                    "=",
+                    "0"
+                  ],
+                  "subInstructions": []
                 }
               ],
               "events": [
@@ -51372,6 +51456,19 @@
                       "parameters": [
                         "SirHenry",
                         "TempGhost",
+                        "=",
+                        "0"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarObjet"
+                      },
+                      "parameters": [
+                        "SirHenrysSword",
+                        "activated",
                         "=",
                         "0"
                       ],
@@ -51434,6 +51531,19 @@
                     "CurrentGhost",
                     "-",
                     "0.3"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "SirHenrysSword",
+                    "activated",
+                    "=",
+                    "0"
                   ],
                   "subInstructions": []
                 }
@@ -51508,6 +51618,19 @@
                         "TopDownMovement",
                         "=",
                         "100"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarObjet"
+                      },
+                      "parameters": [
+                        "SirHenrysSword",
+                        "activated",
+                        "=",
+                        "0"
                       ],
                       "subInstructions": []
                     }
@@ -51609,6 +51732,19 @@
                     "1"
                   ],
                   "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "SirHenrysSword",
+                    "activated",
+                    "=",
+                    "0"
+                  ],
+                  "subInstructions": []
                 }
               ],
               "events": []
@@ -51688,6 +51824,19 @@
                   },
                   "parameters": [
                     "SirHenrysSword",
+                    "=",
+                    "0"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "SirHenrysSword",
+                    "activated",
                     "=",
                     "0"
                   ],
@@ -52484,7 +52633,7 @@
           "type": "BuiltinCommonInstructions::Group",
           "events": [
             {
-              "disabled": true,
+              "disabled": false,
               "folded": false,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
