@@ -51774,10 +51774,35 @@
                         {
                           "type": {
                             "inverted": false,
+                            "value": "TopDownMovementBehavior::MaxSpeed"
+                          },
+                          "parameters": [
+                            "SirHenrysSword",
+                            "TopDownMovement",
+                            "=",
+                            "250"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
                             "value": "ChangeAnimationSpeedScale"
                           },
                           "parameters": [
                             "SirHenry",
+                            "=",
+                            "2.5"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ChangeAnimationSpeedScale"
+                          },
+                          "parameters": [
+                            "SirHenrysSword",
                             "=",
                             "2.5"
                           ],
@@ -51847,10 +51872,35 @@
                         {
                           "type": {
                             "inverted": false,
+                            "value": "ChangeAnimationSpeedScale"
+                          },
+                          "parameters": [
+                            "SirHenrysSword",
+                            "=",
+                            "1"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
                             "value": "TopDownMovementBehavior::MaxSpeed"
                           },
                           "parameters": [
                             "SirHenry",
+                            "TopDownMovement",
+                            "=",
+                            "100"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "TopDownMovementBehavior::MaxSpeed"
+                          },
+                          "parameters": [
+                            "SirHenrysSword",
                             "TopDownMovement",
                             "=",
                             "100"
@@ -51939,10 +51989,35 @@
                         {
                           "type": {
                             "inverted": false,
+                            "value": "ChangeAnimationSpeedScale"
+                          },
+                          "parameters": [
+                            "SirHenrysSword",
+                            "=",
+                            "1"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
                             "value": "TopDownMovementBehavior::MaxSpeed"
                           },
                           "parameters": [
                             "SirHenry",
+                            "TopDownMovement",
+                            "=",
+                            "100"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "TopDownMovementBehavior::MaxSpeed"
+                          },
+                          "parameters": [
+                            "SirHenrysSword",
                             "TopDownMovement",
                             "=",
                             "100"
@@ -52001,10 +52076,35 @@
                     {
                       "type": {
                         "inverted": false,
+                        "value": "TopDownMovementBehavior::MaxSpeed"
+                      },
+                      "parameters": [
+                        "SirHenrysSword",
+                        "TopDownMovement",
+                        "=",
+                        "100"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
                         "value": "ChangeAnimationSpeedScale"
                       },
                       "parameters": [
                         "SirHenry",
+                        "=",
+                        "1"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ChangeAnimationSpeedScale"
+                      },
+                      "parameters": [
+                        "SirHenrysSword",
                         "=",
                         "1"
                       ],
@@ -52041,6 +52141,17 @@
                         "TopDownMovement"
                       ],
                       "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "TopDownMovementBehavior::SimulateUpKey"
+                      },
+                      "parameters": [
+                        "SirHenrysSword",
+                        "TopDownMovement"
+                      ],
+                      "subInstructions": []
                     }
                   ],
                   "events": []
@@ -52070,6 +52181,17 @@
                       },
                       "parameters": [
                         "SirHenry",
+                        "TopDownMovement"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "TopDownMovementBehavior::SimulateLeftKey"
+                      },
+                      "parameters": [
+                        "SirHenrysSword",
                         "TopDownMovement"
                       ],
                       "subInstructions": []
@@ -52105,6 +52227,17 @@
                         "TopDownMovement"
                       ],
                       "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "TopDownMovementBehavior::SimulateRightKey"
+                      },
+                      "parameters": [
+                        "SirHenrysSword",
+                        "TopDownMovement"
+                      ],
+                      "subInstructions": []
                     }
                   ],
                   "events": []
@@ -52134,6 +52267,17 @@
                       },
                       "parameters": [
                         "SirHenry",
+                        "TopDownMovement"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "TopDownMovementBehavior::SimulateDownKey"
+                      },
+                      "parameters": [
+                        "SirHenrysSword",
                         "TopDownMovement"
                       ],
                       "subInstructions": []
