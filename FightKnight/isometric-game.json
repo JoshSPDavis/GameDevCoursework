@@ -100807,8 +100807,44 @@
                   "parameters": [
                     "KnightVale",
                     "SirHenry",
-                    "200",
+                    "300",
                     ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "KnightVale",
+                    "Moving",
+                    "=",
+                    "1"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
+                    "KnightVale",
+                    "Moving",
+                    "=",
+                    "1"
                   ],
                   "subInstructions": []
                 }
@@ -100816,7 +100852,7 @@
               "actions": [],
               "events": [
                 {
-                  "disabled": false,
+                  "disabled": true,
                   "folded": false,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
@@ -100851,20 +100887,7 @@
                         "Assets\\Dire Straits - Walk Of Life.mp3",
                         "1",
                         "yes",
-                        "20",
-                        "1"
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "ModVarObjet"
-                      },
-                      "parameters": [
-                        "KnightVale",
-                        "Moving",
-                        "=",
+                        "90",
                         "1"
                       ],
                       "subInstructions": []
@@ -102280,20 +102303,7 @@
               "folded": false,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "TextObject::String"
-                  },
-                  "parameters": [
-                    "KnightValeDisplay",
-                    "=",
-                    "LargeNumberToString(KnightVale.Distance(SirHenry))"
-                  ],
-                  "subInstructions": []
-                }
-              ],
+              "actions": [],
               "events": []
             },
             {
