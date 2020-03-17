@@ -5446,15 +5446,6 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "Assets/Map/Slab.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Assets\\Map\\Slab.png",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
         "file": "Assets/Map/CornerSlab.png",
         "kind": "image",
         "metadata": "",
@@ -12164,6 +12155,58 @@
         "name": "RightUpStab2-15-0.png",
         "smoothed": false,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Map/KnightValesHealthLeft.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Map\\KnightValesHealthLeft.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Map/KnightValesHealthMiddle.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Map\\KnightValesHealthMiddle.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Map/KnightValesHealthRight.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Map\\KnightValesHealthRight.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets/Map/Slab.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets\\Map\\Slab.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Slab.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Slab.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "file": "Assets/Dire Straits - Walk Of Life.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Assets\\Dire Straits - Walk Of Life.mp3",
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -12196,7 +12239,7 @@
         "gridWidth": 32,
         "snap": true,
         "windowMask": false,
-        "zoomFactor": 0.52
+        "zoomFactor": 0.592
       },
       "objectsGroups": [
         {
@@ -12229,8 +12272,8 @@
           "locked": false,
           "name": "SirHenry",
           "width": 70,
-          "x": 844,
-          "y": 916,
+          "x": 925,
+          "y": 912,
           "zOrder": 10009,
           "numberProperties": [],
           "stringProperties": [],
@@ -12478,9 +12521,9 @@
           "locked": false,
           "name": "SirHenrysSword",
           "width": 70,
-          "x": 931,
-          "y": 910,
-          "zOrder": 10001,
+          "x": 1007,
+          "y": 884,
+          "zOrder": 10005,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -12493,12 +12536,21 @@
           "locked": false,
           "name": "KnightVale",
           "width": 70,
-          "x": 926,
-          "y": 86,
+          "x": 865,
+          "y": 143,
           "zOrder": 10009,
           "numberProperties": [],
           "stringProperties": [],
-          "initialVariables": []
+          "initialVariables": [
+            {
+              "name": "MaxHealth",
+              "value": "750"
+            },
+            {
+              "name": "CurrentHealth",
+              "value": "750"
+            }
+          ]
         },
         {
           "angle": 0,
@@ -12508,8 +12560,8 @@
           "locked": false,
           "name": "KnightValesBodyHitbox",
           "width": 70,
-          "x": 1007,
-          "y": 130,
+          "x": 927,
+          "y": 79,
           "zOrder": 10003,
           "numberProperties": [
             {
@@ -12537,15 +12589,45 @@
         },
         {
           "angle": 0,
+          "customSize": true,
+          "height": 34,
+          "layer": "UI",
+          "locked": false,
+          "name": "KnightValesHealth",
+          "width": 1440,
+          "x": 240,
+          "y": 1000,
+          "zOrder": 10013,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 34,
+          "layer": "UI",
+          "locked": false,
+          "name": "KnightValesHealthBackground",
+          "width": 1448,
+          "x": 236,
+          "y": 1000,
+          "zOrder": 10012,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
           "customSize": false,
           "height": 0,
-          "layer": "",
+          "layer": "UI",
           "locked": false,
-          "name": "Display",
+          "name": "KnightValeDisplay",
           "width": 0,
-          "x": 1028,
-          "y": 103,
-          "zOrder": 10012,
+          "x": 238,
+          "y": 962,
+          "zOrder": 10015,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -12566,7 +12648,7 @@
           "height": 32,
           "name": "Slab",
           "tags": "",
-          "texture": "Assets\\Map\\Slab.png",
+          "texture": "Slab.png",
           "type": "TiledSpriteObject::TiledSprite",
           "width": 32,
           "variables": [],
@@ -12589,6 +12671,8 @@
               "type": "NewExtension::MyBehavior"
             },
             {
+              "name": "Pathfinding",
+              "type": "PathfindingBehavior::PathfindingBehavior",
               "acceleration": 400,
               "allowDiagonals": true,
               "angleOffset": 0,
@@ -12597,11 +12681,11 @@
               "cellWidth": 20,
               "extraBorder": 0,
               "maxSpeed": 200,
-              "name": "Pathfinding",
-              "rotateObject": false,
-              "type": "PathfindingBehavior::PathfindingBehavior"
+              "rotateObject": false
             },
             {
+              "name": "TopDownMovement",
+              "type": "TopDownMovementBehavior::TopDownMovementBehavior",
               "acceleration": 400,
               "allowDiagonals": true,
               "angleOffset": 0,
@@ -12609,9 +12693,7 @@
               "deceleration": 800,
               "ignoreDefaultControls": false,
               "maxSpeed": 200,
-              "name": "TopDownMovement",
-              "rotateObject": false,
-              "type": "TopDownMovementBehavior::TopDownMovementBehavior"
+              "rotateObject": false
             }
           ],
           "animations": [
@@ -40470,6 +40552,10 @@
             {
               "name": "Direction",
               "value": "0"
+            },
+            {
+              "name": "Moving",
+              "value": "0"
             }
           ],
           "behaviors": [
@@ -40478,6 +40564,8 @@
               "type": "NewExtension::MyBehavior"
             },
             {
+              "name": "Pathfinding",
+              "type": "PathfindingBehavior::PathfindingBehavior",
               "acceleration": 400,
               "allowDiagonals": true,
               "angleOffset": 0,
@@ -40486,11 +40574,11 @@
               "cellWidth": 20,
               "extraBorder": 0,
               "maxSpeed": 100,
-              "name": "Pathfinding",
-              "rotateObject": false,
-              "type": "PathfindingBehavior::PathfindingBehavior"
+              "rotateObject": false
             },
             {
+              "name": "TopDownMovement",
+              "type": "TopDownMovementBehavior::TopDownMovementBehavior",
               "acceleration": 400,
               "allowDiagonals": true,
               "angleOffset": 0,
@@ -40498,9 +40586,7 @@
               "deceleration": 800,
               "ignoreDefaultControls": true,
               "maxSpeed": 200,
-              "name": "TopDownMovement",
-              "rotateObject": false,
-              "type": "TopDownMovementBehavior::TopDownMovementBehavior"
+              "rotateObject": false
             }
           ],
           "animations": [
@@ -48405,6 +48491,8 @@
               "type": "NewExtension::MyBehavior"
             },
             {
+              "name": "Pathfinding",
+              "type": "PathfindingBehavior::PathfindingBehavior",
               "acceleration": 400,
               "allowDiagonals": true,
               "angleOffset": 0,
@@ -48413,11 +48501,11 @@
               "cellWidth": 20,
               "extraBorder": 0,
               "maxSpeed": 200,
-              "name": "Pathfinding",
-              "rotateObject": false,
-              "type": "PathfindingBehavior::PathfindingBehavior"
+              "rotateObject": false
             },
             {
+              "name": "TopDownMovement",
+              "type": "TopDownMovementBehavior::TopDownMovementBehavior",
               "acceleration": 400,
               "allowDiagonals": true,
               "angleOffset": 0,
@@ -48425,9 +48513,7 @@
               "deceleration": 800,
               "ignoreDefaultControls": false,
               "maxSpeed": 200,
-              "name": "TopDownMovement",
-              "rotateObject": false,
-              "type": "TopDownMovementBehavior::TopDownMovementBehavior"
+              "rotateObject": false
             }
           ],
           "animations": [
@@ -71546,10 +71632,10 @@
               "type": "NewExtension::MyBehavior"
             },
             {
-              "cost": 0,
-              "impassable": true,
               "name": "PathfindingObstacle",
-              "type": "PathfindingBehavior::PathfindingObstacleBehavior"
+              "type": "PathfindingBehavior::PathfindingObstacleBehavior",
+              "cost": 0,
+              "impassable": true
             },
             {
               "name": "TopDownMovement",
@@ -94681,6 +94767,36 @@
         },
         {
           "height": 64,
+          "name": "KnightValesHealthLeft",
+          "tags": "",
+          "texture": "Assets\\Map\\KnightValesHealthLeft.png",
+          "type": "TiledSpriteObject::TiledSprite",
+          "width": 32,
+          "variables": [],
+          "behaviors": []
+        },
+        {
+          "height": 64,
+          "name": "KnightValesHealthBackground",
+          "tags": "",
+          "texture": "Assets\\Map\\KnightValesHealthRight.png",
+          "type": "TiledSpriteObject::TiledSprite",
+          "width": 32,
+          "variables": [],
+          "behaviors": []
+        },
+        {
+          "height": 64,
+          "name": "KnightValesHealth",
+          "tags": "",
+          "texture": "Assets\\Map\\KnightValesHealthMiddle.png",
+          "type": "TiledSpriteObject::TiledSprite",
+          "width": 32,
+          "variables": [],
+          "behaviors": []
+        },
+        {
+          "height": 64,
           "name": "Health",
           "tags": "",
           "texture": "Health-1-1.png",
@@ -94702,6 +94818,25 @@
           "string": "Text",
           "font": "",
           "characterSize": 20,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
+        },
+        {
+          "bold": true,
+          "italic": false,
+          "name": "KnightValeDisplay",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [],
+          "string": "Knight Vale",
+          "font": "",
+          "characterSize": 40,
           "color": {
             "b": 0,
             "g": 0,
@@ -97592,7 +97727,7 @@
                       "parameters": [
                         "SirHenrysSword",
                         "=",
-                        "16 + round(SirHenry.TopDownMovement::Angle()/45)"
+                        "17 + round(SirHenry.TopDownMovement::Angle()/45)"
                       ],
                       "subInstructions": []
                     }
@@ -100267,7 +100402,7 @@
                     "value": "Cache"
                   },
                   "parameters": [
-                    "SirHenrysSword"
+                    "KnightValesSword"
                   ],
                   "subInstructions": []
                 },
@@ -100284,10 +100419,12 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "Cache"
+                    "value": "ChangeAnimation"
                   },
                   "parameters": [
-                    "KnightValesSword"
+                    "KnightVale",
+                    "=",
+                    "10"
                   ],
                   "subInstructions": []
                 }
@@ -100513,7 +100650,20 @@
                             "SirHenry",
                             "CurrentGhost",
                             "+",
-                            "SirHenrysSword.Variable(activated) * 10"
+                            "(SirHenrysSword.Variable(activated) * 10)/2"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ModVarObjet"
+                          },
+                          "parameters": [
+                            "KnightVale",
+                            "CurrentHealth",
+                            "-",
+                            "(SirHenrysSword.Variable(activated) * 10)"
                           ],
                           "subInstructions": []
                         }
@@ -100652,14 +100802,306 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "PosX"
+                    "value": "Distance"
                   },
                   "parameters": [
                     "KnightVale",
-                    "<",
-                    "SirHenry.X() - 50"
+                    "SirHenry",
+                    "200",
+                    ""
                   ],
                   "subInstructions": []
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": [],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "StopMusicCanal"
+                      },
+                      "parameters": [
+                        "",
+                        "1"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "PlaySoundCanal"
+                      },
+                      "parameters": [
+                        "",
+                        "Assets\\Dire Straits - Walk Of Life.mp3",
+                        "1",
+                        "yes",
+                        "20",
+                        "1"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarObjet"
+                      },
+                      "parameters": [
+                        "KnightVale",
+                        "Moving",
+                        "=",
+                        "1"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ]
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "BuiltinCommonInstructions::And"
+                  },
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "PosY"
+                      },
+                      "parameters": [
+                        "KnightVale",
+                        "<",
+                        "SirHenry.Y()"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "PosY"
+                      },
+                      "parameters": [
+                        "KnightVale",
+                        ">",
+                        "SirHenry.Y() -10"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarObjet"
+                      },
+                      "parameters": [
+                        "KnightVale",
+                        "Moving",
+                        "=",
+                        "1"
+                      ],
+                      "subInstructions": []
+                    }
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TopDownMovementBehavior::SimulateUpKey"
+                  },
+                  "parameters": [
+                    "KnightVale",
+                    "TopDownMovement"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TopDownMovementBehavior::SimulateUpKey"
+                  },
+                  "parameters": [
+                    "KnightValesSword",
+                    "TopDownMovement"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TopDownMovementBehavior::SimulateUpKey"
+                  },
+                  "parameters": [
+                    "KnightValesBodyHitbox",
+                    "TopDownMovement"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "BuiltinCommonInstructions::And"
+                  },
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "PosY"
+                      },
+                      "parameters": [
+                        "KnightVale",
+                        ">",
+                        "SirHenry.Y()"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "PosY"
+                      },
+                      "parameters": [
+                        "KnightVale",
+                        "<",
+                        "SirHenry.Y() + 10"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarObjet"
+                      },
+                      "parameters": [
+                        "KnightVale",
+                        "Moving",
+                        "=",
+                        "1"
+                      ],
+                      "subInstructions": []
+                    }
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TopDownMovementBehavior::SimulateDownKey"
+                  },
+                  "parameters": [
+                    "KnightVale",
+                    "TopDownMovement"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TopDownMovementBehavior::SimulateDownKey"
+                  },
+                  "parameters": [
+                    "KnightValesSword",
+                    "TopDownMovement"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TopDownMovementBehavior::SimulateDownKey"
+                  },
+                  "parameters": [
+                    "KnightValesBodyHitbox",
+                    "TopDownMovement"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "BuiltinCommonInstructions::And"
+                  },
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "PosX"
+                      },
+                      "parameters": [
+                        "KnightVale",
+                        ">",
+                        "SirHenry.X()"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "PosX"
+                      },
+                      "parameters": [
+                        "KnightVale",
+                        "<",
+                        "SirHenry.X() + 30"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarObjet"
+                      },
+                      "parameters": [
+                        "KnightVale",
+                        "Moving",
+                        "=",
+                        "1"
+                      ],
+                      "subInstructions": []
+                    }
+                  ]
                 }
               ],
               "actions": [
@@ -100707,14 +101149,48 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "PosX"
+                    "value": "BuiltinCommonInstructions::And"
                   },
-                  "parameters": [
-                    "KnightVale",
-                    ">",
-                    "SirHenry.X() + 50"
-                  ],
-                  "subInstructions": []
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "PosX"
+                      },
+                      "parameters": [
+                        "KnightVale",
+                        "<",
+                        "SirHenry.X()"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "PosX"
+                      },
+                      "parameters": [
+                        "KnightVale",
+                        ">",
+                        "SirHenry.X() - 30"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarObjet"
+                      },
+                      "parameters": [
+                        "KnightVale",
+                        "Moving",
+                        "=",
+                        "1"
+                      ],
+                      "subInstructions": []
+                    }
+                  ]
                 }
               ],
               "actions": [
@@ -100744,61 +101220,6 @@
                   "type": {
                     "inverted": false,
                     "value": "TopDownMovementBehavior::SimulateLeftKey"
-                  },
-                  "parameters": [
-                    "KnightValesBodyHitbox",
-                    "TopDownMovement"
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": []
-            },
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "PosY"
-                  },
-                  "parameters": [
-                    "KnightVale",
-                    "<",
-                    "SirHenry.Y() - 50"
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "TopDownMovementBehavior::SimulateDownKey"
-                  },
-                  "parameters": [
-                    "KnightVale",
-                    "TopDownMovement"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "TopDownMovementBehavior::SimulateDownKey"
-                  },
-                  "parameters": [
-                    "KnightValesSword",
-                    "TopDownMovement"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "TopDownMovementBehavior::SimulateDownKey"
                   },
                   "parameters": [
                     "KnightValesBodyHitbox",
@@ -100825,6 +101246,19 @@
                     "SirHenry.Y() + 50"
                   ],
                   "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
+                    "KnightVale",
+                    "Moving",
+                    "=",
+                    "1"
+                  ],
+                  "subInstructions": []
                 }
               ],
               "actions": [
@@ -100872,240 +101306,201 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "Distance"
+                    "value": "PosY"
                   },
                   "parameters": [
                     "KnightVale",
-                    "SirHenry",
-                    "50",
-                    ""
+                    "<",
+                    "SirHenry.Y() - 50"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
+                    "KnightVale",
+                    "Moving",
+                    "=",
+                    "1"
                   ],
                   "subInstructions": []
                 }
               ],
-              "actions": [],
-              "events": [
+              "actions": [
                 {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "PosY"
-                      },
-                      "parameters": [
-                        "KnightVale",
-                        ">",
-                        "SirHenry.Y() -30"
-                      ],
-                      "subInstructions": []
-                    }
+                  "type": {
+                    "inverted": false,
+                    "value": "TopDownMovementBehavior::SimulateDownKey"
+                  },
+                  "parameters": [
+                    "KnightVale",
+                    "TopDownMovement"
                   ],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "TopDownMovementBehavior::SimulateUpKey"
-                      },
-                      "parameters": [
-                        "KnightVale",
-                        "TopDownMovement"
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "TopDownMovementBehavior::SimulateUpKey"
-                      },
-                      "parameters": [
-                        "KnightValesSword",
-                        "TopDownMovement"
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "TopDownMovementBehavior::SimulateUpKey"
-                      },
-                      "parameters": [
-                        "KnightValesBodyHitbox",
-                        "TopDownMovement"
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "events": []
+                  "subInstructions": []
                 },
                 {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "PosY"
-                      },
-                      "parameters": [
-                        "KnightVale",
-                        "<",
-                        "SirHenry.Y() + 30"
-                      ],
-                      "subInstructions": []
-                    }
+                  "type": {
+                    "inverted": false,
+                    "value": "TopDownMovementBehavior::SimulateDownKey"
+                  },
+                  "parameters": [
+                    "KnightValesSword",
+                    "TopDownMovement"
                   ],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "TopDownMovementBehavior::SimulateDownKey"
-                      },
-                      "parameters": [
-                        "KnightVale",
-                        "TopDownMovement"
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "TopDownMovementBehavior::SimulateDownKey"
-                      },
-                      "parameters": [
-                        "KnightValesSword",
-                        "TopDownMovement"
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "TopDownMovementBehavior::SimulateDownKey"
-                      },
-                      "parameters": [
-                        "KnightValesBodyHitbox",
-                        "TopDownMovement"
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "events": []
+                  "subInstructions": []
                 },
                 {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "PosX"
-                      },
-                      "parameters": [
-                        "KnightVale",
-                        "<",
-                        "SirHenry.X() + 30"
-                      ],
-                      "subInstructions": []
-                    }
+                  "type": {
+                    "inverted": false,
+                    "value": "TopDownMovementBehavior::SimulateDownKey"
+                  },
+                  "parameters": [
+                    "KnightValesBodyHitbox",
+                    "TopDownMovement"
                   ],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "TopDownMovementBehavior::SimulateRightKey"
-                      },
-                      "parameters": [
-                        "KnightVale",
-                        "TopDownMovement"
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "TopDownMovementBehavior::SimulateRightKey"
-                      },
-                      "parameters": [
-                        "KnightValesSword",
-                        "TopDownMovement"
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "TopDownMovementBehavior::SimulateRightKey"
-                      },
-                      "parameters": [
-                        "KnightValesBodyHitbox",
-                        "TopDownMovement"
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "events": []
-                },
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "PosX"
-                      },
-                      "parameters": [
-                        "KnightVale",
-                        ">",
-                        "SirHenry.X() - 30"
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "TopDownMovementBehavior::SimulateLeftKey"
-                      },
-                      "parameters": [
-                        "KnightVale",
-                        "TopDownMovement"
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "TopDownMovementBehavior::SimulateLeftKey"
-                      },
-                      "parameters": [
-                        "KnightValesSword",
-                        "TopDownMovement"
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "TopDownMovementBehavior::SimulateLeftKey"
-                      },
-                      "parameters": [
-                        "KnightValesBodyHitbox",
-                        "TopDownMovement"
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "events": []
+                  "subInstructions": []
                 }
-              ]
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "PosX"
+                  },
+                  "parameters": [
+                    "KnightVale",
+                    ">",
+                    "SirHenry.X() + 50"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
+                    "KnightVale",
+                    "Moving",
+                    "=",
+                    "1"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TopDownMovementBehavior::SimulateLeftKey"
+                  },
+                  "parameters": [
+                    "KnightVale",
+                    "TopDownMovement"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TopDownMovementBehavior::SimulateLeftKey"
+                  },
+                  "parameters": [
+                    "KnightValesSword",
+                    "TopDownMovement"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TopDownMovementBehavior::SimulateLeftKey"
+                  },
+                  "parameters": [
+                    "KnightValesBodyHitbox",
+                    "TopDownMovement"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "PosX"
+                  },
+                  "parameters": [
+                    "KnightVale",
+                    "<",
+                    "SirHenry.X() - 50"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
+                    "KnightVale",
+                    "Moving",
+                    "=",
+                    "1"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TopDownMovementBehavior::SimulateRightKey"
+                  },
+                  "parameters": [
+                    "KnightVale",
+                    "TopDownMovement"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TopDownMovementBehavior::SimulateRightKey"
+                  },
+                  "parameters": [
+                    "KnightValesSword",
+                    "TopDownMovement"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TopDownMovementBehavior::SimulateRightKey"
+                  },
+                  "parameters": [
+                    "KnightValesBodyHitbox",
+                    "TopDownMovement"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
             },
             {
               "disabled": false,
@@ -101168,6 +101563,19 @@
                         "Dodging",
                         "=",
                         "0"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarObjet"
+                      },
+                      "parameters": [
+                        "KnightVale",
+                        "Moving",
+                        "=",
+                        "1"
                       ],
                       "subInstructions": []
                     }
@@ -101491,6 +101899,41 @@
                     "value": "VarObjet"
                   },
                   "parameters": [
+                    "KnightVale",
+                    "CurrentHealth",
+                    ">=",
+                    "0"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TiledSpriteObject::Width"
+                  },
+                  "parameters": [
+                    "KnightValesHealth",
+                    "=",
+                    "(1440* (KnightVale.Variable(CurrentHealth)/KnightVale.Variable(MaxHealth)))"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
                     "SirHenry",
                     "CurrentHealth",
                     "<",
@@ -101507,6 +101950,41 @@
                   },
                   "parameters": [
                     "Health",
+                    "=",
+                    "0"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
+                    "KnightVale",
+                    "CurrentHealth",
+                    "<",
+                    "0"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TiledSpriteObject::Width"
+                  },
+                  "parameters": [
+                    "KnightValesHealth",
                     "=",
                     "0"
                   ],
@@ -101802,7 +102280,20 @@
               "folded": false,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [],
-              "actions": [],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "KnightValeDisplay",
+                    "=",
+                    "LargeNumberToString(KnightVale.Distance(SirHenry))"
+                  ],
+                  "subInstructions": []
+                }
+              ],
               "events": []
             },
             {
