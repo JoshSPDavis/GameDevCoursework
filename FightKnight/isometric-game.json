@@ -12549,6 +12549,10 @@
             {
               "name": "CurrentHealth",
               "value": "750"
+            },
+            {
+              "name": "initAttack",
+              "value": "1"
             }
           ]
         },
@@ -40550,19 +40554,15 @@
               "value": "0"
             },
             {
-              "name": "initAttack1",
-              "value": "1"
+              "name": "initAttack",
+              "value": "0"
             },
             {
               "name": "Moving",
               "value": "0"
             },
             {
-              "name": "initHAttack1",
-              "value": "1"
-            },
-            {
-              "name": "delaying",
+              "name": "pressAttack",
               "value": "0"
             }
           ],
@@ -100753,7 +100753,7 @@
                     "KnightValesBodyHitbox",
                     "Pathfinding",
                     "=",
-                    "70"
+                    "100"
                   ],
                   "subInstructions": []
                 },
@@ -100766,7 +100766,7 @@
                     "KnightValesBodyHitbox",
                     "TopDownMovement",
                     "=",
-                    "70"
+                    "100"
                   ],
                   "subInstructions": []
                 },
@@ -100884,54 +100884,18 @@
                 {
                   "type": {
                     "inverted": false,
-                    "value": "BuiltinCommonInstructions::And"
-                  },
-                  "parameters": [],
-                  "subInstructions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "VarObjet"
-                      },
-                      "parameters": [
-                        "KnightVale",
-                        "CurrentStamina",
-                        ">=",
-                        "0"
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "Distance"
-                      },
-                      "parameters": [
-                        "KnightVale",
-                        "SirHenry",
-                        "60",
-                        ""
-                      ],
-                      "subInstructions": []
-                    }
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "ModVarObjet"
+                    "value": "Distance"
                   },
                   "parameters": [
                     "KnightVale",
-                    "initAttack1",
-                    "=",
-                    "Random(10)"
+                    "SirHenry",
+                    "50",
+                    ""
                   ],
                   "subInstructions": []
                 }
               ],
+              "actions": [],
               "events": [
                 {
                   "disabled": false,
@@ -100945,7 +100909,115 @@
                       },
                       "parameters": [
                         "KnightVale",
-                        "HeavyAttacking",
+                        "initAttack",
+                        "!=",
+                        "0"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarObjet"
+                      },
+                      "parameters": [
+                        "KnightVale",
+                        "initAttack",
+                        "=",
+                        "Random(10)"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarObjet"
+                      },
+                      "parameters": [
+                        "KnightVale",
+                        "initAttack",
+                        "=",
+                        "0"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarObjet"
+                      },
+                      "parameters": [
+                        "KnightVale",
+                        "pressAttack",
+                        "=",
+                        "1"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                }
+              ]
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
+                    "KnightVale",
+                    "pressAttack",
+                    "=",
+                    "1"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
+                    "KnightVale",
+                    "CurrentStamina",
+                    ">=",
+                    "0"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarObjet"
+                      },
+                      "parameters": [
+                        "KnightVale",
+                        "HeavySkip",
                         "!=",
                         "1"
                       ],
@@ -100971,22 +101043,9 @@
                       },
                       "parameters": [
                         "KnightVale",
-                        "HeavySkip",
+                        "HeavyAttacking",
                         "!=",
                         "1"
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "VarObjet"
-                      },
-                      "parameters": [
-                        "KnightVale",
-                        "initAttack1",
-                        "=",
-                        "0"
                       ],
                       "subInstructions": []
                     }
@@ -100994,16 +101053,20 @@
                   "actions": [],
                   "events": [
                     {
-                      "disabled": false,
+                      "disabled": true,
                       "folded": false,
                       "type": "BuiltinCommonInstructions::Standard",
                       "conditions": [
                         {
                           "type": {
                             "inverted": false,
-                            "value": "BuiltinCommonInstructions::Once"
+                            "value": "ObjectTimer"
                           },
-                          "parameters": [],
+                          "parameters": [
+                            "KnightVale",
+                            "\"attack1\"",
+                            "1"
+                          ],
                           "subInstructions": []
                         }
                       ],
@@ -101011,11 +101074,12 @@
                         {
                           "type": {
                             "inverted": false,
-                            "value": "ResetObjectTimer"
+                            "value": "TextObject::String"
                           },
                           "parameters": [
-                            "KnightVale",
-                            "\"delay\""
+                            "KnightValeDisplay",
+                            "=",
+                            "\"time to change\""
                           ],
                           "subInstructions": []
                         }
@@ -101029,41 +101093,63 @@
                       "conditions": [
                         {
                           "type": {
-                            "inverted": true,
-                            "value": "ObjectTimer"
-                          },
-                          "parameters": [
-                            "KnightVale",
-                            "delay",
-                            "0.2"
-                          ],
-                          "subInstructions": []
-                        },
-                        {
-                          "type": {
                             "inverted": false,
-                            "value": "VarObjet"
+                            "value": "BuiltinCommonInstructions::And"
                           },
-                          "parameters": [
-                            "KnightVale",
-                            "Attack2",
-                            "=",
-                            "0"
-                          ],
-                          "subInstructions": []
-                        },
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "VarObjet"
-                          },
-                          "parameters": [
-                            "KnightVale",
-                            "Attacking",
-                            "=",
-                            "0"
-                          ],
-                          "subInstructions": []
+                          "parameters": [],
+                          "subInstructions": [
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "VarObjet"
+                              },
+                              "parameters": [
+                                "KnightVale",
+                                "Attacking",
+                                "=",
+                                "1"
+                              ],
+                              "subInstructions": []
+                            },
+                            {
+                              "type": {
+                                "inverted": true,
+                                "value": "ObjectTimer"
+                              },
+                              "parameters": [
+                                "KnightVale",
+                                "\"attack1\"",
+                                "1"
+                              ],
+                              "subInstructions": []
+                            },
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "VarObjet"
+                              },
+                              "parameters": [
+                                "KnightVale",
+                                "HeavySkip",
+                                "=",
+                                "0"
+                              ],
+                              "subInstructions": []
+                            },
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "VarObjet"
+                              },
+                              "parameters": [
+                                "KnightVale",
+                                "pressAttack",
+                                "=",
+                                "1"
+                              ],
+                              "subInstructions": []
+                            }
+                          ]
                         }
                       ],
                       "actions": [
@@ -101074,7 +101160,43 @@
                           },
                           "parameters": [
                             "KnightVale",
-                            "delaying",
+                            "Attacking",
+                            "=",
+                            "1"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ChangeAnimationSpeedScale"
+                          },
+                          "parameters": [
+                            "KnightVale",
+                            "=",
+                            "1"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ChangeAnimationSpeedScale"
+                          },
+                          "parameters": [
+                            "KnightValesSword",
+                            "=",
+                            "1"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ChangeAnimationSpeedScale"
+                          },
+                          "parameters": [
+                            "KnightValesBodyHitbox",
                             "=",
                             "1"
                           ],
@@ -101089,233 +101211,51 @@
                             "KnightValesBodyHitbox",
                             "TopDownMovement",
                             "=",
-                            "200"
+                            "100"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ModVarObjet"
+                          },
+                          "parameters": [
+                            "KnightVale",
+                            "Attack2",
+                            "=",
+                            "1"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ModVarObjet"
+                          },
+                          "parameters": [
+                            "KnightVale",
+                            "Regen",
+                            "=",
+                            "0"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ModVarObjet"
+                          },
+                          "parameters": [
+                            "KnightVale",
+                            "pressAttack",
+                            "=",
+                            "0"
                           ],
                           "subInstructions": []
                         }
                       ],
-                      "events": [
-                        {
-                          "disabled": false,
-                          "folded": false,
-                          "type": "BuiltinCommonInstructions::Standard",
-                          "conditions": [
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "PosY"
-                              },
-                              "parameters": [
-                                "KnightVale",
-                                ">",
-                                "SirHenry.Y()"
-                              ],
-                              "subInstructions": []
-                            }
-                          ],
-                          "actions": [
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "TopDownMovementBehavior::SimulateUpKey"
-                              },
-                              "parameters": [
-                                "KnightVale",
-                                "TopDownMovement"
-                              ],
-                              "subInstructions": []
-                            },
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "TopDownMovementBehavior::SimulateUpKey"
-                              },
-                              "parameters": [
-                                "KnightValesSword",
-                                "TopDownMovement"
-                              ],
-                              "subInstructions": []
-                            },
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "TopDownMovementBehavior::SimulateUpKey"
-                              },
-                              "parameters": [
-                                "KnightValesBodyHitbox",
-                                "TopDownMovement"
-                              ],
-                              "subInstructions": []
-                            }
-                          ],
-                          "events": []
-                        },
-                        {
-                          "disabled": false,
-                          "folded": false,
-                          "type": "BuiltinCommonInstructions::Standard",
-                          "conditions": [
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "PosY"
-                              },
-                              "parameters": [
-                                "KnightVale",
-                                "<",
-                                "SirHenry.Y()"
-                              ],
-                              "subInstructions": []
-                            }
-                          ],
-                          "actions": [
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "TopDownMovementBehavior::SimulateDownKey"
-                              },
-                              "parameters": [
-                                "KnightVale",
-                                "TopDownMovement"
-                              ],
-                              "subInstructions": []
-                            },
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "TopDownMovementBehavior::SimulateDownKey"
-                              },
-                              "parameters": [
-                                "KnightValesSword",
-                                "TopDownMovement"
-                              ],
-                              "subInstructions": []
-                            },
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "TopDownMovementBehavior::SimulateDownKey"
-                              },
-                              "parameters": [
-                                "KnightValesBodyHitbox",
-                                "TopDownMovement"
-                              ],
-                              "subInstructions": []
-                            }
-                          ],
-                          "events": []
-                        },
-                        {
-                          "disabled": false,
-                          "folded": false,
-                          "type": "BuiltinCommonInstructions::Standard",
-                          "conditions": [
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "PosY"
-                              },
-                              "parameters": [
-                                "KnightVale",
-                                ">",
-                                "SirHenry.Y()"
-                              ],
-                              "subInstructions": []
-                            }
-                          ],
-                          "actions": [
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "TopDownMovementBehavior::SimulateUpKey"
-                              },
-                              "parameters": [
-                                "KnightVale",
-                                "TopDownMovement"
-                              ],
-                              "subInstructions": []
-                            },
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "TopDownMovementBehavior::SimulateUpKey"
-                              },
-                              "parameters": [
-                                "KnightValesSword",
-                                "TopDownMovement"
-                              ],
-                              "subInstructions": []
-                            },
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "TopDownMovementBehavior::SimulateUpKey"
-                              },
-                              "parameters": [
-                                "KnightValesBodyHitbox",
-                                "TopDownMovement"
-                              ],
-                              "subInstructions": []
-                            }
-                          ],
-                          "events": []
-                        },
-                        {
-                          "disabled": false,
-                          "folded": false,
-                          "type": "BuiltinCommonInstructions::Standard",
-                          "conditions": [
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "PosX"
-                              },
-                              "parameters": [
-                                "KnightVale",
-                                "<",
-                                "SirHenry.X()"
-                              ],
-                              "subInstructions": []
-                            }
-                          ],
-                          "actions": [
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "TopDownMovementBehavior::SimulateRightKey"
-                              },
-                              "parameters": [
-                                "KnightVale",
-                                "TopDownMovement"
-                              ],
-                              "subInstructions": []
-                            },
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "TopDownMovementBehavior::SimulateRightKey"
-                              },
-                              "parameters": [
-                                "KnightValesSword",
-                                "TopDownMovement"
-                              ],
-                              "subInstructions": []
-                            },
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "TopDownMovementBehavior::SimulateRightKey"
-                              },
-                              "parameters": [
-                                "KnightValesBodyHitbox",
-                                "TopDownMovement"
-                              ],
-                              "subInstructions": []
-                            }
-                          ],
-                          "events": []
-                        }
-                      ]
+                      "events": []
                     },
                     {
                       "disabled": false,
@@ -101332,18 +101272,6 @@
                             "Attacking",
                             "=",
                             "0"
-                          ],
-                          "subInstructions": []
-                        },
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "ObjectTimer"
-                          },
-                          "parameters": [
-                            "KnightVale",
-                            "delay",
-                            "0.2"
                           ],
                           "subInstructions": []
                         }
@@ -101380,7 +101308,7 @@
                             "value": "ChangeAnimationSpeedScale"
                           },
                           "parameters": [
-                            "KnightVale",
+                            "KnightValesSword",
                             "=",
                             "1"
                           ],
@@ -101389,13 +101317,12 @@
                         {
                           "type": {
                             "inverted": false,
-                            "value": "TopDownMovementBehavior::MaxSpeed"
+                            "value": "ChangeAnimationSpeedScale"
                           },
                           "parameters": [
-                            "KnightVale",
-                            "TopDownMovement",
+                            "KnightValesBodyHitbox",
                             "=",
-                            "100"
+                            "1"
                           ],
                           "subInstructions": []
                         },
@@ -101443,178 +101370,7 @@
                           },
                           "parameters": [
                             "KnightVale",
-                            "delaying",
-                            "=",
-                            "0"
-                          ],
-                          "subInstructions": []
-                        },
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "TextObject::String"
-                          },
-                          "parameters": [
-                            "KnightValeDisplay",
-                            "=",
-                            "ToString(KnightVale.Variable(Attacking))"
-                          ],
-                          "subInstructions": []
-                        }
-                      ],
-                      "events": []
-                    },
-                    {
-                      "disabled": false,
-                      "folded": false,
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "BuiltinCommonInstructions::And"
-                          },
-                          "parameters": [],
-                          "subInstructions": [
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "VarObjet"
-                              },
-                              "parameters": [
-                                "KnightVale",
-                                "Attacking",
-                                "=",
-                                "1"
-                              ],
-                              "subInstructions": []
-                            },
-                            {
-                              "type": {
-                                "inverted": true,
-                                "value": "ObjectTimer"
-                              },
-                              "parameters": [
-                                "KnightVale",
-                                "\"attack1\"",
-                                "0.8"
-                              ],
-                              "subInstructions": []
-                            },
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "VarObjet"
-                              },
-                              "parameters": [
-                                "KnightVale",
-                                "HeavySkip",
-                                "=",
-                                "0"
-                              ],
-                              "subInstructions": []
-                            }
-                          ]
-                        }
-                      ],
-                      "actions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "ModVarObjet"
-                          },
-                          "parameters": [
-                            "KnightVale",
-                            "Attacking",
-                            "=",
-                            "1"
-                          ],
-                          "subInstructions": []
-                        },
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "ChangeAnimationSpeedScale"
-                          },
-                          "parameters": [
-                            "KnightVale",
-                            "=",
-                            "1"
-                          ],
-                          "subInstructions": []
-                        },
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "ChangeAnimationSpeedScale"
-                          },
-                          "parameters": [
-                            "KnightVale",
-                            "=",
-                            "1"
-                          ],
-                          "subInstructions": []
-                        },
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "TopDownMovementBehavior::MaxSpeed"
-                          },
-                          "parameters": [
-                            "KnightVale",
-                            "TopDownMovement",
-                            "=",
-                            "100"
-                          ],
-                          "subInstructions": []
-                        },
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "TopDownMovementBehavior::MaxSpeed"
-                          },
-                          "parameters": [
-                            "KnightVale",
-                            "TopDownMovement",
-                            "=",
-                            "100"
-                          ],
-                          "subInstructions": []
-                        },
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "ModVarObjet"
-                          },
-                          "parameters": [
-                            "KnightVale",
-                            "Attack2",
-                            "=",
-                            "1"
-                          ],
-                          "subInstructions": []
-                        },
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "ModVarObjet"
-                          },
-                          "parameters": [
-                            "KnightVale",
-                            "Regen",
-                            "=",
-                            "0"
-                          ],
-                          "subInstructions": []
-                        },
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "ModVarObjet"
-                          },
-                          "parameters": [
-                            "KnightVale",
-                            "delaying",
+                            "pressAttack",
                             "=",
                             "0"
                           ],
@@ -101667,13 +101423,12 @@
                     },
                     {
                       "type": {
-                        "inverted": false,
-                        "value": "VarObjet"
+                        "inverted": true,
+                        "value": "ObjectTimer"
                       },
                       "parameters": [
                         "KnightVale",
-                        "Attack2",
-                        "!=",
+                        "\"attack1\"",
                         "1"
                       ],
                       "subInstructions": []
@@ -101735,6 +101490,248 @@
                   "conditions": [
                     {
                       "type": {
+                        "inverted": true,
+                        "value": "ObjectTimer"
+                      },
+                      "parameters": [
+                        "KnightVale",
+                        "\"attack1\"",
+                        "0.2"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [],
+                  "events": [
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "PosX"
+                          },
+                          "parameters": [
+                            "KnightVale",
+                            ">",
+                            "SirHenry.X()+20"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "TopDownMovementBehavior::SimulateLeftKey"
+                          },
+                          "parameters": [
+                            "KnightVale",
+                            "TopDownMovement"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "TopDownMovementBehavior::SimulateLeftKey"
+                          },
+                          "parameters": [
+                            "KnightValesSword",
+                            "TopDownMovement"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "TopDownMovementBehavior::SimulateLeftKey"
+                          },
+                          "parameters": [
+                            "KnightValesBodyHitbox",
+                            "TopDownMovement"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "PosY"
+                          },
+                          "parameters": [
+                            "KnightVale",
+                            "<",
+                            "SirHenry.Y()-20"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "TopDownMovementBehavior::SimulateDownKey"
+                          },
+                          "parameters": [
+                            "KnightVale",
+                            "TopDownMovement"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "TopDownMovementBehavior::SimulateDownKey"
+                          },
+                          "parameters": [
+                            "KnightValesSword",
+                            "TopDownMovement"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "TopDownMovementBehavior::SimulateDownKey"
+                          },
+                          "parameters": [
+                            "KnightValesBodyHitbox",
+                            "TopDownMovement"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "PosY"
+                          },
+                          "parameters": [
+                            "KnightVale",
+                            ">",
+                            "SirHenry.Y()+10"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "TopDownMovementBehavior::SimulateUpKey"
+                          },
+                          "parameters": [
+                            "KnightVale",
+                            "TopDownMovement"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "TopDownMovementBehavior::SimulateUpKey"
+                          },
+                          "parameters": [
+                            "KnightValesSword",
+                            "TopDownMovement"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "TopDownMovementBehavior::SimulateUpKey"
+                          },
+                          "parameters": [
+                            "KnightValesBodyHitbox",
+                            "TopDownMovement"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "PosX"
+                          },
+                          "parameters": [
+                            "KnightVale",
+                            "<",
+                            "SirHenry.X()-10"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "TopDownMovementBehavior::SimulateRightKey"
+                          },
+                          "parameters": [
+                            "KnightVale",
+                            "TopDownMovement"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "TopDownMovementBehavior::SimulateRightKey"
+                          },
+                          "parameters": [
+                            "KnightValesSword",
+                            "TopDownMovement"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "TopDownMovementBehavior::SimulateRightKey"
+                          },
+                          "parameters": [
+                            "KnightValesBodyHitbox",
+                            "TopDownMovement"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    }
+                  ]
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
                         "inverted": false,
                         "value": "TopDownMovementBehavior::Angle"
                       },
@@ -101743,6 +101740,18 @@
                         "TopDownMovement",
                         ">=",
                         "0"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ObjectTimer"
+                      },
+                      "parameters": [
+                        "KnightVale",
+                        "\"attack1\"",
+                        "0.2"
                       ],
                       "subInstructions": []
                     }
@@ -101756,7 +101765,7 @@
                       "parameters": [
                         "KnightVale",
                         "=",
-                        "16 + round(KnightVale.TopDownMovement::Angle()/45)"
+                        "16 + round(KnightValesBodyHitbox.TopDownMovement::Angle()/45)"
                       ],
                       "subInstructions": []
                     },
@@ -101768,7 +101777,7 @@
                       "parameters": [
                         "KnightValesSword",
                         "=",
-                        "1 + round(KnightVale.TopDownMovement::Angle()/45)"
+                        "1 + round(KnightValesBodyHitbox.TopDownMovement::Angle()/45)"
                       ],
                       "subInstructions": []
                     },
@@ -101780,7 +101789,7 @@
                       "parameters": [
                         "KnightValesBodyHitbox",
                         "=",
-                        "16 + round(KnightVale.TopDownMovement::Angle()/45)"
+                        "16 + round(KnightValesBodyHitbox.TopDownMovement::Angle()/45)"
                       ],
                       "subInstructions": []
                     }
@@ -101799,6 +101808,18 @@
                           "parameters": [
                             "KnightVale",
                             "\"attack1\"",
+                            "0.4"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ObjectTimer"
+                          },
+                          "parameters": [
+                            "KnightVale",
+                            "\"attack1\"",
                             "0.2"
                           ],
                           "subInstructions": []
@@ -101811,34 +101832,8 @@
                             "value": "AddForceAL"
                           },
                           "parameters": [
-                            "KnightVale",
-                            "round(KnightVale.TopDownMovement::Angle())",
-                            "50",
-                            ""
-                          ],
-                          "subInstructions": []
-                        },
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "AddForceAL"
-                          },
-                          "parameters": [
-                            "KnightValesSword",
-                            "round(KnightValesSword.TopDownMovement::Angle())",
-                            "50",
-                            ""
-                          ],
-                          "subInstructions": []
-                        },
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "AddForceAL"
-                          },
-                          "parameters": [
                             "KnightValesBodyHitbox",
-                            "round(KnightVale.TopDownMovement::Angle())",
+                            "round(KnightValesBodyHitbox.TopDownMovement::Angle())",
                             "50",
                             ""
                           ],
@@ -101866,6 +101861,18 @@
                         "0"
                       ],
                       "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ObjectTimer"
+                      },
+                      "parameters": [
+                        "KnightVale",
+                        "\"attack1\"",
+                        "0.2"
+                      ],
+                      "subInstructions": []
                     }
                   ],
                   "actions": [
@@ -101877,7 +101884,7 @@
                       "parameters": [
                         "KnightVale",
                         "=",
-                        "24 + round(KnightVale.TopDownMovement::Angle()/45)"
+                        "24 + round(KnightValesBodyHitbox.TopDownMovement::Angle()/45)"
                       ],
                       "subInstructions": []
                     },
@@ -101889,7 +101896,7 @@
                       "parameters": [
                         "KnightValesSword",
                         "=",
-                        "9 + round(KnightValesSword.TopDownMovement::Angle()/45)"
+                        "9 + round(KnightValesBodyHitbox.TopDownMovement::Angle()/45)"
                       ],
                       "subInstructions": []
                     },
@@ -101901,7 +101908,7 @@
                       "parameters": [
                         "KnightValesBodyHitbox",
                         "=",
-                        "24 + round(KnightValesSword.TopDownMovement::Angle()/45)"
+                        "24 + round(KnightValesBodyHitbox.TopDownMovement::Angle()/45)"
                       ],
                       "subInstructions": []
                     }
@@ -101920,38 +101927,24 @@
                           "parameters": [
                             "KnightVale",
                             "\"attack1\"",
+                            "0.4"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "ObjectTimer"
+                          },
+                          "parameters": [
+                            "KnightVale",
+                            "\"attack1\"",
                             "0.2"
                           ],
                           "subInstructions": []
                         }
                       ],
                       "actions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "AddForceAL"
-                          },
-                          "parameters": [
-                            "KnightVale",
-                            "round(KnightVale.TopDownMovement::Angle())",
-                            "50",
-                            ""
-                          ],
-                          "subInstructions": []
-                        },
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "AddForceAL"
-                          },
-                          "parameters": [
-                            "KnightValesSword",
-                            "round(KnightVale.TopDownMovement::Angle())",
-                            "50",
-                            ""
-                          ],
-                          "subInstructions": []
-                        },
                         {
                           "type": {
                             "inverted": false,
@@ -102005,7 +101998,7 @@
                       "parameters": [
                         "KnightVale",
                         "\"attack1\"",
-                        "0.6"
+                        "0.9"
                       ],
                       "subInstructions": []
                     }
@@ -102023,6 +102016,18 @@
                     "activated",
                     "=",
                     "2"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "KnightValeDisplay",
+                    "=",
+                    "\"Step: 4\""
                   ],
                   "subInstructions": []
                 }
@@ -102087,7 +102092,7 @@
                       "parameters": [
                         "KnightVale",
                         "=",
-                        "24 + round(KnightVale.TopDownMovement::Angle()/45)"
+                        "24 + round(KnightValesBodyHitbox.TopDownMovement::Angle()/45)"
                       ],
                       "subInstructions": []
                     },
@@ -102099,7 +102104,7 @@
                       "parameters": [
                         "KnightValesSword",
                         "=",
-                        "9 + round(KnightVale.TopDownMovement::Angle()/45)"
+                        "9 + round(KnightValesBodyHitbox.TopDownMovement::Angle()/45)"
                       ],
                       "subInstructions": []
                     },
@@ -102111,7 +102116,7 @@
                       "parameters": [
                         "KnightValesBodyHitbox",
                         "=",
-                        "24 + round(KnightVale.TopDownMovement::Angle()/45)"
+                        "24 + round(KnightValesBodyHitbox.TopDownMovement::Angle()/45)"
                       ],
                       "subInstructions": []
                     }
@@ -102142,34 +102147,8 @@
                             "value": "AddForceAL"
                           },
                           "parameters": [
-                            "KnightVale",
-                            "round(KnightVale.TopDownMovement::Angle())",
-                            "50",
-                            ""
-                          ],
-                          "subInstructions": []
-                        },
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "AddForceAL"
-                          },
-                          "parameters": [
-                            "KnightValesSword",
-                            "round(KnightVale.TopDownMovement::Angle())",
-                            "50",
-                            ""
-                          ],
-                          "subInstructions": []
-                        },
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "AddForceAL"
-                          },
-                          "parameters": [
                             "KnightValesBodyHitbox",
-                            "round(KnightVale.TopDownMovement::Angle())",
+                            "round(KnightValesBodyHitbox.TopDownMovement::Angle())",
                             "50",
                             ""
                           ],
@@ -102208,7 +102187,7 @@
                       "parameters": [
                         "KnightVale",
                         "=",
-                        "32 + round(KnightVale.TopDownMovement::Angle()/45)"
+                        "32 + round(KnightValesBodyHitbox.TopDownMovement::Angle()/45)"
                       ],
                       "subInstructions": []
                     },
@@ -102220,7 +102199,7 @@
                       "parameters": [
                         "KnightValesSword",
                         "=",
-                        "17 + round(KnightVale.TopDownMovement::Angle()/45)"
+                        "17 + round(KnightValesBodyHitbox.TopDownMovement::Angle()/45)"
                       ],
                       "subInstructions": []
                     },
@@ -102232,7 +102211,7 @@
                       "parameters": [
                         "KnightValesBodyHitbox",
                         "=",
-                        "32 + round(KnightVale.TopDownMovement::Angle()/45)"
+                        "32 + round(KnightValesBodyHitbox.TopDownMovement::Angle()/45)"
                       ],
                       "subInstructions": []
                     }
@@ -102263,34 +102242,8 @@
                             "value": "AddForceAL"
                           },
                           "parameters": [
-                            "KnightVale",
-                            "round(KnightVale.TopDownMovement::Angle())",
-                            "50",
-                            ""
-                          ],
-                          "subInstructions": []
-                        },
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "AddForceAL"
-                          },
-                          "parameters": [
-                            "KnightValesSword",
-                            "round(KnightVale.TopDownMovement::Angle())",
-                            "50",
-                            ""
-                          ],
-                          "subInstructions": []
-                        },
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "AddForceAL"
-                          },
-                          "parameters": [
                             "KnightValesBodyHitbox",
-                            "round(KnightVale.TopDownMovement::Angle())",
+                            "round(KnightValesBodyHitbox.TopDownMovement::Angle())",
                             "50",
                             ""
                           ],
@@ -102302,6 +102255,14 @@
                   ]
                 }
               ]
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [],
+              "events": []
             },
             {
               "disabled": false,
@@ -102336,7 +102297,7 @@
                       "parameters": [
                         "KnightVale",
                         "\"attack1\"",
-                        "0.805"
+                        "1.05"
                       ],
                       "subInstructions": []
                     },
@@ -102390,9 +102351,9 @@
                   },
                   "parameters": [
                     "KnightVale",
-                    "initAttack1",
+                    "initAttack",
                     "=",
-                    "1"
+                    "0"
                   ],
                   "subInstructions": []
                 }
@@ -102432,7 +102393,7 @@
                       "parameters": [
                         "KnightVale",
                         "\"attack1\"",
-                        "1.210"
+                        "1.410"
                       ],
                       "subInstructions": []
                     },
@@ -102486,21 +102447,13 @@
                   },
                   "parameters": [
                     "KnightVale",
-                    "initAttack1",
+                    "initAttack",
                     "=",
-                    "1"
+                    "0"
                   ],
                   "subInstructions": []
                 }
               ],
-              "events": []
-            },
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [],
-              "actions": [],
               "events": []
             },
             {
@@ -102577,19 +102530,6 @@
                         "Moving",
                         "=",
                         "1"
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "VarObjet"
-                      },
-                      "parameters": [
-                        "KnightVale",
-                        "delaying",
-                        "=",
-                        "0"
                       ],
                       "subInstructions": []
                     }
@@ -102876,7 +102816,7 @@
                           "parameters": [
                             "KnightVale",
                             ">",
-                            "SirHenry.X() - 1"
+                            "SirHenry.X() - 25"
                           ],
                           "subInstructions": []
                         }
@@ -102952,7 +102892,7 @@
                           "parameters": [
                             "KnightVale",
                             "<",
-                            "SirHenry.X() + 1"
+                            "SirHenry.X() + 25"
                           ],
                           "subInstructions": []
                         }
@@ -103028,7 +102968,7 @@
                           "parameters": [
                             "KnightVale",
                             "<",
-                            "SirHenry.Y() + 1"
+                            "SirHenry.Y() + 25"
                           ],
                           "subInstructions": []
                         }
@@ -103104,7 +103044,7 @@
                           "parameters": [
                             "KnightVale",
                             ">",
-                            "SirHenry.Y() -1"
+                            "SirHenry.Y() -25"
                           ],
                           "subInstructions": []
                         }
@@ -103825,7 +103765,7 @@
           "parameters": []
         },
         {
-          "disabled": false,
+          "disabled": true,
           "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
@@ -103854,6 +103794,35 @@
               ],
               "subInstructions": []
             },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ResetObjectTimer"
+              },
+              "parameters": [
+                "SirHenry",
+                "\"Stamina\""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": [],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
             {
               "type": {
                 "inverted": false,
