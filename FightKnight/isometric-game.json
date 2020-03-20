@@ -12266,7 +12266,7 @@
         "gridWidth": 32,
         "snap": true,
         "windowMask": false,
-        "zoomFactor": 0.592
+        "zoomFactor": 0.52
       },
       "objectsGroups": [
         {
@@ -12719,6 +12719,51 @@
           "x": 1029,
           "y": 212,
           "zOrder": 10019,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "UI",
+          "locked": false,
+          "name": "HenrySword",
+          "width": 0,
+          "x": 1667,
+          "y": 145,
+          "zOrder": 10020,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 390,
+          "layer": "UI",
+          "locked": false,
+          "name": "FPSBackground",
+          "width": 267,
+          "x": 1655,
+          "y": 130,
+          "zOrder": 10014,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "UI",
+          "locked": false,
+          "name": "ValesSword",
+          "width": 0,
+          "x": 1668,
+          "y": 176,
+          "zOrder": 10021,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -91195,6 +91240,44 @@
         {
           "bold": false,
           "italic": false,
+          "name": "ValesSword",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [],
+          "string": "KnightValesSword: ",
+          "font": "",
+          "characterSize": 20,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "HenrySword",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [],
+          "string": "HenrysSword: ",
+          "font": "",
+          "characterSize": 20,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
+        },
+        {
+          "bold": false,
+          "italic": false,
           "name": "FPS",
           "smoothed": true,
           "tags": "",
@@ -93388,22 +93471,125 @@
                   ]
                 }
               ],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "ModVarObjet"
-                  },
-                  "parameters": [
-                    "SirHenrysSword",
-                    "activated",
-                    "=",
-                    "1"
-                  ],
-                  "subInstructions": []
-                }
-              ],
+              "actions": [],
               "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ObjectTimer"
+                      },
+                      "parameters": [
+                        "SirHenry",
+                        "\"attack1\"",
+                        "0.114"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "ObjectTimer"
+                      },
+                      "parameters": [
+                        "SirHenry",
+                        "\"attack1\"",
+                        "0.461"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarObjet"
+                      },
+                      "parameters": [
+                        "SirHenrysSword",
+                        "activated",
+                        "=",
+                        "1"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "ObjectTimer"
+                      },
+                      "parameters": [
+                        "SirHenry",
+                        "\"attack1\"",
+                        "0.115"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarObjet"
+                      },
+                      "parameters": [
+                        "SirHenrysSword",
+                        "activated",
+                        "=",
+                        "0"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ObjectTimer"
+                      },
+                      "parameters": [
+                        "SirHenry",
+                        "\"attack1\"",
+                        "0.460"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarObjet"
+                      },
+                      "parameters": [
+                        "SirHenrysSword",
+                        "activated",
+                        "=",
+                        "0"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
                 {
                   "disabled": false,
                   "folded": false,
@@ -93670,22 +93856,125 @@
                   ]
                 }
               ],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "ModVarObjet"
-                  },
-                  "parameters": [
-                    "SirHenrysSword",
-                    "activated",
-                    "=",
-                    "3"
-                  ],
-                  "subInstructions": []
-                }
-              ],
+              "actions": [],
               "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ObjectTimer"
+                      },
+                      "parameters": [
+                        "SirHenry",
+                        "\"attack2\"",
+                        ".689"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "ObjectTimer"
+                      },
+                      "parameters": [
+                        "SirHenry",
+                        "\"attack2\"",
+                        "1.266"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarObjet"
+                      },
+                      "parameters": [
+                        "SirHenrysSword",
+                        "activated",
+                        "=",
+                        "3"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "ObjectTimer"
+                      },
+                      "parameters": [
+                        "SirHenry",
+                        "\"attack2\"",
+                        "0.690"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarObjet"
+                      },
+                      "parameters": [
+                        "SirHenrysSword",
+                        "activated",
+                        "=",
+                        "0"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ObjectTimer"
+                      },
+                      "parameters": [
+                        "SirHenry",
+                        "\"attack2\"",
+                        "1.265"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarObjet"
+                      },
+                      "parameters": [
+                        "SirHenrysSword",
+                        "activated",
+                        "=",
+                        "0"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
                 {
                   "disabled": false,
                   "folded": false,
@@ -94089,22 +94378,125 @@
                   ]
                 }
               ],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "ModVarObjet"
-                  },
-                  "parameters": [
-                    "SirHenrysSword",
-                    "activated",
-                    "=",
-                    "2"
-                  ],
-                  "subInstructions": []
-                }
-              ],
+              "actions": [],
               "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ObjectTimer"
+                      },
+                      "parameters": [
+                        "SirHenry",
+                        "\"attack1\"",
+                        "0.714"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "ObjectTimer"
+                      },
+                      "parameters": [
+                        "SirHenry",
+                        "\"attack1\"",
+                        "0.946"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarObjet"
+                      },
+                      "parameters": [
+                        "SirHenrysSword",
+                        "activated",
+                        "=",
+                        "2"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "ObjectTimer"
+                      },
+                      "parameters": [
+                        "SirHenry",
+                        "\"attack1\"",
+                        "0.715"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarObjet"
+                      },
+                      "parameters": [
+                        "SirHenrysSword",
+                        "activated",
+                        "=",
+                        "0"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ObjectTimer"
+                      },
+                      "parameters": [
+                        "SirHenry",
+                        "\"attack1\"",
+                        "0.945"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarObjet"
+                      },
+                      "parameters": [
+                        "SirHenrysSword",
+                        "activated",
+                        "=",
+                        "0"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
                 {
                   "disabled": false,
                   "folded": false,
@@ -94370,22 +94762,125 @@
                   ]
                 }
               ],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "ModVarObjet"
-                  },
-                  "parameters": [
-                    "SirHenrysSword",
-                    "activated",
-                    "=",
-                    "4"
-                  ],
-                  "subInstructions": []
-                }
-              ],
+              "actions": [],
               "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ObjectTimer"
+                      },
+                      "parameters": [
+                        "SirHenry",
+                        "\"attack2\"",
+                        "1.954"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "ObjectTimer"
+                      },
+                      "parameters": [
+                        "SirHenry",
+                        "\"attack2\"",
+                        "2.644"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarObjet"
+                      },
+                      "parameters": [
+                        "SirHenrysSword",
+                        "activated",
+                        "=",
+                        "4"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "ObjectTimer"
+                      },
+                      "parameters": [
+                        "SirHenry",
+                        "\"attack2\"",
+                        "1.955"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarObjet"
+                      },
+                      "parameters": [
+                        "SirHenrysSword",
+                        "activated",
+                        "=",
+                        "0"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ObjectTimer"
+                      },
+                      "parameters": [
+                        "SirHenry",
+                        "\"attack2\"",
+                        "2.645"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarObjet"
+                      },
+                      "parameters": [
+                        "SirHenrysSword",
+                        "activated",
+                        "=",
+                        "0"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
                 {
                   "disabled": false,
                   "folded": false,
@@ -94847,6 +95342,123 @@
                 }
               ],
               "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ObjectTimer"
+                      },
+                      "parameters": [
+                        "SirHenry",
+                        "\"attack1\"",
+                        "1.259"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "ObjectTimer"
+                      },
+                      "parameters": [
+                        "SirHenry",
+                        "\"attack1\"",
+                        "1.949"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarObjet"
+                      },
+                      "parameters": [
+                        "SirHenrysSword",
+                        "activated",
+                        "=",
+                        "4"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": true,
+                        "value": "ObjectTimer"
+                      },
+                      "parameters": [
+                        "SirHenry",
+                        "\"attack1\"",
+                        "1.259"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarObjet"
+                      },
+                      "parameters": [
+                        "SirHenrysSword",
+                        "activated",
+                        "=",
+                        "0"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ObjectTimer"
+                      },
+                      "parameters": [
+                        "SirHenry",
+                        "\"attack1\"",
+                        "1.949"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ModVarObjet"
+                      },
+                      "parameters": [
+                        "SirHenrysSword",
+                        "activated",
+                        "=",
+                        "0"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
+                },
                 {
                   "disabled": false,
                   "folded": false,
@@ -97328,7 +97940,7 @@
                             "SirHenry",
                             "CurrentHealth",
                             "-",
-                            "(KnightValesSword.Variable(activated) * 10)"
+                            "(KnightValesSword.Variable(activated) * 3)"
                           ],
                           "subInstructions": []
                         }
@@ -102859,6 +103471,30 @@
                 "FPS",
                 "=",
                 "\"FPS: \" + ToString(round(1/TimeDelta()))"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "ValesSword",
+                "=",
+                "\"KnightValesSword: \" + LargeNumberToString(KnightValesSword.Variable(activated))"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "HenrySword",
+                "=",
+                "\"HenrysSword: \" + LargeNumberToString(SirHenrysSword.Variable(activated))"
               ],
               "subInstructions": []
             }
