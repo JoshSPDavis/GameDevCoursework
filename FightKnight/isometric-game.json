@@ -12234,6 +12234,41 @@
         "name": "Core-1-0.png",
         "smoothed": false,
         "userAdded": true
+      },
+      {
+        "file": "Assets/Swingmiss.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Assets\\Swingmiss.wav",
+        "userAdded": true
+      },
+      {
+        "file": "Assets/Step.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Assets\\Step.wav",
+        "userAdded": true
+      },
+      {
+        "file": "Assets/Sword Clash.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Assets\\Sword Clash.wav",
+        "userAdded": false
+      },
+      {
+        "file": "Assets/Hit.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Assets\\Hit.wav",
+        "userAdded": true
+      },
+      {
+        "file": "Assets/Sprint.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Assets\\Sprint.wav",
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -12719,51 +12754,6 @@
           "x": 1029,
           "y": 212,
           "zOrder": 10019,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "UI",
-          "locked": false,
-          "name": "HenrySword",
-          "width": 0,
-          "x": 1667,
-          "y": 145,
-          "zOrder": 10020,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 390,
-          "layer": "UI",
-          "locked": false,
-          "name": "FPSBackground",
-          "width": 267,
-          "x": 1655,
-          "y": 130,
-          "zOrder": 10014,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "UI",
-          "locked": false,
-          "name": "ValesSword",
-          "width": 0,
-          "x": 1668,
-          "y": 176,
-          "zOrder": 10021,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -93516,6 +93506,17 @@
                         "1"
                       ],
                       "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "RePlaySoundCanal"
+                      },
+                      "parameters": [
+                        "",
+                        "4"
+                      ],
+                      "subInstructions": []
                     }
                   ],
                   "events": []
@@ -93899,6 +93900,17 @@
                         "activated",
                         "=",
                         "3"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "RePlaySoundCanal"
+                      },
+                      "parameters": [
+                        "",
+                        "4"
                       ],
                       "subInstructions": []
                     }
@@ -94423,6 +94435,17 @@
                         "2"
                       ],
                       "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "RePlaySoundCanal"
+                      },
+                      "parameters": [
+                        "",
+                        "4"
+                      ],
+                      "subInstructions": []
                     }
                   ],
                   "events": []
@@ -94809,7 +94832,37 @@
                       "subInstructions": []
                     }
                   ],
-                  "events": []
+                  "events": [
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "BuiltinCommonInstructions::Once"
+                          },
+                          "parameters": [],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "RePlaySoundCanal"
+                          },
+                          "parameters": [
+                            "",
+                            "4"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    }
+                  ]
                 },
                 {
                   "disabled": false,
@@ -95326,21 +95379,7 @@
                   ]
                 }
               ],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "ModVarObjet"
-                  },
-                  "parameters": [
-                    "SirHenrysSword",
-                    "activated",
-                    "=",
-                    "4"
-                  ],
-                  "subInstructions": []
-                }
-              ],
+              "actions": [],
               "events": [
                 {
                   "disabled": false,
@@ -95387,7 +95426,37 @@
                       "subInstructions": []
                     }
                   ],
-                  "events": []
+                  "events": [
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "BuiltinCommonInstructions::Once"
+                          },
+                          "parameters": [],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "RePlaySoundCanal"
+                          },
+                          "parameters": [
+                            "",
+                            "4"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    }
+                  ]
                 },
                 {
                   "disabled": false,
@@ -96651,6 +96720,99 @@
                 {
                   "type": {
                     "inverted": false,
+                    "value": "BuiltinCommonInstructions::Or"
+                  },
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarObjet"
+                      },
+                      "parameters": [
+                        "SirHenry",
+                        "Attacking",
+                        ">",
+                        "0"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarObjet"
+                      },
+                      "parameters": [
+                        "SirHenry",
+                        "HeavyAttacking",
+                        ">",
+                        "0"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarObjet"
+                      },
+                      "parameters": [
+                        "SirHenry",
+                        "HeavySkip",
+                        ">",
+                        "0"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarObjet"
+                      },
+                      "parameters": [
+                        "SirHenry",
+                        "Dodging",
+                        ">",
+                        "0"
+                      ],
+                      "subInstructions": []
+                    }
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "PauseSoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "2"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "PauseSoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "3"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
                     "value": "BuiltinCommonInstructions::And"
                   },
                   "parameters": [],
@@ -96733,6 +96895,17 @@
                     "activated",
                     "=",
                     "0"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "PauseSoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "4"
                   ],
                   "subInstructions": []
                 }
@@ -96876,6 +97049,28 @@
                             "0"
                           ],
                           "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "RePlaySoundCanal"
+                          },
+                          "parameters": [
+                            "",
+                            "3"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "PauseSoundCanal"
+                          },
+                          "parameters": [
+                            "",
+                            "2"
+                          ],
+                          "subInstructions": []
                         }
                       ],
                       "events": []
@@ -96960,6 +97155,28 @@
                             "Regen",
                             "=",
                             "1"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "RePlaySoundCanal"
+                          },
+                          "parameters": [
+                            "",
+                            "2"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "PauseSoundCanal"
+                          },
+                          "parameters": [
+                            "",
+                            "3"
                           ],
                           "subInstructions": []
                         }
@@ -97378,6 +97595,28 @@
                             "round(SirHenry.TopDownMovement::Angle()/45) + SirHenry.Variable(GhostMod) + 8"
                           ],
                           "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "PauseSoundCanal"
+                          },
+                          "parameters": [
+                            "",
+                            "2"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "PauseSoundCanal"
+                          },
+                          "parameters": [
+                            "",
+                            "3"
+                          ],
+                          "subInstructions": []
                         }
                       ],
                       "events": []
@@ -97415,7 +97654,98 @@
                           "subInstructions": []
                         }
                       ],
-                      "events": []
+                      "events": [
+                        {
+                          "disabled": false,
+                          "folded": false,
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "TopDownMovementBehavior::MaxSpeed"
+                              },
+                              "parameters": [
+                                "SirHenry",
+                                "TopDownMovement",
+                                "=",
+                                "100"
+                              ],
+                              "subInstructions": []
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "RePlaySoundCanal"
+                              },
+                              "parameters": [
+                                "",
+                                "2"
+                              ],
+                              "subInstructions": []
+                            },
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "PauseSoundCanal"
+                              },
+                              "parameters": [
+                                "",
+                                "3"
+                              ],
+                              "subInstructions": []
+                            }
+                          ],
+                          "events": []
+                        },
+                        {
+                          "disabled": false,
+                          "folded": false,
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "TopDownMovementBehavior::MaxSpeed"
+                              },
+                              "parameters": [
+                                "SirHenry",
+                                "TopDownMovement",
+                                "=",
+                                "200"
+                              ],
+                              "subInstructions": []
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "RePlaySoundCanal"
+                              },
+                              "parameters": [
+                                "",
+                                "3"
+                              ],
+                              "subInstructions": []
+                            },
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "PauseSoundCanal"
+                              },
+                              "parameters": [
+                                "",
+                                "2"
+                              ],
+                              "subInstructions": []
+                            }
+                          ],
+                          "events": []
+                        }
+                      ]
                     }
                   ]
                 },
@@ -97436,7 +97766,30 @@
                       "subInstructions": []
                     }
                   ],
-                  "actions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "PauseSoundCanal"
+                      },
+                      "parameters": [
+                        "",
+                        "2"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "PauseSoundCanal"
+                      },
+                      "parameters": [
+                        "",
+                        "3"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
                   "events": [
                     {
                       "disabled": false,
@@ -97516,6 +97869,14 @@
           "parameters": []
         },
         {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [],
+          "events": []
+        },
+        {
           "colorB": 228,
           "colorG": 176,
           "colorR": 74,
@@ -97562,6 +97923,121 @@
                     "KnightVale",
                     "=",
                     "10"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "Assets\\Step.wav",
+                    "2",
+                    "yes",
+                    "70",
+                    "1"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "Assets\\Sprint.wav",
+                    "3",
+                    "yes",
+                    "70",
+                    "1"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "Assets\\Swingmiss.wav",
+                    "4",
+                    "no",
+                    "70",
+                    "1"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "Assets\\Hit.wav",
+                    "5",
+                    "no",
+                    "70",
+                    "1"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "Assets\\Sword Clash.wav",
+                    "6",
+                    "no",
+                    "70",
+                    "1"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": [],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "PauseSoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "5"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "PauseSoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "6"
                   ],
                   "subInstructions": []
                 }
@@ -97738,6 +98214,19 @@
                     ""
                   ],
                   "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
+                    "SirHenry",
+                    "Dodging",
+                    "=",
+                    "0"
+                  ],
+                  "subInstructions": []
                 }
               ],
               "actions": [
@@ -97852,11 +98341,174 @@
                             "(SirHenrysSword.Variable(activated) * 10)"
                           ],
                           "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "RePlaySoundCanal"
+                          },
+                          "parameters": [
+                            "",
+                            "5"
+                          ],
+                          "subInstructions": []
                         }
                       ],
-                      "events": []
+                      "events": [
+                        {
+                          "disabled": false,
+                          "folded": false,
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "VarObjet"
+                              },
+                              "parameters": [
+                                "SirHenry",
+                                "GhostHealth",
+                                ">=",
+                                "SirHenry.Variable(MaxGhostHealth)"
+                              ],
+                              "subInstructions": []
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "ModVarObjet"
+                              },
+                              "parameters": [
+                                "SirHenry",
+                                "CurrentHealth",
+                                "+",
+                                "(SirHenrysSword.Variable(activated) * 5)/2"
+                              ],
+                              "subInstructions": []
+                            }
+                          ],
+                          "events": []
+                        },
+                        {
+                          "disabled": false,
+                          "folded": false,
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "VarObjet"
+                              },
+                              "parameters": [
+                                "SirHenry",
+                                "GhostHealth",
+                                "<",
+                                "SirHenry.Variable(MaxGhostHealth)"
+                              ],
+                              "subInstructions": []
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "ModVarObjet"
+                              },
+                              "parameters": [
+                                "SirHenry",
+                                "CurrentGhost",
+                                "+",
+                                "(SirHenrysSword.Variable(activated) * 10)/2"
+                              ],
+                              "subInstructions": []
+                            }
+                          ],
+                          "events": []
+                        }
+                      ]
                     }
                   ]
+                }
+              ]
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
+                    "SirHenrysSword",
+                    "activated",
+                    ">",
+                    "0"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
+                    "KnightValesSword",
+                    "activated",
+                    ">",
+                    "0"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "SirHenrysSword",
+                    "KnightValesSword",
+                    "SirHenry",
+                    "",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": [],
+                      "subInstructions": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "RePlaySoundCanal"
+                      },
+                      "parameters": [
+                        "",
+                        "6"
+                      ],
+                      "subInstructions": []
+                    }
+                  ],
+                  "events": []
                 }
               ]
             },
@@ -97887,6 +98539,45 @@
                     "KnightValesSword",
                     "activated",
                     ">",
+                    "0"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
+                    "SirHenry",
+                    "Dodging",
+                    "=",
+                    "0"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
+                    "SirHenry",
+                    "GhostForm",
+                    "=",
+                    "0"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
+                    "SirHenry",
+                    "TempGhost",
+                    "=",
                     "0"
                   ],
                   "subInstructions": []
@@ -99699,7 +100390,7 @@
                       "parameters": [
                         "KnightVale",
                         "=",
-                        "16 + round(KnightValesBodyHitbox.TopDownMovement::Angle()/45)"
+                        "16 + round((KnightValesBodyHitbox.TopDownMovement::Angle()-22.5)/45)"
                       ],
                       "subInstructions": []
                     },
@@ -99711,7 +100402,7 @@
                       "parameters": [
                         "KnightValesSword",
                         "=",
-                        "1 + round(KnightValesBodyHitbox.TopDownMovement::Angle()/45)"
+                        "1 + round((KnightValesBodyHitbox.TopDownMovement::Angle()-22.5)/45)"
                       ],
                       "subInstructions": []
                     },
@@ -99723,7 +100414,7 @@
                       "parameters": [
                         "KnightValesBodyHitbox",
                         "=",
-                        "16 + round(KnightValesBodyHitbox.TopDownMovement::Angle()/45)"
+                        "16 + round((KnightValesBodyHitbox.TopDownMovement::Angle()-22.5)/45)"
                       ],
                       "subInstructions": []
                     },
@@ -99830,7 +100521,7 @@
                       "parameters": [
                         "KnightVale",
                         "=",
-                        "24 + round(KnightValesBodyHitbox.TopDownMovement::Angle()/45)"
+                        "24 + round((KnightValesBodyHitbox.TopDownMovement::Angle()-22.5)/45)"
                       ],
                       "subInstructions": []
                     },
@@ -99842,7 +100533,7 @@
                       "parameters": [
                         "KnightValesSword",
                         "=",
-                        "9 + round(KnightValesBodyHitbox.TopDownMovement::Angle()/45)"
+                        "9 + round((KnightValesBodyHitbox.TopDownMovement::Angle()-22.5)/45)"
                       ],
                       "subInstructions": []
                     },
@@ -99854,7 +100545,7 @@
                       "parameters": [
                         "KnightValesBodyHitbox",
                         "=",
-                        "24 + round(KnightValesBodyHitbox.TopDownMovement::Angle()/45)"
+                        "24 + round((KnightValesBodyHitbox.TopDownMovement::Angle()-22.5)/45)"
                       ],
                       "subInstructions": []
                     },
@@ -100141,7 +100832,7 @@
                       "parameters": [
                         "KnightVale",
                         "=",
-                        "24 + round(KnightValesBodyHitbox.TopDownMovement::Angle()/45)"
+                        "24 + round((KnightValesBodyHitbox.TopDownMovement::Angle()-22.5)/45)"
                       ],
                       "subInstructions": []
                     },
@@ -100153,7 +100844,7 @@
                       "parameters": [
                         "KnightValesSword",
                         "=",
-                        "9 + round(KnightValesBodyHitbox.TopDownMovement::Angle()/45)"
+                        "9 + round((KnightValesBodyHitbox.TopDownMovement::Angle()-22.5)/45)"
                       ],
                       "subInstructions": []
                     },
@@ -100165,7 +100856,7 @@
                       "parameters": [
                         "KnightValesBodyHitbox",
                         "=",
-                        "24 + round(KnightValesBodyHitbox.TopDownMovement::Angle()/45)"
+                        "24 + round((KnightValesBodyHitbox.TopDownMovement::Angle()-22.5)/45)"
                       ],
                       "subInstructions": []
                     },
@@ -100248,7 +100939,7 @@
                       "parameters": [
                         "KnightVale",
                         "=",
-                        "32 + round(KnightValesBodyHitbox.TopDownMovement::Angle()/45)"
+                        "32 + round((KnightValesBodyHitbox.TopDownMovement::Angle()-22.5)/45)"
                       ],
                       "subInstructions": []
                     },
@@ -100260,7 +100951,7 @@
                       "parameters": [
                         "KnightValesSword",
                         "=",
-                        "17 + round(KnightValesBodyHitbox.TopDownMovement::Angle()/45)"
+                        "17 + round((KnightValesBodyHitbox.TopDownMovement::Angle()-22.5)/45)"
                       ],
                       "subInstructions": []
                     },
@@ -100272,7 +100963,7 @@
                       "parameters": [
                         "KnightValesBodyHitbox",
                         "=",
-                        "32 + round(KnightValesBodyHitbox.TopDownMovement::Angle()/45)"
+                        "32 + round((KnightValesBodyHitbox.TopDownMovement::Angle()-22.5)/45)"
                       ],
                       "subInstructions": []
                     },
@@ -100547,7 +101238,7 @@
                       "parameters": [
                         "KnightVale",
                         "=",
-                        "40 + round(KnightValesBodyHitbox.TopDownMovement::Angle()/45)"
+                        "40 + round((KnightValesBodyHitbox.TopDownMovement::Angle()-22.5)/45)"
                       ],
                       "subInstructions": []
                     },
@@ -100559,7 +101250,7 @@
                       "parameters": [
                         "KnightValesSword",
                         "=",
-                        "25 + round(KnightValesBodyHitbox.TopDownMovement::Angle()/45)"
+                        "25 + round((KnightValesBodyHitbox.TopDownMovement::Angle()-22.5)/45)"
                       ],
                       "subInstructions": []
                     },
@@ -100571,7 +101262,7 @@
                       "parameters": [
                         "KnightValesBodyHitbox",
                         "=",
-                        "40 + round(KnightValesBodyHitbox.TopDownMovement::Angle()/45)"
+                        "40 + round((KnightValesBodyHitbox.TopDownMovement::Angle()-22.5)/45)"
                       ],
                       "subInstructions": []
                     },
@@ -100731,7 +101422,7 @@
                       "parameters": [
                         "KnightVale",
                         "=",
-                        "48 + round(KnightValesBodyHitbox.TopDownMovement::Angle()/45)"
+                        "48 + round((KnightValesBodyHitbox.TopDownMovement::Angle()-22.5)/45)"
                       ],
                       "subInstructions": []
                     },
@@ -100743,7 +101434,7 @@
                       "parameters": [
                         "KnightValesSword",
                         "=",
-                        "33 + round(KnightValesBodyHitbox.TopDownMovement::Angle()/45)"
+                        "33 + round((KnightValesBodyHitbox.TopDownMovement::Angle()-22.5)/45)"
                       ],
                       "subInstructions": []
                     },
@@ -100755,7 +101446,7 @@
                       "parameters": [
                         "KnightValesBodyHitbox",
                         "=",
-                        "48 + round(KnightValesBodyHitbox.TopDownMovement::Angle()/45)"
+                        "48 + round((KnightValesBodyHitbox.TopDownMovement::Angle()-22.5)/45)"
                       ],
                       "subInstructions": []
                     },
@@ -100985,7 +101676,7 @@
                   "conditions": [
                     {
                       "type": {
-                        "inverted": false,
+                        "inverted": true,
                         "value": "ObjectTimer"
                       },
                       "parameters": [
@@ -101020,7 +101711,7 @@
                   "conditions": [
                     {
                       "type": {
-                        "inverted": true,
+                        "inverted": false,
                         "value": "ObjectTimer"
                       },
                       "parameters": [
@@ -101349,7 +102040,7 @@
                       "parameters": [
                         "KnightVale",
                         "=",
-                        "32 + round(KnightValesBodyHitbox.TopDownMovement::Angle()/45)"
+                        "32 + round((KnightValesBodyHitbox.TopDownMovement::Angle()-22.5)/45)"
                       ],
                       "subInstructions": []
                     },
@@ -101361,7 +102052,7 @@
                       "parameters": [
                         "KnightValesSword",
                         "=",
-                        "17 + round(KnightValesBodyHitbox.TopDownMovement::Angle()/45)"
+                        "17 + round((KnightValesBodyHitbox.TopDownMovement::Angle()-22.5)/45)"
                       ],
                       "subInstructions": []
                     },
@@ -101373,7 +102064,7 @@
                       "parameters": [
                         "KnightValesBodyHitbox",
                         "=",
-                        "32 + round(KnightValesBodyHitbox.TopDownMovement::Angle()/45)"
+                        "32 + round((KnightValesBodyHitbox.TopDownMovement::Angle()-22.5)/45)"
                       ],
                       "subInstructions": []
                     },
@@ -101512,7 +102203,7 @@
                       "parameters": [
                         "KnightVale",
                         "=",
-                        "40 + round(KnightValesBodyHitbox.TopDownMovement::Angle()/45)"
+                        "40 + round((KnightValesBodyHitbox.TopDownMovement::Angle()-22.5)/45)"
                       ],
                       "subInstructions": []
                     },
@@ -101524,7 +102215,7 @@
                       "parameters": [
                         "KnightValesSword",
                         "=",
-                        "25 + round(KnightValesBodyHitbox.TopDownMovement::Angle()/45)"
+                        "25 + round((KnightValesBodyHitbox.TopDownMovement::Angle()-22.5)/45)"
                       ],
                       "subInstructions": []
                     },
@@ -101536,7 +102227,7 @@
                       "parameters": [
                         "KnightValesBodyHitbox",
                         "=",
-                        "40 + round(KnightValesBodyHitbox.TopDownMovement::Angle()/45)"
+                        "40 + round((KnightValesBodyHitbox.TopDownMovement::Angle()-22.5)/45)"
                       ],
                       "subInstructions": []
                     },
@@ -101867,7 +102558,7 @@
                       "parameters": [
                         "KnightVale",
                         "=",
-                        "40 + round(KnightValesBodyHitbox.TopDownMovement::Angle()/45)"
+                        "40 + round((KnightValesBodyHitbox.TopDownMovement::Angle()-22.5)/45)"
                       ],
                       "subInstructions": []
                     },
@@ -101879,7 +102570,7 @@
                       "parameters": [
                         "KnightValesSword",
                         "=",
-                        "25 + round(KnightValesBodyHitbox.TopDownMovement::Angle()/45)"
+                        "25 + round((KnightValesBodyHitbox.TopDownMovement::Angle()-22.5)/45)"
                       ],
                       "subInstructions": []
                     },
@@ -101891,7 +102582,7 @@
                       "parameters": [
                         "KnightValesBodyHitbox",
                         "=",
-                        "40 + round(KnightValesBodyHitbox.TopDownMovement::Angle()/45)"
+                        "40 + round((KnightValesBodyHitbox.TopDownMovement::Angle()-22.5)/45)"
                       ],
                       "subInstructions": []
                     },
@@ -102051,7 +102742,7 @@
                       "parameters": [
                         "KnightVale",
                         "=",
-                        "48 + round(KnightValesBodyHitbox.TopDownMovement::Angle()/45)"
+                        "48 + round((KnightValesBodyHitbox.TopDownMovement::Angle()-22.5)/45)"
                       ],
                       "subInstructions": []
                     },
@@ -102063,7 +102754,7 @@
                       "parameters": [
                         "KnightValesSword",
                         "=",
-                        "33 + round(KnightValesBodyHitbox.TopDownMovement::Angle()/45)"
+                        "33 + round((KnightValesBodyHitbox.TopDownMovement::Angle()-22.5)/45)"
                       ],
                       "subInstructions": []
                     },
@@ -102075,7 +102766,7 @@
                       "parameters": [
                         "KnightValesBodyHitbox",
                         "=",
-                        "48 + round(KnightValesBodyHitbox.TopDownMovement::Angle()/45)"
+                        "48 + round((KnightValesBodyHitbox.TopDownMovement::Angle()-22.5)/45)"
                       ],
                       "subInstructions": []
                     },
@@ -103584,6 +104275,42 @@
                     "value": "VarObjet"
                   },
                   "parameters": [
+                    "SirHenry",
+                    "CurrentHealth",
+                    ">",
+                    "SirHenry.Variable(MaxHealth)"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "SirHenry",
+                    "CurrentHealth",
+                    "=",
+                    "SirHenry.Variable(MaxHealth)"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
                     "KnightVale",
                     "CurrentHealth",
                     ">=",
@@ -103988,6 +104715,27 @@
                 "\"FPS: \" + ToString(round(1/TimeDelta()))"
               ],
               "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "HenrySword",
+                "=",
+                "\"HenrysSword: \" + LargeNumberToString(SirHenrysSword.Variable(activated))"
+              ],
+              "subInstructions": []
             },
             {
               "type": {
@@ -103998,18 +104746,6 @@
                 "ValesSword",
                 "=",
                 "\"KnightValesSword: \" + LargeNumberToString(KnightValesSword.Variable(activated))"
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "TextObject::String"
-              },
-              "parameters": [
-                "HenrySword",
-                "=",
-                "\"HenrysSword: \" + LargeNumberToString(SirHenrysSword.Variable(activated))"
               ],
               "subInstructions": []
             }
