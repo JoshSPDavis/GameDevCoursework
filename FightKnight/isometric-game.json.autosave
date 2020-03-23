@@ -12227,15 +12227,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
-        "file": "Core-1-0.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Core-1-0.png",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
         "file": "Assets/Swingmiss.wav",
         "kind": "audio",
         "metadata": "",
@@ -12303,6 +12294,15 @@
         "kind": "audio",
         "metadata": "",
         "name": "Assets\\SirValesTheme5Organ.wav",
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Core-1-0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Core-1-0.png",
+        "smoothed": false,
         "userAdded": true
       }
     ],
@@ -12382,6 +12382,10 @@
             {
               "name": "GhostMod",
               "value": "0"
+            },
+            {
+              "name": "Variable",
+              "value": ""
             }
           ]
         },
@@ -12650,6 +12654,18 @@
             {
               "name": "initAttack",
               "value": "1"
+            },
+            {
+              "name": "Variable",
+              "value": ""
+            },
+            {
+              "name": "damageMod",
+              "value": "0"
+            },
+            {
+              "name": "Variable2",
+              "value": ""
             }
           ]
         },
@@ -12765,12 +12781,12 @@
         },
         {
           "angle": 0,
-          "customSize": false,
-          "height": 0,
+          "customSize": true,
+          "height": 70,
           "layer": "",
           "locked": false,
           "name": "SirHenrySubbuteo",
-          "width": 0,
+          "width": 70,
           "x": 956,
           "y": 940,
           "zOrder": 10018,
@@ -12780,12 +12796,12 @@
         },
         {
           "angle": 0,
-          "customSize": false,
-          "height": 0,
+          "customSize": true,
+          "height": 70,
           "layer": "",
           "locked": false,
           "name": "KnightValeSubbuteo",
-          "width": 0,
+          "width": 70,
           "x": 1029,
           "y": 212,
           "zOrder": 10019,
@@ -40729,6 +40745,18 @@
             {
               "name": "Aggression",
               "value": "1"
+            },
+            {
+              "name": "damageChecking",
+              "value": "0"
+            },
+            {
+              "name": "damageMod",
+              "value": "0"
+            },
+            {
+              "name": "interrupted",
+              "value": "0"
             }
           ],
           "behaviors": [
@@ -68084,6 +68112,14 @@
             },
             {
               "name": "Regen",
+              "value": "0"
+            },
+            {
+              "name": "AttackMiddle",
+              "value": "0"
+            },
+            {
+              "name": "damageMod",
               "value": "0"
             }
           ],
@@ -98910,300 +98946,15 @@
               "disabled": false,
               "folded": false,
               "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "VarObjet"
-                  },
-                  "parameters": [
-                    "SirHenrysSword",
-                    "activated",
-                    ">",
-                    "0"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "VarObjet"
-                  },
-                  "parameters": [
-                    "KnightValesSword",
-                    "activated",
-                    "=",
-                    "0"
-                  ],
-                  "subInstructions": []
-                }
-              ],
+              "conditions": [],
               "actions": [],
-              "events": [
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "CollisionNP"
-                      },
-                      "parameters": [
-                        "SirHenrysSword",
-                        "KnightValesBodyHitbox",
-                        "SirHenry",
-                        "",
-                        ""
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "actions": [],
-                  "events": [
-                    {
-                      "disabled": false,
-                      "folded": false,
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "BuiltinCommonInstructions::Once"
-                          },
-                          "parameters": [],
-                          "subInstructions": []
-                        }
-                      ],
-                      "actions": [
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "ModVarObjet"
-                          },
-                          "parameters": [
-                            "SirHenry",
-                            "CurrentGhost",
-                            "+",
-                            "(SirHenrysSword.Variable(activated) * 10)/2"
-                          ],
-                          "subInstructions": []
-                        },
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "ModVarObjet"
-                          },
-                          "parameters": [
-                            "KnightVale",
-                            "CurrentHealth",
-                            "-",
-                            "(SirHenrysSword.Variable(activated) * 10)"
-                          ],
-                          "subInstructions": []
-                        },
-                        {
-                          "type": {
-                            "inverted": false,
-                            "value": "RePlaySoundCanal"
-                          },
-                          "parameters": [
-                            "",
-                            "5"
-                          ],
-                          "subInstructions": []
-                        }
-                      ],
-                      "events": [
-                        {
-                          "disabled": false,
-                          "folded": false,
-                          "type": "BuiltinCommonInstructions::Standard",
-                          "conditions": [
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "VarObjet"
-                              },
-                              "parameters": [
-                                "SirHenry",
-                                "GhostHealth",
-                                ">=",
-                                "SirHenry.Variable(MaxGhostHealth)"
-                              ],
-                              "subInstructions": []
-                            }
-                          ],
-                          "actions": [
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "ModVarObjet"
-                              },
-                              "parameters": [
-                                "SirHenry",
-                                "CurrentHealth",
-                                "+",
-                                "(SirHenrysSword.Variable(activated) * 5)/2"
-                              ],
-                              "subInstructions": []
-                            }
-                          ],
-                          "events": []
-                        },
-                        {
-                          "disabled": false,
-                          "folded": false,
-                          "type": "BuiltinCommonInstructions::Standard",
-                          "conditions": [
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "VarObjet"
-                              },
-                              "parameters": [
-                                "SirHenry",
-                                "GhostHealth",
-                                "<",
-                                "SirHenry.Variable(MaxGhostHealth)"
-                              ],
-                              "subInstructions": []
-                            }
-                          ],
-                          "actions": [
-                            {
-                              "type": {
-                                "inverted": false,
-                                "value": "ModVarObjet"
-                              },
-                              "parameters": [
-                                "SirHenry",
-                                "CurrentGhost",
-                                "+",
-                                "(SirHenrysSword.Variable(activated) * 10)/2"
-                              ],
-                              "subInstructions": []
-                            }
-                          ],
-                          "events": []
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
+              "events": []
             },
             {
-              "disabled": false,
+              "disabled": true,
               "folded": false,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "VarObjet"
-                  },
-                  "parameters": [
-                    "SirHenrysSword",
-                    "activated",
-                    ">",
-                    "0"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "VarObjet"
-                  },
-                  "parameters": [
-                    "KnightValesSword",
-                    "activated",
-                    ">",
-                    "0"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "CollisionNP"
-                  },
-                  "parameters": [
-                    "SirHenrysSword",
-                    "KnightValesSword",
-                    "SirHenry",
-                    "",
-                    ""
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "actions": [],
-              "events": [
-                {
-                  "disabled": false,
-                  "folded": false,
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "BuiltinCommonInstructions::Once"
-                      },
-                      "parameters": [],
-                      "subInstructions": []
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "RePlaySoundCanal"
-                      },
-                      "parameters": [
-                        "",
-                        "6"
-                      ],
-                      "subInstructions": []
-                    }
-                  ],
-                  "events": []
-                }
-              ]
-            },
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "VarObjet"
-                  },
-                  "parameters": [
-                    "SirHenrysSword",
-                    "activated",
-                    "=",
-                    "0"
-                  ],
-                  "subInstructions": []
-                },
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "VarObjet"
-                  },
-                  "parameters": [
-                    "KnightValesSword",
-                    "activated",
-                    ">",
-                    "0"
-                  ],
-                  "subInstructions": []
-                },
                 {
                   "type": {
                     "inverted": false,
@@ -99242,10 +98993,599 @@
                     "0"
                   ],
                   "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "BuiltinCommonInstructions::Or"
+                  },
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarObjet"
+                      },
+                      "parameters": [
+                        "SirHenry",
+                        "Attacking",
+                        ">",
+                        "0"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarObjet"
+                      },
+                      "parameters": [
+                        "SirHenry",
+                        "Attack2",
+                        ">",
+                        "0"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarObjet"
+                      },
+                      "parameters": [
+                        "SirHenry",
+                        "HeavyAttacking",
+                        ">",
+                        "0"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarObjet"
+                      },
+                      "parameters": [
+                        "SirHenry",
+                        "HeavyAttack2",
+                        ">",
+                        "0"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarObjet"
+                      },
+                      "parameters": [
+                        "SirHenry",
+                        "HeavySkip",
+                        ">",
+                        "0"
+                      ],
+                      "subInstructions": []
+                    }
+                  ]
                 }
               ],
               "actions": [],
               "events": [
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "SirHenrysSword",
+                        "KnightValesSword",
+                        "SirHenry",
+                        "",
+                        ""
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "BuiltinCommonInstructions::Or"
+                      },
+                      "parameters": [],
+                      "subInstructions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "VarObjet"
+                          },
+                          "parameters": [
+                            "KnightVale",
+                            "Attacking",
+                            ">",
+                            "0"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "VarObjet"
+                          },
+                          "parameters": [
+                            "KnightVale",
+                            "Attack2",
+                            ">",
+                            "0"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "VarObjet"
+                          },
+                          "parameters": [
+                            "KnightVale",
+                            "HeavyAttacking",
+                            ">",
+                            "0"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "VarObjet"
+                          },
+                          "parameters": [
+                            "KnightVale",
+                            "HeavyAttack2",
+                            ">",
+                            "0"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "VarObjet"
+                          },
+                          "parameters": [
+                            "KnightVale",
+                            "HeavySkip",
+                            ">",
+                            "0"
+                          ],
+                          "subInstructions": []
+                        }
+                      ]
+                    }
+                  ],
+                  "actions": [],
+                  "events": [
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "BuiltinCommonInstructions::Once"
+                          },
+                          "parameters": [],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "RePlaySoundCanal"
+                          },
+                          "parameters": [
+                            "",
+                            "6"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    }
+                  ]
+                },
+                {
+                  "disabled": false,
+                  "folded": false,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarObjet"
+                      },
+                      "parameters": [
+                        "SirHenrysSword",
+                        "activated",
+                        ">",
+                        "0"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "BuiltinCommonInstructions::And"
+                      },
+                      "parameters": [],
+                      "subInstructions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "VarObjet"
+                          },
+                          "parameters": [
+                            "KnightVale",
+                            "Attacking",
+                            "=",
+                            "0"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "VarObjet"
+                          },
+                          "parameters": [
+                            "KnightVale",
+                            "Attack2",
+                            "=",
+                            "0"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "VarObjet"
+                          },
+                          "parameters": [
+                            "KnightVale",
+                            "HeavyAttacking",
+                            "=",
+                            "0"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "VarObjet"
+                          },
+                          "parameters": [
+                            "KnightVale",
+                            "HeavyAttack2",
+                            "=",
+                            "0"
+                          ],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "VarObjet"
+                          },
+                          "parameters": [
+                            "KnightVale",
+                            "HeavySkip",
+                            "=",
+                            "0"
+                          ],
+                          "subInstructions": []
+                        }
+                      ]
+                    }
+                  ],
+                  "actions": [],
+                  "events": [
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "CollisionNP"
+                          },
+                          "parameters": [
+                            "SirHenrysSword",
+                            "KnightVale",
+                            "SirHenry",
+                            "",
+                            ""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [],
+                      "events": [
+                        {
+                          "disabled": false,
+                          "folded": false,
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "BuiltinCommonInstructions::Once"
+                              },
+                              "parameters": [],
+                              "subInstructions": []
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "ModVarObjet"
+                              },
+                              "parameters": [
+                                "KnightVale",
+                                "CurrentHealth",
+                                "-",
+                                "(SirHenrysSword.Variable(activated) * 10)"
+                              ],
+                              "subInstructions": []
+                            },
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "RePlaySoundCanal"
+                              },
+                              "parameters": [
+                                "",
+                                "5"
+                              ],
+                              "subInstructions": []
+                            }
+                          ],
+                          "events": [
+                            {
+                              "disabled": false,
+                              "folded": false,
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "inverted": false,
+                                    "value": "VarObjet"
+                                  },
+                                  "parameters": [
+                                    "SirHenry",
+                                    "GhostHealth",
+                                    ">=",
+                                    "SirHenry.Variable(MaxGhostHealth)"
+                                  ],
+                                  "subInstructions": []
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "inverted": false,
+                                    "value": "ModVarObjet"
+                                  },
+                                  "parameters": [
+                                    "SirHenry",
+                                    "CurrentHealth",
+                                    "+",
+                                    "(SirHenrysSword.Variable(activated) * 5)/2"
+                                  ],
+                                  "subInstructions": []
+                                }
+                              ],
+                              "events": []
+                            },
+                            {
+                              "disabled": false,
+                              "folded": false,
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "inverted": false,
+                                    "value": "VarObjet"
+                                  },
+                                  "parameters": [
+                                    "SirHenry",
+                                    "GhostHealth",
+                                    "<",
+                                    "SirHenry.Variable(MaxGhostHealth)"
+                                  ],
+                                  "subInstructions": []
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "inverted": false,
+                                    "value": "ModVarObjet"
+                                  },
+                                  "parameters": [
+                                    "SirHenry",
+                                    "CurrentGhost",
+                                    "+",
+                                    "(SirHenrysSword.Variable(activated) * 10)/2"
+                                  ],
+                                  "subInstructions": []
+                                }
+                              ],
+                              "events": []
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "CollisionNP"
+                          },
+                          "parameters": [
+                            "SirHenrysSword",
+                            "KnightValesBodyHitbox",
+                            "SirHenry",
+                            "",
+                            ""
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [],
+                      "events": [
+                        {
+                          "disabled": false,
+                          "folded": false,
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "BuiltinCommonInstructions::Once"
+                              },
+                              "parameters": [],
+                              "subInstructions": []
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "ModVarObjet"
+                              },
+                              "parameters": [
+                                "SirHenry",
+                                "CurrentGhost",
+                                "+",
+                                "(SirHenrysSword.Variable(activated) * 10)/2"
+                              ],
+                              "subInstructions": []
+                            },
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "ModVarObjet"
+                              },
+                              "parameters": [
+                                "KnightVale",
+                                "CurrentHealth",
+                                "-",
+                                "(SirHenrysSword.Variable(activated) * 10)"
+                              ],
+                              "subInstructions": []
+                            },
+                            {
+                              "type": {
+                                "inverted": false,
+                                "value": "RePlaySoundCanal"
+                              },
+                              "parameters": [
+                                "",
+                                "5"
+                              ],
+                              "subInstructions": []
+                            }
+                          ],
+                          "events": [
+                            {
+                              "disabled": false,
+                              "folded": false,
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "inverted": false,
+                                    "value": "VarObjet"
+                                  },
+                                  "parameters": [
+                                    "SirHenry",
+                                    "GhostHealth",
+                                    ">=",
+                                    "SirHenry.Variable(MaxGhostHealth)"
+                                  ],
+                                  "subInstructions": []
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "inverted": false,
+                                    "value": "ModVarObjet"
+                                  },
+                                  "parameters": [
+                                    "SirHenry",
+                                    "CurrentHealth",
+                                    "+",
+                                    "(SirHenrysSword.Variable(activated) * 5)/2"
+                                  ],
+                                  "subInstructions": []
+                                }
+                              ],
+                              "events": []
+                            },
+                            {
+                              "disabled": false,
+                              "folded": false,
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "inverted": false,
+                                    "value": "VarObjet"
+                                  },
+                                  "parameters": [
+                                    "SirHenry",
+                                    "GhostHealth",
+                                    "<",
+                                    "SirHenry.Variable(MaxGhostHealth)"
+                                  ],
+                                  "subInstructions": []
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "inverted": false,
+                                    "value": "ModVarObjet"
+                                  },
+                                  "parameters": [
+                                    "SirHenry",
+                                    "CurrentGhost",
+                                    "+",
+                                    "(SirHenrysSword.Variable(activated) * 10)/2"
+                                  ],
+                                  "subInstructions": []
+                                }
+                              ],
+                              "events": []
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
                 {
                   "disabled": false,
                   "folded": false,
@@ -99292,7 +99632,7 @@
                             "SirHenry",
                             "CurrentHealth",
                             "-",
-                            "(KnightValesSword.Variable(activated) * 3)"
+                            "(KnightValesSword.Variable(activated) * 3) * (1 + (1- (KnightVale.Variable(CurrentHealth)/KnightVale.Variable(MaxHealth))))"
                           ],
                           "subInstructions": []
                         },
