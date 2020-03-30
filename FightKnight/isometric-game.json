@@ -14,7 +14,7 @@
     "macExecutableFilename": "",
     "orientation": "landscape",
     "packageName": "com.example.FightKnight",
-    "projectFile": "C:\\Users\\joshd\\OneDrive\\GameDev\\GameDev2\\FightKnight\\isometric-game.json",
+    "projectFile": "C:\\Users\\joshd\\OneDrive\\GameDev\\Coursework\\GameDevCoursework\\FightKnight\\isometric-game.json",
     "scaleMode": "nearest",
     "sizeOnStartupMode": "",
     "useExternalSourceFiles": false,
@@ -91510,7 +91510,7 @@
           "underlined": false,
           "variables": [],
           "behaviors": [],
-          "string": "Controls:\nTab: Toggle this menu\nI (not L): Toggle invulnerability\nC: Toggle comedy mode\nW: Move forwards\nA: Move left\nS: Move backwards\nD: Move right\nG: Light attack\nH: Heavy attack\nJ(hold): Soul form\nSpace: Dodge backwards\n1: Decrease music volume\n2: Increase music volume",
+          "string": "Controls:\nV: Toggle this menu\nI (not L): Toggle invulnerability\nC: Toggle comedy mode\nW: Move forwards\nA: Move left\nS: Move backwards\nD: Move right\nG: Light attack\nH: Heavy attack\nJ(hold): Soul form\nSpace: Dodge backwards\n1: Decrease music volume\n2: Increase music volume",
           "font": "",
           "characterSize": 20,
           "color": {
@@ -114946,7 +114946,7 @@
                   },
                   "parameters": [
                     "",
-                    "Tab"
+                    "v"
                   ],
                   "subInstructions": []
                 },
@@ -115089,7 +115089,7 @@
                   },
                   "parameters": [
                     "",
-                    "Tab"
+                    "v"
                   ],
                   "subInstructions": []
                 },
