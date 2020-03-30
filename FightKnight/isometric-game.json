@@ -12313,6 +12313,27 @@
         "name": "NewFile-1-0.png",
         "smoothed": false,
         "userAdded": true
+      },
+      {
+        "file": "Assets/Hit Me With Your Rhythm Stick.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Assets\\Hit Me With Your Rhythm Stick.wav",
+        "userAdded": true
+      },
+      {
+        "file": "Assets/ClashComedy.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Assets\\ClashComedy.wav",
+        "userAdded": true
+      },
+      {
+        "file": "Assets/HitComedy.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Assets\\HitComedy.wav",
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -12345,7 +12366,7 @@
         "gridWidth": 32,
         "snap": true,
         "windowMask": false,
-        "zoomFactor": 0.376
+        "zoomFactor": 0.448
       },
       "objectsGroups": [
         {
@@ -12843,7 +12864,7 @@
           "width": 1920,
           "x": 0,
           "y": 0,
-          "zOrder": 10017,
+          "zOrder": 10014,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -12855,8 +12876,8 @@
           "layer": "UI",
           "locked": false,
           "name": "restartbutton",
-          "width": 228,
-          "x": 806,
+          "width": 224,
+          "x": 848,
           "y": 698,
           "zOrder": 10036,
           "numberProperties": [],
@@ -12875,10 +12896,55 @@
           "layer": "UI",
           "locked": false,
           "name": "Survival",
-          "width": 860,
-          "x": 490,
+          "width": 854,
+          "x": 533,
           "y": 501,
           "zOrder": 10037,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 493,
+          "layer": "UI",
+          "locked": false,
+          "name": "ControlsBackground",
+          "width": 361,
+          "x": 1559,
+          "y": -1,
+          "zOrder": 10016,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "UI",
+          "locked": false,
+          "name": "Controls",
+          "width": 0,
+          "x": 1563,
+          "y": 3,
+          "zOrder": 10038,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "UI",
+          "locked": false,
+          "name": "Stats",
+          "width": 0,
+          "x": 1562,
+          "y": 324,
+          "zOrder": 10039,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -68199,6 +68265,22 @@
             {
               "name": "interrupted",
               "value": "0"
+            },
+            {
+              "name": "Comedy",
+              "value": "0"
+            },
+            {
+              "name": "Invulnerable",
+              "value": "0"
+            },
+            {
+              "name": "cstart",
+              "value": "1"
+            },
+            {
+              "name": "istart",
+              "value": "1"
             }
           ],
           "behaviors": [
@@ -91421,6 +91503,44 @@
         {
           "bold": false,
           "italic": false,
+          "name": "Controls",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [],
+          "string": "Controls:\nTab: Toggle this menu\nI (not L): Toggle invulnerability\nC: Toggle comedy mode\nW: Move forwards\nA: Move left\nS: Move backwards\nD: Move right\nG: Light attack\nH: Heavy attack\nJ(hold): Soul form\nSpace: Dodge backwards\n1: Decrease music volume\n2: Increase music volume",
+          "font": "",
+          "characterSize": 20,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
+        },
+        {
+          "bold": false,
+          "italic": false,
+          "name": "Stats",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "behaviors": [],
+          "string": "Health (red bar):\nStamina (green bar):\nSoul Connection (blue bar):\nInvulnerability:\nComedy Mode: \nMusic Volume:\nResolution:",
+          "font": "",
+          "characterSize": 20,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
+        },
+        {
+          "bold": false,
+          "italic": false,
           "name": "FPS",
           "smoothed": true,
           "tags": "",
@@ -91474,6 +91594,29 @@
             "g": 0,
             "r": 0
           }
+        },
+        {
+          "height": 32,
+          "name": "ControlsBackground",
+          "tags": "",
+          "texture": "FPSbackground-1.png",
+          "type": "TiledSpriteObject::TiledSprite",
+          "width": 32,
+          "variables": [
+            {
+              "name": "visibility",
+              "value": "1"
+            },
+            {
+              "name": "start",
+              "value": "1"
+            },
+            {
+              "name": "MaxMusicVolume",
+              "value": "50"
+            }
+          ],
+          "behaviors": []
         },
         {
           "height": 32,
@@ -91720,6 +91863,424 @@
                     "SirHenry",
                     "0",
                     "0"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "KeyPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "i"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
+                    "SirHenry",
+                    "Invulnerable",
+                    "=",
+                    "0"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "BuiltinCommonInstructions::Or"
+                  },
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarObjet"
+                      },
+                      "parameters": [
+                        "SirHenry",
+                        "istart",
+                        "=",
+                        "1"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ObjectTimer"
+                      },
+                      "parameters": [
+                        "SirHenry",
+                        "\"toggle\"",
+                        "0.2"
+                      ],
+                      "subInstructions": []
+                    }
+                  ]
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": [],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "SirHenry",
+                    "Invulnerable",
+                    "=",
+                    "1"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ResetObjectTimer"
+                  },
+                  "parameters": [
+                    "SirHenry",
+                    "\"toggle\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "SirHenry",
+                    "istart",
+                    "=",
+                    "0"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "KeyPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "c"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
+                    "SirHenry",
+                    "Comedy",
+                    "=",
+                    "0"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": [],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "BuiltinCommonInstructions::Or"
+                  },
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarObjet"
+                      },
+                      "parameters": [
+                        "SirHenry",
+                        "cstart",
+                        "=",
+                        "1"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ObjectTimer"
+                      },
+                      "parameters": [
+                        "SirHenry",
+                        "\"ctoggle\"",
+                        "0.2"
+                      ],
+                      "subInstructions": []
+                    }
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "SirHenry",
+                    "Comedy",
+                    "=",
+                    "1"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ResetObjectTimer"
+                  },
+                  "parameters": [
+                    "SirHenry",
+                    "\"ctoggle\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "SirHenry",
+                    "cstart",
+                    "=",
+                    "0"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "KeyPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "i"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
+                    "SirHenry",
+                    "Invulnerable",
+                    "=",
+                    "1"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ObjectTimer"
+                  },
+                  "parameters": [
+                    "SirHenry",
+                    "\"toggle\"",
+                    "0.2"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": [],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "SirHenry",
+                    "Invulnerable",
+                    "=",
+                    "0"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ResetObjectTimer"
+                  },
+                  "parameters": [
+                    "SirHenry",
+                    "\"toggle\""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "KeyPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "c"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
+                    "SirHenry",
+                    "Comedy",
+                    "=",
+                    "1"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ObjectTimer"
+                  },
+                  "parameters": [
+                    "SirHenry",
+                    "\"ctoggle\"",
+                    "0.2"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": [],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "SirHenry",
+                    "Comedy",
+                    "=",
+                    "0"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ResetObjectTimer"
+                  },
+                  "parameters": [
+                    "SirHenry",
+                    "\"ctoggle\""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
+                    "SirHenry",
+                    "Invulnerable",
+                    "=",
+                    "1"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "SirHenry",
+                    "CurrentHealth",
+                    "=",
+                    "SirHenry.Variable(MaxHealth)"
                   ],
                   "subInstructions": []
                 }
@@ -99001,6 +99562,66 @@
                 {
                   "type": {
                     "inverted": false,
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "Assets\\Hit Me With Your Rhythm Stick.wav",
+                    "15",
+                    "yes",
+                    "50",
+                    "1"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "Assets\\ClashComedy.wav",
+                    "16",
+                    "no",
+                    "70",
+                    "1"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "Assets\\HitComedy.wav",
+                    "17",
+                    "no",
+                    "70",
+                    "1"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "Assets\\HitComedy.wav",
+                    "18",
+                    "no",
+                    "70",
+                    "1"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
                     "value": "TiledSpriteObject::SetOpacity"
                   },
                   "parameters": [
@@ -99162,6 +99783,50 @@
                   "parameters": [
                     "",
                     "9"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "PauseSoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "15"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "PauseSoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "16"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "PauseSoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "17"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "PauseSoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "18"
                   ],
                   "subInstructions": []
                 },
@@ -99669,17 +100334,6 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "RePlaySoundCanal"
-                      },
-                      "parameters": [
-                        "",
-                        "6"
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
                         "value": "ModVarObjet"
                       },
                       "parameters": [
@@ -99713,7 +100367,92 @@
                       "subInstructions": []
                     }
                   ],
-                  "events": []
+                  "events": [
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "BuiltinCommonInstructions::Once"
+                          },
+                          "parameters": [],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "VarObjet"
+                          },
+                          "parameters": [
+                            "SirHenry",
+                            "Comedy",
+                            "=",
+                            "1"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "RePlaySoundCanal"
+                          },
+                          "parameters": [
+                            "",
+                            "16"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "BuiltinCommonInstructions::Once"
+                          },
+                          "parameters": [],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "VarObjet"
+                          },
+                          "parameters": [
+                            "SirHenry",
+                            "Comedy",
+                            "=",
+                            "0"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "RePlaySoundCanal"
+                          },
+                          "parameters": [
+                            "",
+                            "6"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    }
+                  ]
                 },
                 {
                   "disabled": false,
@@ -99812,17 +100551,6 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "RePlaySoundCanal"
-                      },
-                      "parameters": [
-                        "",
-                        "6"
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
                         "value": "ModVarObjet"
                       },
                       "parameters": [
@@ -99856,7 +100584,92 @@
                       "subInstructions": []
                     }
                   ],
-                  "events": []
+                  "events": [
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "BuiltinCommonInstructions::Once"
+                          },
+                          "parameters": [],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "VarObjet"
+                          },
+                          "parameters": [
+                            "SirHenry",
+                            "Comedy",
+                            "=",
+                            "0"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "RePlaySoundCanal"
+                          },
+                          "parameters": [
+                            "",
+                            "6"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "BuiltinCommonInstructions::Once"
+                          },
+                          "parameters": [],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "VarObjet"
+                          },
+                          "parameters": [
+                            "SirHenry",
+                            "Comedy",
+                            "=",
+                            "1"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "RePlaySoundCanal"
+                          },
+                          "parameters": [
+                            "",
+                            "16"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    }
+                  ]
                 },
                 {
                   "disabled": false,
@@ -99990,17 +100803,6 @@
                     {
                       "type": {
                         "inverted": false,
-                        "value": "RePlaySoundCanal"
-                      },
-                      "parameters": [
-                        "",
-                        "6"
-                      ],
-                      "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
                         "value": "ModVarObjet"
                       },
                       "parameters": [
@@ -100069,7 +100871,92 @@
                       "subInstructions": []
                     }
                   ],
-                  "events": []
+                  "events": [
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "BuiltinCommonInstructions::Once"
+                          },
+                          "parameters": [],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "VarObjet"
+                          },
+                          "parameters": [
+                            "SirHenry",
+                            "Comedy",
+                            "=",
+                            "0"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "RePlaySoundCanal"
+                          },
+                          "parameters": [
+                            "",
+                            "6"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "BuiltinCommonInstructions::Once"
+                          },
+                          "parameters": [],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "VarObjet"
+                          },
+                          "parameters": [
+                            "SirHenry",
+                            "Comedy",
+                            "=",
+                            "1"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "RePlaySoundCanal"
+                          },
+                          "parameters": [
+                            "",
+                            "16"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    }
+                  ]
                 }
               ]
             },
@@ -100557,17 +101444,6 @@
                         "(SirHenrysSword.Variable(activated)*2)"
                       ],
                       "subInstructions": []
-                    },
-                    {
-                      "type": {
-                        "inverted": false,
-                        "value": "RePlaySoundCanal"
-                      },
-                      "parameters": [
-                        "",
-                        "5"
-                      ],
-                      "subInstructions": []
                     }
                   ],
                   "events": [
@@ -100659,6 +101535,90 @@
                           "events": []
                         }
                       ]
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "BuiltinCommonInstructions::Once"
+                          },
+                          "parameters": [],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "VarObjet"
+                          },
+                          "parameters": [
+                            "SirHenry",
+                            "Comedy",
+                            "=",
+                            "1"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "RePlaySoundCanal"
+                          },
+                          "parameters": [
+                            "",
+                            "17"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "BuiltinCommonInstructions::Once"
+                          },
+                          "parameters": [],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "VarObjet"
+                          },
+                          "parameters": [
+                            "SirHenry",
+                            "Comedy",
+                            "=",
+                            "0"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "RePlaySoundCanal"
+                          },
+                          "parameters": [
+                            "",
+                            "5"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
                     }
                   ]
                 },
@@ -100796,7 +101756,92 @@
                       "subInstructions": []
                     }
                   ],
-                  "events": []
+                  "events": [
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "BuiltinCommonInstructions::Once"
+                          },
+                          "parameters": [],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "VarObjet"
+                          },
+                          "parameters": [
+                            "SirHenry",
+                            "Comedy",
+                            "=",
+                            "0"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "RePlaySoundCanal"
+                          },
+                          "parameters": [
+                            "",
+                            "7"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    },
+                    {
+                      "disabled": false,
+                      "folded": false,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "BuiltinCommonInstructions::Once"
+                          },
+                          "parameters": [],
+                          "subInstructions": []
+                        },
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "VarObjet"
+                          },
+                          "parameters": [
+                            "SirHenry",
+                            "Comedy",
+                            "=",
+                            "1"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "inverted": false,
+                            "value": "RePlaySoundCanal"
+                          },
+                          "parameters": [
+                            "",
+                            "18"
+                          ],
+                          "subInstructions": []
+                        }
+                      ],
+                      "events": []
+                    }
+                  ]
                 },
                 {
                   "disabled": false,
@@ -112845,6 +113890,448 @@
                     "value": "VarObjet"
                   },
                   "parameters": [
+                    "SirHenry",
+                    "Comedy",
+                    "=",
+                    "1"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": [],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "PauseSoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "10"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "PauseSoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "11"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "PauseSoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "12"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "PauseSoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "13"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "PauseSoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "14"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "RePlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "15"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
+                    "SirHenry",
+                    "Comedy",
+                    "=",
+                    "0"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": [],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "PauseSoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "15"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "RePlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "14"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "RePlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "13"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "RePlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "12"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "RePlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "11"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "RePlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "10"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
+                    "SirHenry",
+                    "Comedy",
+                    "=",
+                    "1"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SoundCanalVolume"
+                  },
+                  "parameters": [
+                    "",
+                    "15",
+                    "<",
+                    "ControlsBackground.Variable(MaxMusicVolume)"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVolumeSoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "15",
+                    "+",
+                    "1"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
+                    "SirHenry",
+                    "Comedy",
+                    "=",
+                    "1"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SoundCanalVolume"
+                  },
+                  "parameters": [
+                    "",
+                    "15",
+                    ">",
+                    "ControlsBackground.Variable(MaxMusicVolume)"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVolumeSoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "15",
+                    "-",
+                    "1"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
+                    "KnightVale",
+                    "CurrentHealth",
+                    "<=",
+                    "KnightVale.Variable(MaxHealth) * 1"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
+                    "KnightVale",
+                    "CurrentHealth",
+                    ">=",
+                    "KnightVale.Variable(MaxHealth) * 0.8"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SoundCanalVolume"
+                  },
+                  "parameters": [
+                    "",
+                    "11",
+                    "<",
+                    "ControlsBackground.Variable(MaxMusicVolume)"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "KnightVale",
+                    "Aggression",
+                    "=",
+                    "1"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVolumeSoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "11",
+                    "+",
+                    "1"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
+                    "KnightVale",
+                    "CurrentHealth",
+                    "<=",
+                    "KnightVale.Variable(MaxHealth) * 1"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
+                    "KnightVale",
+                    "CurrentHealth",
+                    ">=",
+                    "KnightVale.Variable(MaxHealth) * 0.8"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SoundCanalVolume"
+                  },
+                  "parameters": [
+                    "",
+                    "11",
+                    ">",
+                    "ControlsBackground.Variable(MaxMusicVolume)"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "KnightVale",
+                    "Aggression",
+                    "=",
+                    "1"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVolumeSoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "11",
+                    "-",
+                    "1"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
                     "KnightVale",
                     "CurrentHealth",
                     "<",
@@ -112874,7 +114361,7 @@
                     "",
                     "10",
                     "<",
-                    "50"
+                    "ControlsBackground.Variable(MaxMusicVolume)"
                   ],
                   "subInstructions": []
                 }
@@ -112915,7 +114402,69 @@
                     "",
                     "10",
                     "+",
-                    "2"
+                    "1"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
+                    "KnightVale",
+                    "CurrentHealth",
+                    "<",
+                    "KnightVale.Variable(MaxHealth) * 0.8"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
+                    "KnightVale",
+                    "CurrentHealth",
+                    ">=",
+                    "KnightVale.Variable(MaxHealth) * 0.6"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SoundCanalVolume"
+                  },
+                  "parameters": [
+                    "",
+                    "10",
+                    ">",
+                    "ControlsBackground.Variable(MaxMusicVolume)"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVolumeSoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "10",
+                    "-",
+                    "1"
                   ],
                   "subInstructions": []
                 }
@@ -112962,7 +114511,7 @@
                     "",
                     "12",
                     "<",
-                    "50"
+                    "ControlsBackground.Variable(MaxMusicVolume)"
                   ],
                   "subInstructions": []
                 }
@@ -112988,7 +114537,7 @@
                   },
                   "parameters": [
                     "",
-                    "11",
+                    "10",
                     "-",
                     "4"
                   ],
@@ -113003,7 +114552,69 @@
                     "",
                     "12",
                     "+",
-                    "2"
+                    "1"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
+                    "KnightVale",
+                    "CurrentHealth",
+                    "<",
+                    "KnightVale.Variable(MaxHealth) * 0.6"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
+                    "KnightVale",
+                    "CurrentHealth",
+                    ">=",
+                    "KnightVale.Variable(MaxHealth) * 0.4"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SoundCanalVolume"
+                  },
+                  "parameters": [
+                    "",
+                    "12",
+                    ">",
+                    "ControlsBackground.Variable(MaxMusicVolume)"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVolumeSoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "12",
+                    "-",
+                    "1"
                   ],
                   "subInstructions": []
                 }
@@ -113050,7 +114661,7 @@
                     "",
                     "13",
                     "<",
-                    "50"
+                    "ControlsBackground.Variable(MaxMusicVolume)"
                   ],
                   "subInstructions": []
                 }
@@ -113091,7 +114702,69 @@
                     "",
                     "13",
                     "+",
-                    "2"
+                    "1"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
+                    "KnightVale",
+                    "CurrentHealth",
+                    "<",
+                    "KnightVale.Variable(MaxHealth) * 0.4"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
+                    "KnightVale",
+                    "CurrentHealth",
+                    ">=",
+                    "KnightVale.Variable(MaxHealth) * 0.2"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SoundCanalVolume"
+                  },
+                  "parameters": [
+                    "",
+                    "13",
+                    ">",
+                    "ControlsBackground.Variable(MaxMusicVolume)"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVolumeSoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "13",
+                    "-",
+                    "1"
                   ],
                   "subInstructions": []
                 }
@@ -113138,7 +114811,7 @@
                     "",
                     "14",
                     "<",
-                    "50"
+                    "ControlsBackground.Variable(MaxMusicVolume)"
                   ],
                   "subInstructions": []
                 }
@@ -113179,7 +114852,417 @@
                     "",
                     "14",
                     "+",
-                    "2"
+                    "1"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
+                    "KnightVale",
+                    "CurrentHealth",
+                    "<",
+                    "KnightVale.Variable(MaxHealth) * 0.2"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
+                    "KnightVale",
+                    "CurrentHealth",
+                    ">=",
+                    "KnightVale.Variable(MaxHealth) * 0.0"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SoundCanalVolume"
+                  },
+                  "parameters": [
+                    "",
+                    "14",
+                    ">",
+                    "ControlsBackground.Variable(MaxMusicVolume)"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVolumeSoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "14",
+                    "-",
+                    "1"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
+                    "ControlsBackground",
+                    "visibility",
+                    "=",
+                    "1"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "KeyPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "Tab"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "BuiltinCommonInstructions::Or"
+                  },
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "VarObjet"
+                      },
+                      "parameters": [
+                        "ControlsBackground",
+                        "start",
+                        "=",
+                        "1"
+                      ],
+                      "subInstructions": []
+                    },
+                    {
+                      "type": {
+                        "inverted": false,
+                        "value": "ObjectTimer"
+                      },
+                      "parameters": [
+                        "ControlsBackground",
+                        "\"toggleBackground\"",
+                        "0.2"
+                      ],
+                      "subInstructions": []
+                    }
+                  ]
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": [],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "ControlsBackground",
+                    "visibility",
+                    "=",
+                    "0"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Cache"
+                  },
+                  "parameters": [
+                    "ControlsBackground"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Cache"
+                  },
+                  "parameters": [
+                    "Stats"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Cache"
+                  },
+                  "parameters": [
+                    "Controls"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ResetObjectTimer"
+                  },
+                  "parameters": [
+                    "ControlsBackground",
+                    "\"toggleBackground\""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "ControlsBackground",
+                    "start",
+                    "=",
+                    "0"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
+                    "ControlsBackground",
+                    "visibility",
+                    "=",
+                    "0"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "KeyPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "Tab"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": [],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ObjectTimer"
+                  },
+                  "parameters": [
+                    "ControlsBackground",
+                    "\"toggleBackground\"",
+                    "0.2"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "ControlsBackground",
+                    "visibility",
+                    "=",
+                    "1"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "ControlsBackground",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "Controls",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "Stats",
+                    ""
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ResetObjectTimer"
+                  },
+                  "parameters": [
+                    "ControlsBackground",
+                    "\"toggleBackground\""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
+                    "ControlsBackground",
+                    "MaxMusicVolume",
+                    ">",
+                    "0"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "KeyPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "Num1"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "ControlsBackground",
+                    "MaxMusicVolume",
+                    "-",
+                    "0.1"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "VarObjet"
+                  },
+                  "parameters": [
+                    "ControlsBackground",
+                    "MaxMusicVolume",
+                    "<",
+                    "100"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "KeyPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "Num2"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarObjet"
+                  },
+                  "parameters": [
+                    "ControlsBackground",
+                    "MaxMusicVolume",
+                    "+",
+                    "0.1"
                   ],
                   "subInstructions": []
                 }
@@ -113211,11 +115294,45 @@
           "events": []
         },
         {
+          "disabled": true,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "FPS",
+                "=",
+                "ToString(SoundChannelVolume(15))"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
           "disabled": false,
           "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [],
-          "actions": [],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "TextObject::String"
+              },
+              "parameters": [
+                "Stats",
+                "=",
+                "\"Health (red bar): \" + ToString(int(SirHenry.Variable(CurrentHealth))) + \"/\" + ToString(SirHenry.Variable(MaxHealth)) + \"\nStamina (green bar): \" + ToString(int(SirHenry.Variable(CurrentStamina))) + \"/\" + ToString(SirHenry.Variable(MaxStamina)) + \"\nSoul Connection (blue bar): \" + ToString(int(SirHenry.Variable(CurrentGhost))) + \"/\" + ToString(SirHenry.Variable(MaxGhostHealth)) + \"\nInvulnerability: \" + ToString(SirHenry.Variable(Invulnerable)) + \"\nComedy Mode: \" + ToString(SirHenry.Variable(Comedy)) + \"\nMusic Volume: \" + ToString(int(ControlsBackground.Variable(MaxMusicVolume))) + \"\nResolution:\" + ToString(SceneWindowWidth() * (ScreenWidth()/1920)) + \" x \" + ToString(int(SceneWindowHeight() * (ScreenWidth()/1920)))\n"
+              ],
+              "subInstructions": []
+            }
+          ],
           "events": []
         },
         {
